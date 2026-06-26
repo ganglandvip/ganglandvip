@@ -1,0 +1,151 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 0,
+    "max_z": -1080,
+    "min_x": -180,
+    "min_z": -1260
+  },
+  "buildings": [],
+  "coord_x": -1,
+  "coord_z": -7,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "-1_-7",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -51.854,
+          "z": -1290.444
+        },
+        {
+          "x": -61.721,
+          "z": -1274.213
+        },
+        {
+          "x": -62.035,
+          "z": -1210.182
+        },
+        {
+          "x": -62.044,
+          "z": -1207.978
+        },
+        {
+          "x": -62.081,
+          "z": -1200.853
+        },
+        {
+          "x": -62.091,
+          "z": -1194.842
+        },
+        {
+          "x": -62.091,
+          "z": -1191.625
+        },
+        {
+          "x": -62.146,
+          "z": -1145.928
+        },
+        {
+          "x": -62.109,
+          "z": -1135.097
+        },
+        {
+          "x": -62.174,
+          "z": -1126.503
+        },
+        {
+          "x": -62.201,
+          "z": -1065.177
+        },
+        {
+          "x": -62.321,
+          "z": -1005.309
+        },
+        {
+          "x": -62.349,
+          "z": -977.679
+        },
+        {
+          "x": -62.294,
+          "z": -973.126
+        },
+        {
+          "x": -62.303,
+          "z": -970.276
+        },
+        {
+          "x": -62.414,
+          "z": -925.347
+        },
+        {
+          "x": -62.469,
+          "z": -877.981
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617890",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/651573513#section/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/651573513",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 0,
+      "start_node_id": "11274476844",
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 52.0,
+        "relative_y_m": -6.0,
+        "x": -180.0,
+        "z": -1260.0
+      },
+      {
+        "elevation_m": 52.0,
+        "relative_y_m": -6.0,
+        "x": 0.0,
+        "z": -1260.0
+      },
+      {
+        "elevation_m": 53.0,
+        "relative_y_m": -5.0,
+        "x": -180.0,
+        "z": -1080.0
+      },
+      {
+        "elevation_m": 52.0,
+        "relative_y_m": -6.0,
+        "x": 0.0,
+        "z": -1080.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

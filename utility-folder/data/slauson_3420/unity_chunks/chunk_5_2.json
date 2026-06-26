@@ -1,0 +1,121 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 1080,
+    "max_z": 540,
+    "min_x": 900,
+    "min_z": 360
+  },
+  "buildings": [
+    {
+      "building": "yes",
+      "footprint": [
+        {
+          "x": 897.087,
+          "z": 535.037
+        },
+        {
+          "x": 933.989,
+          "z": 535.126
+        },
+        {
+          "x": 934.016,
+          "z": 521.289
+        },
+        {
+          "x": 897.124,
+          "z": 521.211
+        },
+        {
+          "x": 897.087,
+          "z": 535.037
+        }
+      ],
+      "height_m": 4.8,
+      "id": "way/407333119",
+      "levels": 0,
+      "name": null
+    }
+  ],
+  "coord_x": 5,
+  "coord_z": 2,
+  "counts": {
+    "areas": 0,
+    "buildings": 1,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "5_2",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 943.505,
+          "z": 475.025
+        },
+        {
+          "x": 891.826,
+          "z": 474.657
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "4011777744",
+      "estimated_road_width_m": 10.2,
+      "highway": "tertiary",
+      "id": "way/398417452#section/0",
+      "lane_count": 3,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "West 54th Street",
+      "oneway": false,
+      "parent_id": "way/398417452",
+      "render_kind": "road",
+      "road_width_m": 10.2,
+      "section_index": 0,
+      "start_node_id": "122742764",
+      "surface": "paved",
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 900.0,
+        "z": 360.0
+      },
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 1080.0,
+        "z": 360.0
+      },
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 900.0,
+        "z": 540.0
+      },
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 1080.0,
+        "z": 540.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

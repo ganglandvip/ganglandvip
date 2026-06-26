@@ -1,0 +1,250 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -900,
+    "max_z": 180,
+    "min_x": -1080,
+    "min_z": 0
+  },
+  "buildings": [
+    {
+      "building": "house",
+      "footprint": [
+        {
+          "x": -902.311,
+          "z": 153.488
+        },
+        {
+          "x": -899.081,
+          "z": 153.466
+        },
+        {
+          "x": -899.099,
+          "z": 149.826
+        },
+        {
+          "x": -902.33,
+          "z": 149.848
+        },
+        {
+          "x": -902.311,
+          "z": 153.488
+        }
+      ],
+      "height_m": 3.8,
+      "id": "way/410970377",
+      "levels": 0,
+      "name": null
+    },
+    {
+      "building": "house",
+      "footprint": [
+        {
+          "x": -902.422,
+          "z": 127.45
+        },
+        {
+          "x": -902.413,
+          "z": 130.901
+        },
+        {
+          "x": -897.816,
+          "z": 130.879
+        },
+        {
+          "x": -897.825,
+          "z": 127.428
+        },
+        {
+          "x": -902.422,
+          "z": 127.45
+        }
+      ],
+      "height_m": 3.6,
+      "id": "way/410970397",
+      "levels": 0,
+      "name": null
+    }
+  ],
+  "coord_x": -6,
+  "coord_z": 0,
+  "counts": {
+    "areas": 0,
+    "buildings": 2,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 4
+  },
+  "id": "-6_0",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -1131.253,
+          "z": 57.174
+        },
+        {
+          "x": -1042.709,
+          "z": 57.886
+        },
+        {
+          "x": -951.461,
+          "z": 58.643
+        },
+        {
+          "x": -854.86,
+          "z": 59.345
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "705825512",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/56242259#section/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/56242259",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 0,
+      "start_node_id": "123690330",
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -854.629,
+          "z": 4.598
+        },
+        {
+          "x": -949.818,
+          "z": 3.729
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122785395",
+      "estimated_road_width_m": 13.6,
+      "highway": "primary",
+      "id": "way/398364729#section/2",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "35 mph",
+      "name": "West Slauson Avenue",
+      "oneway": false,
+      "parent_id": "way/398364729",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 2,
+      "start_node_id": "123550136",
+      "surface": "asphalt",
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -945.563,
+          "z": 16.409
+        },
+        {
+          "x": -940.911,
+          "z": 16.91
+        }
+      ],
+      "crossing": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/1452456946#segment/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1452456946",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "segment_index": 0,
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -940.911,
+          "z": 16.91
+        },
+        {
+          "x": -860.794,
+          "z": 17.733
+        }
+      ],
+      "crossing": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/1452456946#segment/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1452456946",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "segment_index": 1,
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 74.0,
+        "relative_y_m": 16.0,
+        "x": -1080.0,
+        "z": 0.0
+      },
+      {
+        "elevation_m": 72.0,
+        "relative_y_m": 14.0,
+        "x": -900.0,
+        "z": 0.0
+      },
+      {
+        "elevation_m": 80.0,
+        "relative_y_m": 22.0,
+        "x": -1080.0,
+        "z": 180.0
+      },
+      {
+        "elevation_m": 77.0,
+        "relative_y_m": 19.0,
+        "x": -900.0,
+        "z": 180.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

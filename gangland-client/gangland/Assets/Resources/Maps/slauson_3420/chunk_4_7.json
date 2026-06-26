@@ -1,0 +1,119 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 900,
+    "max_z": 1440,
+    "min_x": 720,
+    "min_z": 1260
+  },
+  "buildings": [],
+  "coord_x": 4,
+  "coord_z": 7,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "4_7",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 849.488,
+          "z": 1642.694
+        },
+        {
+          "x": 849.506,
+          "z": 1632.218
+        },
+        {
+          "x": 849.294,
+          "z": 1591.932
+        },
+        {
+          "x": 849.183,
+          "z": 1562.755
+        },
+        {
+          "x": 848.103,
+          "z": 1286.726
+        },
+        {
+          "x": 848.74,
+          "z": 1238.958
+        },
+        {
+          "x": 847.272,
+          "z": 1058.742
+        },
+        {
+          "x": 846.516,
+          "z": 865.903
+        },
+        {
+          "x": 845.593,
+          "z": 767.885
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6792064389",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1347432657#section/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "5th Avenue",
+      "oneway": false,
+      "parent_id": "way/1347432657",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 0,
+      "start_node_id": "123217352",
+      "surface": "asphalt",
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 40.0,
+        "relative_y_m": -18.0,
+        "x": 720.0,
+        "z": 1260.0
+      },
+      {
+        "elevation_m": 40.0,
+        "relative_y_m": -18.0,
+        "x": 900.0,
+        "z": 1260.0
+      },
+      {
+        "elevation_m": 40.0,
+        "relative_y_m": -18.0,
+        "x": 720.0,
+        "z": 1440.0
+      },
+      {
+        "elevation_m": 40.0,
+        "relative_y_m": -18.0,
+        "x": 900.0,
+        "z": 1440.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

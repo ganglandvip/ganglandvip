@@ -1,0 +1,198 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -900,
+    "max_z": -720,
+    "min_x": -1080,
+    "min_z": -900
+  },
+  "buildings": [
+    {
+      "building": "residential",
+      "footprint": [
+        {
+          "x": -912.778,
+          "z": -745.042
+        },
+        {
+          "x": -912.778,
+          "z": -742.349
+        },
+        {
+          "x": -914.947,
+          "z": -742.349
+        },
+        {
+          "x": -914.956,
+          "z": -738.497
+        },
+        {
+          "x": -912.086,
+          "z": -738.486
+        },
+        {
+          "x": -912.095,
+          "z": -735.502
+        },
+        {
+          "x": -900.659,
+          "z": -735.469
+        },
+        {
+          "x": -900.641,
+          "z": -740.712
+        },
+        {
+          "x": -898.776,
+          "z": -740.712
+        },
+        {
+          "x": -898.767,
+          "z": -744.998
+        },
+        {
+          "x": -912.778,
+          "z": -745.042
+        }
+      ],
+      "height_m": 5.4,
+      "id": "way/412183875",
+      "levels": 0,
+      "name": null
+    },
+    {
+      "building": "house",
+      "footprint": [
+        {
+          "x": -908.892,
+          "z": -761.061
+        },
+        {
+          "x": -908.541,
+          "z": -761.073
+        },
+        {
+          "x": -908.532,
+          "z": -759.625
+        },
+        {
+          "x": -897.936,
+          "z": -759.681
+        },
+        {
+          "x": -897.973,
+          "z": -765.96
+        },
+        {
+          "x": -903.714,
+          "z": -765.926
+        },
+        {
+          "x": -903.714,
+          "z": -765.303
+        },
+        {
+          "x": -908.911,
+          "z": -765.28
+        },
+        {
+          "x": -908.892,
+          "z": -761.061
+        }
+      ],
+      "height_m": 4.4,
+      "id": "way/412186579",
+      "levels": 0,
+      "name": null
+    }
+  ],
+  "coord_x": -6,
+  "coord_z": -5,
+  "counts": {
+    "areas": 0,
+    "buildings": 2,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "-6_-5",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -671.957,
+          "z": -898.364
+        },
+        {
+          "x": -929.614,
+          "z": -900.334
+        },
+        {
+          "x": -1110.938,
+          "z": -900.534
+        },
+        {
+          "x": -1139.708,
+          "z": -894.879
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123208685",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/607179440#section/2",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Fairview Boulevard",
+      "oneway": false,
+      "parent_id": "way/607179440",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 2,
+      "start_node_id": "123073886",
+      "surface": "asphalt",
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 60.0,
+        "relative_y_m": 2.0,
+        "x": -1080.0,
+        "z": -900.0
+      },
+      {
+        "elevation_m": 60.0,
+        "relative_y_m": 2.0,
+        "x": -900.0,
+        "z": -900.0
+      },
+      {
+        "elevation_m": 63.0,
+        "relative_y_m": 5.0,
+        "x": -1080.0,
+        "z": -720.0
+      },
+      {
+        "elevation_m": 61.0,
+        "relative_y_m": 3.0,
+        "x": -900.0,
+        "z": -720.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

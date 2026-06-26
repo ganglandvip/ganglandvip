@@ -1,0 +1,111 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 1260,
+    "max_z": -180,
+    "min_x": 1080,
+    "min_z": -360
+  },
+  "buildings": [],
+  "coord_x": 6,
+  "coord_z": -2,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "6_-2",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 1293.462,
+          "z": -180.572
+        },
+        {
+          "x": 1203.663,
+          "z": -181.719
+        },
+        {
+          "x": 1173.352,
+          "z": -181.919
+        },
+        {
+          "x": 1113.845,
+          "z": -182.32
+        },
+        {
+          "x": 1024.166,
+          "z": -183.188
+        },
+        {
+          "x": 931.792,
+          "z": -183.311
+        },
+        {
+          "x": 842.38,
+          "z": -184.535
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273759",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 0,
+      "start_node_id": "122728899",
+      "surface": "asphalt",
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 43.0,
+        "relative_y_m": -15.0,
+        "x": 1080.0,
+        "z": -360.0
+      },
+      {
+        "elevation_m": 42.0,
+        "relative_y_m": -16.0,
+        "x": 1260.0,
+        "z": -360.0
+      },
+      {
+        "elevation_m": 42.0,
+        "relative_y_m": -16.0,
+        "x": 1080.0,
+        "z": -180.0
+      },
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 1260.0,
+        "z": -180.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

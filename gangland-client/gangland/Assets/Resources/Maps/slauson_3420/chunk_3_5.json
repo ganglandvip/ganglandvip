@@ -1,0 +1,151 @@
+{
+  "areas": [
+    {
+      "amenity": null,
+      "footprint": [
+        {
+          "x": 835.846,
+          "z": 690.963
+        },
+        {
+          "x": 833.926,
+          "z": 689.282
+        },
+        {
+          "x": 552.465,
+          "z": 686.655
+        },
+        {
+          "x": 553.554,
+          "z": 1040.018
+        },
+        {
+          "x": 338.004,
+          "z": 1041.321
+        },
+        {
+          "x": 338.752,
+          "z": 1190.478
+        },
+        {
+          "x": 553.812,
+          "z": 1192.738
+        },
+        {
+          "x": 554.311,
+          "z": 1224.498
+        },
+        {
+          "x": 939.111,
+          "z": 1226.535
+        },
+        {
+          "x": 938.419,
+          "z": 897.607
+        },
+        {
+          "x": 855.192,
+          "z": 898.13
+        },
+        {
+          "x": 837.258,
+          "z": 898.274
+        },
+        {
+          "x": 835.846,
+          "z": 690.963
+        }
+      ],
+      "id": "way/1141068365",
+      "landuse": "residential",
+      "leisure": null,
+      "name": null,
+      "shop": null
+    }
+  ],
+  "bounds": {
+    "max_x": 720,
+    "max_z": 1080,
+    "min_x": 540,
+    "min_z": 900
+  },
+  "buildings": [
+    {
+      "building": "house",
+      "footprint": [
+        {
+          "x": 687.971,
+          "z": 901.904
+        },
+        {
+          "x": 688.026,
+          "z": 899.132
+        },
+        {
+          "x": 685.553,
+          "z": 899.087
+        },
+        {
+          "x": 685.488,
+          "z": 901.848
+        },
+        {
+          "x": 687.971,
+          "z": 901.904
+        }
+      ],
+      "height_m": 3.4,
+      "id": "way/411163268",
+      "levels": 0,
+      "name": null
+    }
+  ],
+  "coord_x": 3,
+  "coord_z": 5,
+  "counts": {
+    "areas": 1,
+    "buildings": 1,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 0
+  },
+  "id": "3_5",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 540.0,
+        "z": 900.0
+      },
+      {
+        "elevation_m": 40.0,
+        "relative_y_m": -18.0,
+        "x": 720.0,
+        "z": 900.0
+      },
+      {
+        "elevation_m": 39.0,
+        "relative_y_m": -19.0,
+        "x": 540.0,
+        "z": 1080.0
+      },
+      {
+        "elevation_m": 40.0,
+        "relative_y_m": -18.0,
+        "x": 720.0,
+        "z": 1080.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

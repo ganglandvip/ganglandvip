@@ -1,0 +1,135 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -1440,
+    "max_z": 0,
+    "min_x": -1620,
+    "min_z": -180
+  },
+  "buildings": [],
+  "coord_x": -9,
+  "coord_z": -1,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "-9_-1",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -755.756,
+          "z": -95.624
+        },
+        {
+          "x": -948.111,
+          "z": -97.36
+        },
+        {
+          "x": -1134.872,
+          "z": -98.997
+        },
+        {
+          "x": -1212.007,
+          "z": -99.709
+        },
+        {
+          "x": -1332.736,
+          "z": -100.834
+        },
+        {
+          "x": -1470.144,
+          "z": -102.57
+        },
+        {
+          "x": -1694.979,
+          "z": -104.196
+        },
+        {
+          "x": -1858.507,
+          "z": -105.709
+        },
+        {
+          "x": -1948.344,
+          "z": -105.876
+        },
+        {
+          "x": -2018.317,
+          "z": -105.843
+        },
+        {
+          "x": -2030.592,
+          "z": -105.019
+        },
+        {
+          "x": -2067.19,
+          "z": -99.887
+        },
+        {
+          "x": -2083.481,
+          "z": -98.652
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122799693",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295757630#section/3",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 58th Place",
+      "oneway": false,
+      "parent_id": "way/295757630",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 3,
+      "start_node_id": "123526136",
+      "surface": "asphalt",
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 90.0,
+        "relative_y_m": 32.0,
+        "x": -1620.0,
+        "z": -180.0
+      },
+      {
+        "elevation_m": 69.0,
+        "relative_y_m": 11.0,
+        "x": -1440.0,
+        "z": -180.0
+      },
+      {
+        "elevation_m": 88.0,
+        "relative_y_m": 30.0,
+        "x": -1620.0,
+        "z": 0.0
+      },
+      {
+        "elevation_m": 77.0,
+        "relative_y_m": 19.0,
+        "x": -1440.0,
+        "z": 0.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

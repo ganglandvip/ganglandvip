@@ -1,0 +1,88 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 1080,
+    "max_z": 900,
+    "min_x": 900,
+    "min_z": 720
+  },
+  "buildings": [
+    {
+      "building": "yes",
+      "footprint": [
+        {
+          "x": 906.788,
+          "z": 793.801
+        },
+        {
+          "x": 906.742,
+          "z": 785.006
+        },
+        {
+          "x": 891.817,
+          "z": 785.084
+        },
+        {
+          "x": 891.863,
+          "z": 793.89
+        },
+        {
+          "x": 906.788,
+          "z": 793.801
+        }
+      ],
+      "height_m": 5.3,
+      "id": "way/411163426",
+      "levels": 0,
+      "name": null
+    }
+  ],
+  "coord_x": 5,
+  "coord_z": 4,
+  "counts": {
+    "areas": 0,
+    "buildings": 1,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 0
+  },
+  "id": "5_4",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 900.0,
+        "z": 720.0
+      },
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 1080.0,
+        "z": 720.0
+      },
+      {
+        "elevation_m": 40.0,
+        "relative_y_m": -18.0,
+        "x": 900.0,
+        "z": 900.0
+      },
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 1080.0,
+        "z": 900.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

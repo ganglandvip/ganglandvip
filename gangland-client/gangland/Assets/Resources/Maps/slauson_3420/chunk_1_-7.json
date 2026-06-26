@@ -1,0 +1,171 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 360,
+    "max_z": -1080,
+    "min_x": 180,
+    "min_z": -1260
+  },
+  "buildings": [],
+  "coord_x": 1,
+  "coord_z": -7,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "1_-7",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 211.71,
+          "z": -856.741
+        },
+        {
+          "x": 211.737,
+          "z": -913.603
+        },
+        {
+          "x": 211.747,
+          "z": -923.422
+        },
+        {
+          "x": 211.71,
+          "z": -931.17
+        },
+        {
+          "x": 211.728,
+          "z": -976.688
+        },
+        {
+          "x": 211.664,
+          "z": -1020.515
+        },
+        {
+          "x": 211.654,
+          "z": -1027.617
+        },
+        {
+          "x": 211.756,
+          "z": -1049.692
+        },
+        {
+          "x": 211.765,
+          "z": -1080.939
+        },
+        {
+          "x": 211.728,
+          "z": -1133.75
+        },
+        {
+          "x": 211.977,
+          "z": -1161.212
+        },
+        {
+          "x": 211.802,
+          "z": -1169.828
+        },
+        {
+          "x": 211.802,
+          "z": -1171.42
+        },
+        {
+          "x": 211.811,
+          "z": -1199.217
+        },
+        {
+          "x": 211.83,
+          "z": -1260.309
+        },
+        {
+          "x": 211.903,
+          "z": -1354.887
+        },
+        {
+          "x": 211.867,
+          "z": -1389.441
+        },
+        {
+          "x": 211.876,
+          "z": -1425.954
+        },
+        {
+          "x": 211.876,
+          "z": -1428.425
+        },
+        {
+          "x": 211.876,
+          "z": -1473.821
+        },
+        {
+          "x": 211.128,
+          "z": -1536.951
+        },
+        {
+          "x": 210.325,
+          "z": -1601.65
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123322468",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13401387#section/22",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "11th Avenue",
+      "oneway": false,
+      "parent_id": "way/13401387",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 22,
+      "start_node_id": "8410375486",
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 49.0,
+        "relative_y_m": -9.0,
+        "x": 180.0,
+        "z": -1260.0
+      },
+      {
+        "elevation_m": 49.0,
+        "relative_y_m": -9.0,
+        "x": 360.0,
+        "z": -1260.0
+      },
+      {
+        "elevation_m": 50.0,
+        "relative_y_m": -8.0,
+        "x": 180.0,
+        "z": -1080.0
+      },
+      {
+        "elevation_m": 48.0,
+        "relative_y_m": -10.0,
+        "x": 360.0,
+        "z": -1080.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

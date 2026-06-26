@@ -1,0 +1,127 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -900,
+    "max_z": -900,
+    "min_x": -1080,
+    "min_z": -1080
+  },
+  "buildings": [],
+  "coord_x": -6,
+  "coord_z": -6,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "-6_-6",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -1347.486,
+          "z": -1228.327
+        },
+        {
+          "x": -1265.818,
+          "z": -1228.45
+        },
+        {
+          "x": -1210.17,
+          "z": -1193.495
+        },
+        {
+          "x": -1121.054,
+          "z": -1133.583
+        },
+        {
+          "x": -1026.335,
+          "z": -1085.236
+        },
+        {
+          "x": -1005.3,
+          "z": -1074.516
+        },
+        {
+          "x": -886.352,
+          "z": -1013.747
+        },
+        {
+          "x": -817.312,
+          "z": -976.599
+        },
+        {
+          "x": -762.55,
+          "z": -947.122
+        },
+        {
+          "x": -731.5,
+          "z": -930.413
+        },
+        {
+          "x": -671.957,
+          "z": -898.364
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123073886",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13365731#section/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Brett Street",
+      "oneway": false,
+      "parent_id": "way/13365731",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 0,
+      "start_node_id": "123073883",
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 56.0,
+        "relative_y_m": -2.0,
+        "x": -1080.0,
+        "z": -1080.0
+      },
+      {
+        "elevation_m": 57.0,
+        "relative_y_m": -1.0,
+        "x": -900.0,
+        "z": -1080.0
+      },
+      {
+        "elevation_m": 60.0,
+        "relative_y_m": 2.0,
+        "x": -1080.0,
+        "z": -900.0
+      },
+      {
+        "elevation_m": 60.0,
+        "relative_y_m": 2.0,
+        "x": -900.0,
+        "z": -900.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

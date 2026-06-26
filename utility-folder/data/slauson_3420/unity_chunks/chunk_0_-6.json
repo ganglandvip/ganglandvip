@@ -1,0 +1,337 @@
+{
+  "areas": [
+    {
+      "amenity": "parking",
+      "footprint": [
+        {
+          "x": 90.381,
+          "z": -895.692
+        },
+        {
+          "x": 90.445,
+          "z": -911.622
+        },
+        {
+          "x": 93.251,
+          "z": -914.327
+        },
+        {
+          "x": 128.685,
+          "z": -914.204
+        },
+        {
+          "x": 128.612,
+          "z": -895.547
+        },
+        {
+          "x": 90.381,
+          "z": -895.692
+        }
+      ],
+      "id": "way/1426093643",
+      "landuse": null,
+      "leisure": null,
+      "name": null,
+      "shop": null
+    }
+  ],
+  "bounds": {
+    "max_x": 180,
+    "max_z": -900,
+    "min_x": 0,
+    "min_z": -1080
+  },
+  "buildings": [
+    {
+      "building": "house",
+      "footprint": [
+        {
+          "x": 158.785,
+          "z": -891.629
+        },
+        {
+          "x": 164.923,
+          "z": -891.762
+        },
+        {
+          "x": 164.821,
+          "z": -896.427
+        },
+        {
+          "x": 166.501,
+          "z": -896.46
+        },
+        {
+          "x": 166.252,
+          "z": -908.761
+        },
+        {
+          "x": 165.652,
+          "z": -908.75
+        },
+        {
+          "x": 165.624,
+          "z": -910.086
+        },
+        {
+          "x": 162.44,
+          "z": -910.019
+        },
+        {
+          "x": 162.458,
+          "z": -908.828
+        },
+        {
+          "x": 158.425,
+          "z": -908.75
+        },
+        {
+          "x": 158.785,
+          "z": -891.629
+        }
+      ],
+      "height_m": 4.4,
+      "id": "way/407354616",
+      "levels": 0,
+      "name": null
+    },
+    {
+      "building": "residential",
+      "footprint": [
+        {
+          "x": 4.984,
+          "z": -913.18
+        },
+        {
+          "x": -4.384,
+          "z": -913.158
+        },
+        {
+          "x": -4.347,
+          "z": -890.95
+        },
+        {
+          "x": 5.012,
+          "z": -890.961
+        },
+        {
+          "x": 4.984,
+          "z": -913.18
+        }
+      ],
+      "height_m": 8.0,
+      "id": "way/411197930",
+      "levels": 0,
+      "name": null
+    }
+  ],
+  "coord_x": 0,
+  "coord_z": -6,
+  "counts": {
+    "areas": 1,
+    "buildings": 2,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 5
+  },
+  "id": "0_-6",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 32.222,
+          "z": -868.63
+        },
+        {
+          "x": 33.671,
+          "z": -913.737
+        },
+        {
+          "x": 33.644,
+          "z": -916.23
+        },
+        {
+          "x": 34.031,
+          "z": -924.847
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617900",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/719655331#section/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/719655331",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 0,
+      "start_node_id": "6755617899",
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 60.401,
+          "z": -918.167
+        },
+        {
+          "x": 61.112,
+          "z": -915.963
+        }
+      ],
+      "crossing": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/1426093661#segment/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1426093661",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "segment_index": 0,
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 90.39,
+          "z": -917.978
+        },
+        {
+          "x": 90.002,
+          "z": -915.295
+        }
+      ],
+      "crossing": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/1426093666#segment/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1426093666",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "segment_index": 0,
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 90.002,
+          "z": -915.295
+        },
+        {
+          "x": 89.495,
+          "z": -911.9
+        }
+      ],
+      "crossing": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/1426093666#segment/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1426093666",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "segment_index": 1,
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 89.495,
+          "z": -911.9
+        },
+        {
+          "x": 89.495,
+          "z": -905.755
+        }
+      ],
+      "crossing": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/1426093666#segment/2",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1426093666",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "segment_index": 2,
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 52.0,
+        "relative_y_m": -6.0,
+        "x": 0.0,
+        "z": -1080.0
+      },
+      {
+        "elevation_m": 50.0,
+        "relative_y_m": -8.0,
+        "x": 180.0,
+        "z": -1080.0
+      },
+      {
+        "elevation_m": 52.0,
+        "relative_y_m": -6.0,
+        "x": 0.0,
+        "z": -900.0
+      },
+      {
+        "elevation_m": 50.0,
+        "relative_y_m": -8.0,
+        "x": 180.0,
+        "z": -900.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

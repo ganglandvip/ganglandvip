@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -205,13 +206,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.043619387, y: 0, z: 0, w: 0.99904823}
+  m_LocalPosition: {x: 90, y: 1.75, z: -145}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +257,24 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3fd67129c494d92bcbfdc3eccebb72b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyeHeightMeters: 1.75
+  walkSpeedMetersPerSecond: 5.5
+  sprintSpeedMetersPerSecond: 11
+  mouseSensitivity: 0.12
+  minPitch: -75
+  maxPitch: 75
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,6 +442,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1900000000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900000001}
+  - component: {fileID: 1900000002}
+  m_Layer: 0
+  m_Name: City Map Streamer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1900000001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900000000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900000000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1cece0043304c0b98446866e7b5ccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourcesMapRoot: Maps/slauson_3420
+  streamingTarget: {fileID: 330585546}
+  loadOnStart: 1
+  loadRadiusMeters: 2200
+  unloadRadiusMeters: 2400
+  updateIntervalSeconds: 0.35
+  renderTerrain: 0
+  terrainMaterial: {fileID: 0}
+  urbanGroundMaterial: {fileID: 0}
+  roadMaterial: {fileID: 0}
+  sidewalkMaterial: {fileID: 0}
+  walkwayMaterial: {fileID: 0}
+  laneMarkingMaterial: {fileID: 0}
+  roadEdgeMarkingMaterial: {fileID: 0}
+  buildingMaterial: {fileID: 0}
+  windowMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  poiMaterial: {fileID: 0}
+  spawnPois: 0
+  configureEnvironment: 1
+  useAssetPackProps: 1
+  useAssetPackBuildings: 0
+  spawnAssetPackPreview: 0
+  maxPropsPerChunk: 18
+  maxAssetBuildingsPerChunk: 3
+  streetLampPrefab: {fileID: 0}
+  trafficSignalPrefab: {fileID: 0}
+  busStopPrefab: {fileID: 0}
+  trashCanPrefab: {fileID: 0}
+  benchPrefab: {fileID: 0}
+  hydrantPrefab: {fileID: 0}
+  characterPreviewPrefab: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -430,3 +525,4 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 1900000001}

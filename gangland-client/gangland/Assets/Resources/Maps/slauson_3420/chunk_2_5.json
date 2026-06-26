@@ -1,0 +1,116 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 540,
+    "max_z": 1080,
+    "min_x": 360,
+    "min_z": 900
+  },
+  "buildings": [
+    {
+      "building": "school",
+      "footprint": [
+        {
+          "x": 404.968,
+          "z": 933.73
+        },
+        {
+          "x": 381.884,
+          "z": 933.496
+        },
+        {
+          "x": 375.294,
+          "z": 935.144
+        },
+        {
+          "x": 372.931,
+          "z": 933.496
+        },
+        {
+          "x": 372.46,
+          "z": 931.849
+        },
+        {
+          "x": 354.443,
+          "z": 936.09
+        },
+        {
+          "x": 342.435,
+          "z": 918.657
+        },
+        {
+          "x": 358.735,
+          "z": 907.57
+        },
+        {
+          "x": 361.818,
+          "z": 905.744
+        },
+        {
+          "x": 400.99,
+          "z": 895.091
+        },
+        {
+          "x": 408.264,
+          "z": 920.895
+        },
+        {
+          "x": 404.968,
+          "z": 933.73
+        }
+      ],
+      "height_m": 0,
+      "id": "way/1191325287",
+      "levels": 0,
+      "name": null
+    }
+  ],
+  "coord_x": 2,
+  "coord_z": 5,
+  "counts": {
+    "areas": 0,
+    "buildings": 1,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 0
+  },
+  "id": "2_5",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 45.0,
+        "relative_y_m": -13.0,
+        "x": 360.0,
+        "z": 900.0
+      },
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 540.0,
+        "z": 900.0
+      },
+      {
+        "elevation_m": 41.0,
+        "relative_y_m": -17.0,
+        "x": 360.0,
+        "z": 1080.0
+      },
+      {
+        "elevation_m": 39.0,
+        "relative_y_m": -19.0,
+        "x": 540.0,
+        "z": 1080.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

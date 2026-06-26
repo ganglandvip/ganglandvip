@@ -1,0 +1,179 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -180,
+    "max_z": -900,
+    "min_x": -360,
+    "min_z": -1080
+  },
+  "buildings": [],
+  "coord_x": -2,
+  "coord_z": -6,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 3
+  },
+  "id": "-2_-6",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -324.593,
+          "z": -895.391
+        },
+        {
+          "x": -324.685,
+          "z": -906.568
+        },
+        {
+          "x": -324.861,
+          "z": -928.565
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123224199",
+      "estimated_road_width_m": 10.2,
+      "highway": "secondary",
+      "id": "way/398367009#section/0",
+      "lane_count": 3,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "West Boulevard",
+      "oneway": false,
+      "parent_id": "way/398367009",
+      "render_kind": "road",
+      "road_width_m": 10.2,
+      "section_index": 0,
+      "start_node_id": "4011301802",
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -250.762,
+          "z": -888.044
+        },
+        {
+          "x": -273.293,
+          "z": -888.2
+        },
+        {
+          "x": -273.062,
+          "z": -912.056
+        },
+        {
+          "x": -272.969,
+          "z": -928.008
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "10983481244",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/1182815843#section/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1182815843",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 0,
+      "start_node_id": "10983481241",
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -306.392,
+          "z": -889.369
+        },
+        {
+          "x": -305.995,
+          "z": -907.035
+        },
+        {
+          "x": -303.253,
+          "z": -915.885
+        },
+        {
+          "x": -286.925,
+          "z": -915.885
+        },
+        {
+          "x": -286.602,
+          "z": -928.153
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13064952066",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/1421702530#section/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1421702530",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 0,
+      "start_node_id": "13064952063",
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 54.0,
+        "relative_y_m": -4.0,
+        "x": -360.0,
+        "z": -1080.0
+      },
+      {
+        "elevation_m": 53.0,
+        "relative_y_m": -5.0,
+        "x": -180.0,
+        "z": -1080.0
+      },
+      {
+        "elevation_m": 55.0,
+        "relative_y_m": -3.0,
+        "x": -360.0,
+        "z": -900.0
+      },
+      {
+        "elevation_m": 54.0,
+        "relative_y_m": -4.0,
+        "x": -180.0,
+        "z": -900.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -1080,
+    "max_z": 360,
+    "min_x": -1260,
+    "min_z": 180
+  },
+  "buildings": [],
+  "coord_x": -7,
+  "coord_z": 1,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "-7_1",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -855.358,
+          "z": 208.18
+        },
+        {
+          "x": -950.935,
+          "z": 207.367
+        },
+        {
+          "x": -1043.771,
+          "z": 206.588
+        },
+        {
+          "x": -1130.487,
+          "z": 205.853
+        },
+        {
+          "x": -1168.423,
+          "z": 201.567
+        },
+        {
+          "x": -1219.945,
+          "z": 194.977
+        },
+        {
+          "x": -1241.146,
+          "z": 192.572
+        },
+        {
+          "x": -1260.576,
+          "z": 190.379
+        },
+        {
+          "x": -1291.376,
+          "z": 189.589
+        },
+        {
+          "x": -1332.773,
+          "z": 112.032
+        },
+        {
+          "x": -1339.797,
+          "z": 106.043
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572291",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1111523013#section/12",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1111523013",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 12,
+      "start_node_id": "122572269",
+      "surface": "asphalt",
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 80.0,
+        "relative_y_m": 22.0,
+        "x": -1260.0,
+        "z": 180.0
+      },
+      {
+        "elevation_m": 80.0,
+        "relative_y_m": 22.0,
+        "x": -1080.0,
+        "z": 180.0
+      },
+      {
+        "elevation_m": 80.0,
+        "relative_y_m": 22.0,
+        "x": -1260.0,
+        "z": 360.0
+      },
+      {
+        "elevation_m": 86.0,
+        "relative_y_m": 28.0,
+        "x": -1080.0,
+        "z": 360.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

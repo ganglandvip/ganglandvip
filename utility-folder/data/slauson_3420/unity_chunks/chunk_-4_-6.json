@@ -1,0 +1,151 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -540,
+    "max_z": -900,
+    "min_x": -720,
+    "min_z": -1080
+  },
+  "buildings": [],
+  "coord_x": -4,
+  "coord_z": -6,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 2
+  },
+  "id": "-4_-6",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -573.454,
+          "z": -1077.9
+        },
+        {
+          "x": -578.438,
+          "z": -1074.661
+        },
+        {
+          "x": -587.456,
+          "z": -1053.109
+        },
+        {
+          "x": -589.662,
+          "z": -1047.855
+        },
+        {
+          "x": -615.958,
+          "z": -985.026
+        },
+        {
+          "x": -618.921,
+          "z": -974.172
+        },
+        {
+          "x": -633.781,
+          "z": -899.154
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122627847",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/167009411#section/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "North Long Street",
+      "oneway": false,
+      "parent_id": "way/167009411",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 0,
+      "start_node_id": "122627843",
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -511.815,
+          "z": -907.046
+        },
+        {
+          "x": -526.316,
+          "z": -903.317
+        },
+        {
+          "x": -551.357,
+          "z": -898.686
+        },
+        {
+          "x": -633.781,
+          "z": -899.154
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122627847",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/607179440#section/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Fairview Boulevard",
+      "oneway": false,
+      "parent_id": "way/607179440",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 0,
+      "start_node_id": "1784065994",
+      "surface": "asphalt",
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 57.0,
+        "relative_y_m": -1.0,
+        "x": -720.0,
+        "z": -1080.0
+      },
+      {
+        "elevation_m": 55.0,
+        "relative_y_m": -3.0,
+        "x": -540.0,
+        "z": -1080.0
+      },
+      {
+        "elevation_m": 59.0,
+        "relative_y_m": 1.0,
+        "x": -720.0,
+        "z": -900.0
+      },
+      {
+        "elevation_m": 57.0,
+        "relative_y_m": -1.0,
+        "x": -540.0,
+        "z": -900.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}

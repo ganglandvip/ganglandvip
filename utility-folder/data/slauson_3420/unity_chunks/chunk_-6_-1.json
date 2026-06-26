@@ -1,0 +1,231 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -900,
+    "max_z": 0,
+    "min_x": -1080,
+    "min_z": -180
+  },
+  "buildings": [
+    {
+      "building": "retail",
+      "footprint": [
+        {
+          "x": -912.843,
+          "z": -10.664
+        },
+        {
+          "x": -911.744,
+          "z": -10.653
+        },
+        {
+          "x": -911.754,
+          "z": -9.752
+        },
+        {
+          "x": -908.172,
+          "z": -9.718
+        },
+        {
+          "x": -908.163,
+          "z": -10.609
+        },
+        {
+          "x": -907.379,
+          "z": -10.598
+        },
+        {
+          "x": -907.388,
+          "z": -9.585
+        },
+        {
+          "x": -906.068,
+          "z": -9.574
+        },
+        {
+          "x": -906.049,
+          "z": -10.609
+        },
+        {
+          "x": -905.209,
+          "z": -10.609
+        },
+        {
+          "x": -905.219,
+          "z": -9.685
+        },
+        {
+          "x": -903.52,
+          "z": -9.663
+        },
+        {
+          "x": -903.511,
+          "z": -10.587
+        },
+        {
+          "x": -902.357,
+          "z": -10.575
+        },
+        {
+          "x": -902.367,
+          "z": -9.696
+        },
+        {
+          "x": -900.05,
+          "z": -9.674
+        },
+        {
+          "x": -900.041,
+          "z": -10.453
+        },
+        {
+          "x": -897.521,
+          "z": -10.431
+        },
+        {
+          "x": -897.493,
+          "z": -20.772
+        },
+        {
+          "x": -898.804,
+          "z": -20.795
+        },
+        {
+          "x": -898.721,
+          "z": -27.975
+        },
+        {
+          "x": -912.833,
+          "z": -28.119
+        },
+        {
+          "x": -912.843,
+          "z": -27.296
+        },
+        {
+          "x": -912.843,
+          "z": -10.664
+        }
+      ],
+      "height_m": 4.8,
+      "id": "way/410970181",
+      "levels": 0,
+      "name": null
+    }
+  ],
+  "coord_x": -6,
+  "coord_z": -1,
+  "counts": {
+    "areas": 0,
+    "buildings": 1,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 2
+  },
+  "id": "-6_-1",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -1133.967,
+          "z": -48.313
+        },
+        {
+          "x": -948.674,
+          "z": -46.676
+        },
+        {
+          "x": -825.25,
+          "z": -46.599
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7321280565",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/56242257#section/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": "15 mph",
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/56242257",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 0,
+      "start_node_id": "705825500",
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -942.6,
+          "z": -8.082
+        },
+        {
+          "x": -935.041,
+          "z": -7.792
+        }
+      ],
+      "crossing": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/1451762525#segment/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1451762525",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "segment_index": 0,
+      "surface": null,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": {
+    "columns": 2,
+    "origin_elevation_m": 58.0,
+    "points": [
+      {
+        "elevation_m": 70.0,
+        "relative_y_m": 12.0,
+        "x": -1080.0,
+        "z": -180.0
+      },
+      {
+        "elevation_m": 70.0,
+        "relative_y_m": 12.0,
+        "x": -900.0,
+        "z": -180.0
+      },
+      {
+        "elevation_m": 74.0,
+        "relative_y_m": 16.0,
+        "x": -1080.0,
+        "z": 0.0
+      },
+      {
+        "elevation_m": 72.0,
+        "relative_y_m": 14.0,
+        "x": -900.0,
+        "z": 0.0
+      }
+    ],
+    "rows": 2,
+    "schema": "gangland.unity_city_terrain.v1",
+    "source": "Open-Meteo Elevation API, Copernicus DEM GLO-90",
+    "spacing_m": 180
+  }
+}
