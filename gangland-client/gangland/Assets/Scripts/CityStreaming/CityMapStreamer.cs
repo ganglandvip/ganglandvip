@@ -9,7 +9,7 @@ namespace Gangland.CityStreaming
 {
     public sealed class CityMapStreamer : MonoBehaviour
     {
-        const string RendererVersion = "clean-flat-streets-v17";
+        const string RendererVersion = "asset-building-footprint-filter-v18";
         const string StreetLampPath = "Assets/Night Modular City Pack/Prefabs/PropsWithColliders/NC_Street_Lamp.prefab";
         const string TrafficSignalPath = "Assets/Night Modular City Pack/Prefabs/PropsWithColliders/NC_Traffic_Signal.prefab";
         const string BusStopPath = "Assets/Night Modular City Pack/Prefabs/PropsWithColliders/NC_Bus_Stop.prefab";
@@ -25,6 +25,9 @@ namespace Gangland.CityStreaming
         const string IntersectionTexturePath = "Assets/Night Modular City Pack/Textures/NC_Asphalt_Cross and Corner.png";
         const string SidewalkTexturePath = "Assets/Night Modular City Pack/Textures/NC_Footpath.png";
         const string BuildingTexturePath = "Assets/Night Modular City Pack/Textures/NC_Buildings_n_Props_diffuse_N.png";
+        const float MinAssetBuildingDimension = 12f;
+        const float MinAssetBuildingArea = 150f;
+        const float MaxAssetBuildingAspectRatio = 5f;
         static readonly string[] BuildingPaths =
         {
             "Assets/Night Modular City Pack/Prefabs/Buildings/SmallBuildings/NC_SmallBuilding_A.prefab",
@@ -362,7 +365,7 @@ namespace Gangland.CityStreaming
 
                 Vector3 center = BuildingCenter(building);
                 Vector2 size = BuildingFootprintSize(building);
-                if (size.x < 4f || size.y < 4f)
+                if (!IsUsableAssetBuildingFootprint(size))
                 {
                     continue;
                 }
@@ -749,6 +752,23 @@ namespace Gangland.CityStreaming
             }
 
             return new Vector2(maxX - minX, maxZ - minZ);
+        }
+
+        static bool IsUsableAssetBuildingFootprint(Vector2 size)
+        {
+            float minDimension = Mathf.Min(size.x, size.y);
+            float maxDimension = Mathf.Max(size.x, size.y);
+            if (minDimension < MinAssetBuildingDimension)
+            {
+                return false;
+            }
+
+            if (size.x * size.y < MinAssetBuildingArea)
+            {
+                return false;
+            }
+
+            return maxDimension / minDimension <= MaxAssetBuildingAspectRatio;
         }
 
         static Quaternion BuildingRotation(CityBuilding building, int hash)

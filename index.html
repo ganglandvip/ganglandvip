@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gangland VIP is a persistent VR crime world where territory, deception, reputation, and money keep moving after every session.">
+    <title>Gangland VIP</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #fff4dc;
+        --muted: #b8b0a2;
+        --road: #090a0c;
+        --asphalt: #121419;
+        --gold: #f6c85f;
+        --red: #ff344d;
+        --teal: #2ff8d2;
+        --magenta: #ff3daf;
+        --green: #50f06a;
+        --panel: rgba(14, 15, 18, 0.68);
+        --line: rgba(255, 244, 220, 0.18);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        overflow-x: hidden;
+        background: #06070a;
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: 4;
+        pointer-events: none;
+        content: "";
+        background:
+          repeating-linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.025) 0,
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px,
+            transparent 5px
+          );
+        mix-blend-mode: screen;
+        opacity: 0.35;
+        animation: scanlines 7s linear infinite;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .hero {
+        position: relative;
+        min-height: 100svh;
+        overflow: hidden;
+        isolation: isolate;
+        background:
+          linear-gradient(180deg, rgba(4, 5, 8, 0.06), #06070a 94%),
+          url("assets/gangland-hero-street.png") center / cover no-repeat;
+      }
+
+      .hero::before,
+      .hero::after {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        content: "";
+      }
+
+      .hero::before {
+        background:
+          radial-gradient(circle at 18% 58%, rgba(255, 52, 77, 0.38), transparent 23%),
+          radial-gradient(circle at 80% 47%, rgba(47, 248, 210, 0.36), transparent 22%),
+          linear-gradient(90deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.18) 46%, rgba(0, 0, 0, 0.75));
+        animation: neonPulse 6s ease-in-out infinite alternate;
+      }
+
+      .hero::after {
+        opacity: 0.52;
+        background:
+          linear-gradient(108deg, transparent 0 42%, rgba(255, 255, 255, 0.12) 47%, transparent 54% 100%),
+          linear-gradient(72deg, transparent 0 55%, rgba(255, 61, 175, 0.1) 60%, transparent 66% 100%);
+        transform: translateX(-40%);
+        animation: lightSweep 8s ease-in-out infinite;
+      }
+
+      .topbar {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        width: min(1180px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: 22px 0;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .brand-mark {
+        position: relative;
+        width: 38px;
+        height: 38px;
+        flex: 0 0 auto;
+        border: 1px solid rgba(246, 200, 95, 0.8);
+        background:
+          linear-gradient(135deg, rgba(255, 52, 77, 0.85), transparent 45%),
+          linear-gradient(315deg, rgba(47, 248, 210, 0.7), transparent 50%),
+          #0d0e11;
+        box-shadow:
+          0 0 24px rgba(246, 200, 95, 0.28),
+          inset 0 0 18px rgba(255, 244, 220, 0.12);
+        animation: markBeat 2.8s ease-in-out infinite;
+      }
+
+      .brand-mark::after {
+        position: absolute;
+        inset: 9px;
+        content: "";
+        border: 1px solid rgba(255, 244, 220, 0.62);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .nav a,
+      .cta a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 16px;
+        border: 1px solid var(--line);
+        background: rgba(0, 0, 0, 0.34);
+        color: var(--ink);
+        font-size: 0.75rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        backdrop-filter: blur(16px);
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .nav a:hover,
+      .cta a:hover {
+        transform: translateY(-2px);
+        border-color: rgba(246, 200, 95, 0.82);
+        background: rgba(246, 200, 95, 0.16);
+        box-shadow: 0 0 26px rgba(246, 200, 95, 0.18);
+      }
+
+      .hero-inner {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 340px;
+        gap: 32px;
+        align-items: end;
+        width: min(1180px, calc(100% - 36px));
+        min-height: calc(100svh - 96px);
+        margin: 0 auto;
+        padding: 52px 0 8vh;
+      }
+
+      .hero-inner > *,
+      .section-grid > * {
+        min-width: 0;
+      }
+
+      .kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 18px;
+        color: var(--gold);
+        font-size: clamp(0.74rem, 1.8vw, 0.88rem);
+        font-weight: 900;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .kicker::before {
+        width: 46px;
+        height: 2px;
+        content: "";
+        background: linear-gradient(90deg, var(--red), var(--gold), var(--teal));
+        box-shadow: 0 0 18px rgba(246, 200, 95, 0.46);
+      }
+
+      h1 {
+        max-width: 860px;
+        margin: 0;
+        font-size: clamp(4.2rem, 11vw, 9.4rem);
+        line-height: 0.78;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        text-shadow:
+          0 0 16px rgba(255, 52, 77, 0.3),
+          0 14px 42px rgba(0, 0, 0, 0.7);
+        animation: titleDrift 5s ease-in-out infinite alternate;
+      }
+
+      .lede {
+        max-width: 680px;
+        margin: 26px 0 0;
+        color: rgba(255, 244, 220, 0.88);
+        font-size: clamp(1.05rem, 2vw, 1.45rem);
+        line-height: 1.55;
+        text-shadow: 0 2px 18px rgba(0, 0, 0, 0.8);
+      }
+
+      .cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 30px;
+      }
+
+      .cta a:first-child {
+        border-color: rgba(47, 248, 210, 0.65);
+        background: rgba(47, 248, 210, 0.14);
+        box-shadow: 0 0 30px rgba(47, 248, 210, 0.16);
+      }
+
+      .signal-card {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: var(--panel);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+      }
+
+      .signal-card::before {
+        position: absolute;
+        inset: -120% -45%;
+        content: "";
+        background: conic-gradient(from 120deg, transparent, rgba(47, 248, 210, 0.22), transparent, rgba(255, 61, 175, 0.2), transparent);
+        animation: cardSpin 9s linear infinite;
+      }
+
+      .signal-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .signal-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 18px 12px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .signal-head span {
+        color: var(--muted);
+        font-size: 0.7rem;
+        font-weight: 900;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .traffic-light {
+        display: grid;
+        grid-template-columns: repeat(3, 12px);
+        gap: 8px;
+      }
+
+      .traffic-light i {
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.16);
+      }
+
+      .traffic-light i:nth-child(1) {
+        animation: redLight 4s steps(1) infinite;
+      }
+
+      .traffic-light i:nth-child(2) {
+        animation: amberLight 4s steps(1) infinite;
+      }
+
+      .traffic-light i:nth-child(3) {
+        animation: greenLight 4s steps(1) infinite;
+      }
+
+      .system-list {
+        display: grid;
+        gap: 1px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background: rgba(255, 244, 220, 0.09);
+      }
+
+      .system-list li {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 16px 18px;
+        background: rgba(6, 7, 10, 0.8);
+        color: rgba(255, 244, 220, 0.86);
+        font-size: 0.86rem;
+        font-weight: 800;
+      }
+
+      .system-list b {
+        color: var(--gold);
+        font-size: 0.76rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .mini-banner {
+        display: block;
+        width: calc(100% - 36px);
+        margin: 18px;
+        border: 1px solid rgba(255, 244, 220, 0.12);
+        filter: saturate(1.2) contrast(1.04);
+      }
+
+      .motion-layer {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        overflow: hidden;
+        pointer-events: none;
+      }
+
+      .lane {
+        position: absolute;
+        left: -30vw;
+        width: 28vw;
+        height: 3px;
+        border-radius: 999px;
+        opacity: 0;
+        filter: blur(0.3px);
+        animation: laneRush 3.8s linear infinite;
+      }
+
+      .lane:nth-child(1) {
+        bottom: 17vh;
+        background: linear-gradient(90deg, transparent, var(--red), #fff0cb, transparent);
+      }
+
+      .lane:nth-child(2) {
+        bottom: 23vh;
+        animation-delay: 1.3s;
+        animation-duration: 4.7s;
+        background: linear-gradient(90deg, transparent, var(--magenta), var(--red), transparent);
+      }
+
+      .lane:nth-child(3) {
+        bottom: 30vh;
+        animation-delay: 2.1s;
+        animation-duration: 5.4s;
+        background: linear-gradient(90deg, transparent, var(--teal), #f4fff8, transparent);
+      }
+
+      .map-grid {
+        position: absolute;
+        right: -10vw;
+        bottom: -8vh;
+        width: min(72vw, 780px);
+        aspect-ratio: 1.55;
+        border: 1px solid rgba(47, 248, 210, 0.22);
+        opacity: 0.55;
+        transform: perspective(700px) rotateX(62deg) rotateZ(-10deg);
+        background:
+          linear-gradient(rgba(47, 248, 210, 0.13) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(47, 248, 210, 0.13) 1px, transparent 1px);
+        background-size: 46px 46px;
+        animation: gridRoll 6s linear infinite;
+      }
+
+      .sparks {
+        position: absolute;
+        inset: 0;
+      }
+
+      .sparks i {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        border-radius: 999px;
+        background: var(--gold);
+        box-shadow: 0 0 18px var(--gold);
+        opacity: 0;
+        animation: sparkFloat 5s ease-in-out infinite;
+      }
+
+      .sparks i:nth-child(1) { left: 14%; top: 34%; animation-delay: 0s; }
+      .sparks i:nth-child(2) { left: 32%; top: 62%; animation-delay: 1.2s; }
+      .sparks i:nth-child(3) { left: 58%; top: 28%; animation-delay: 2.4s; }
+      .sparks i:nth-child(4) { left: 78%; top: 58%; animation-delay: 0.8s; }
+      .sparks i:nth-child(5) { left: 87%; top: 24%; animation-delay: 3.2s; }
+
+      .content-band {
+        position: relative;
+        z-index: 2;
+        background:
+          linear-gradient(180deg, #06070a, #0d0f14 42%, #07080b);
+      }
+
+      .section {
+        width: min(1180px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: 70px 0;
+      }
+
+      .section-grid {
+        display: grid;
+        grid-template-columns: 0.92fr 1.08fr;
+        gap: 42px;
+        align-items: start;
+      }
+
+      h2 {
+        margin: 0;
+        max-width: 520px;
+        font-size: clamp(2.2rem, 5vw, 5.8rem);
+        line-height: 0.88;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      .section p {
+        margin: 0;
+        color: rgba(255, 244, 220, 0.72);
+        font-size: 1.03rem;
+        line-height: 1.72;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        margin-top: 42px;
+        background: rgba(255, 244, 220, 0.11);
+        border: 1px solid rgba(255, 244, 220, 0.11);
+      }
+
+      .feature {
+        position: relative;
+        min-height: 170px;
+        overflow: hidden;
+        padding: 22px;
+        background: #0d0f14;
+      }
+
+      .feature::before {
+        position: absolute;
+        inset: auto 18px 18px auto;
+        width: 44px;
+        height: 44px;
+        content: "";
+        border: 1px solid currentColor;
+        opacity: 0.4;
+        transform: rotate(45deg);
+        animation: diamondTurn 8s linear infinite;
+      }
+
+      .feature:nth-child(1) { color: var(--gold); }
+      .feature:nth-child(2) { color: var(--teal); }
+      .feature:nth-child(3) { color: var(--red); }
+
+      .feature h3 {
+        margin: 0 0 14px;
+        color: var(--ink);
+        font-size: 0.9rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .feature p {
+        font-size: 0.94rem;
+      }
+
+      .ticker {
+        display: flex;
+        overflow: hidden;
+        border-block: 1px solid rgba(255, 244, 220, 0.12);
+        background: #0b0d11;
+        color: var(--gold);
+      }
+
+      .ticker-track {
+        display: flex;
+        flex: 0 0 auto;
+        gap: 28px;
+        min-width: 100%;
+        padding: 16px 14px;
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        animation: ticker 22s linear infinite;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        width: min(1180px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: 34px 0;
+        color: rgba(255, 244, 220, 0.58);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      @keyframes neonPulse {
+        from { opacity: 0.78; filter: saturate(1); }
+        to { opacity: 1; filter: saturate(1.42); }
+      }
+
+      @keyframes lightSweep {
+        0%, 35% { transform: translateX(-55%); opacity: 0; }
+        48% { opacity: 0.56; }
+        100% { transform: translateX(48%); opacity: 0; }
+      }
+
+      @keyframes markBeat {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.08); }
+      }
+
+      @keyframes titleDrift {
+        from { transform: translate3d(0, 0, 0); }
+        to { transform: translate3d(0, -8px, 0); }
+      }
+
+      @keyframes cardSpin {
+        to { transform: rotate(1turn); }
+      }
+
+      @keyframes redLight {
+        0%, 32% { background: var(--red); box-shadow: 0 0 18px var(--red); }
+        33%, 100% { background: rgba(255, 255, 255, 0.15); box-shadow: none; }
+      }
+
+      @keyframes amberLight {
+        0%, 34%, 58%, 100% { background: rgba(255, 255, 255, 0.15); box-shadow: none; }
+        35%, 57% { background: var(--gold); box-shadow: 0 0 18px var(--gold); }
+      }
+
+      @keyframes greenLight {
+        0%, 59%, 100% { background: rgba(255, 255, 255, 0.15); box-shadow: none; }
+        60%, 99% { background: var(--green); box-shadow: 0 0 18px var(--green); }
+      }
+
+      @keyframes laneRush {
+        0% { transform: translateX(0) skewX(-16deg); opacity: 0; }
+        8%, 72% { opacity: 0.95; }
+        100% { transform: translateX(150vw) skewX(-16deg); opacity: 0; }
+      }
+
+      @keyframes gridRoll {
+        to { background-position: 46px 46px; }
+      }
+
+      @keyframes sparkFloat {
+        0%, 100% { transform: translate3d(0, 16px, 0) scale(0.5); opacity: 0; }
+        45% { opacity: 1; }
+        70% { transform: translate3d(28px, -42px, 0) scale(1.3); opacity: 0; }
+      }
+
+      @keyframes scanlines {
+        to { transform: translateY(24px); }
+      }
+
+      @keyframes diamondTurn {
+        to { transform: rotate(405deg); }
+      }
+
+      @keyframes ticker {
+        to { transform: translateX(-100%); }
+      }
+
+      @media (max-width: 860px) {
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .nav {
+          justify-content: flex-start;
+        }
+
+        .hero-inner,
+        .section-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-inner {
+          display: block;
+          align-items: start;
+          padding-top: 34px;
+        }
+
+        .signal-card {
+          max-width: 420px;
+        }
+
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .topbar,
+        .hero-inner,
+        .section,
+        .footer {
+          width: calc(100vw - 24px);
+          max-width: calc(100vw - 24px);
+        }
+
+        .nav a,
+        .cta a {
+          width: 100%;
+        }
+
+        .lede,
+        .cta,
+        .signal-card {
+          width: calc(100vw - 48px);
+          max-width: calc(100vw - 48px);
+        }
+
+        .lede {
+          width: 300px;
+          max-width: calc(100vw - 72px);
+          inline-size: min(300px, calc(100vw - 72px));
+          padding-right: 42px;
+        }
+
+        h1 {
+          font-size: clamp(3.15rem, 15.5vw, 3.9rem);
+        }
+
+        .hero {
+          background-position: center top;
+        }
+
+        .system-list li {
+          flex-direction: column;
+          gap: 5px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 1ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 1ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+      <div class="motion-layer" aria-hidden="true">
+        <span class="lane"></span>
+        <span class="lane"></span>
+        <span class="lane"></span>
+        <span class="map-grid"></span>
+        <span class="sparks">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+
+      <header class="topbar" aria-label="Primary navigation">
+        <a class="brand" href="https://gangland.vip" aria-label="Gangland VIP home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Gangland VIP</span>
+        </a>
+        <nav class="nav">
+          <a href="#world">World</a>
+          <a href="https://x.com/ganglandvip">X</a>
+          <a href="https://github.com/ganglandvip/ganglandvip">GitHub</a>
+        </nav>
+      </header>
+
+      <section class="hero-inner" aria-label="Gangland VIP homepage">
+        <div>
+          <p class="kicker">Persistent VR Crime World</p>
+          <h1>Gangland</h1>
+          <p class="lede">
+            Territory, deception, reputation, and money keep moving after every session
+            in a living city inspired by South Central Los Angeles.
+          </p>
+          <div class="cta" aria-label="External links">
+            <a href="https://x.com/ganglandvip">Follow on X</a>
+            <a href="https://github.com/ganglandvip/ganglandvip">View GitHub</a>
+          </div>
+        </div>
+
+        <aside class="signal-card" aria-label="Gangland systems">
+          <div class="signal-head">
+            <span>Street Signal</span>
+            <span class="traffic-light" aria-hidden="true">
+              <i></i>
+              <i></i>
+              <i></i>
+            </span>
+          </div>
+          <ul class="system-list">
+            <li><span>Territory</span><b>Live</b></li>
+            <li><span>Reputation</span><b>Moving</b></li>
+            <li><span>Economy</span><b>Persistent</b></li>
+            <li><span>Consequences</span><b>Permanent</b></li>
+          </ul>
+          <img class="mini-banner" src="gangland.banner.png" alt="Gangland VIP banner">
+        </aside>
+      </section>
+    </main>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Crews move blocks</span>
+        <span>Businesses generate heat</span>
+        <span>Trust has a price</span>
+        <span>The city remembers</span>
+      </div>
+      <div class="ticker-track">
+        <span>Crews move blocks</span>
+        <span>Businesses generate heat</span>
+        <span>Trust has a price</span>
+        <span>The city remembers</span>
+      </div>
+    </section>
+
+    <section id="world" class="content-band">
+      <div class="section">
+        <div class="section-grid">
+          <h2>The city does not reset.</h2>
+          <p>
+            Gangland is built around persistence: crews gain and lose territory,
+            businesses generate money, reputations spread, and player choices keep
+            shaping the world after the headset comes off.
+          </p>
+        </div>
+
+        <div class="feature-grid" aria-label="Gameplay pillars">
+          <article class="feature">
+            <h3>Street Power</h3>
+            <p>Crews fight for blocks, routes, businesses, warehouses, and the money running through them.</p>
+          </article>
+          <article class="feature">
+            <h3>Social Pressure</h3>
+            <p>Undercover cops, informants, witnesses, lawyers, and rivals make trust a live system.</p>
+          </article>
+          <article class="feature">
+            <h3>Long Stakes</h3>
+            <p>Money, reputation, property, vehicles, and relationships can be built, stolen, protected, or lost.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Gangland.vip</span>
+      <span>Crenshaw &amp; Slauson inspired open world</span>
+    </footer>
+  </body>
+</html>
