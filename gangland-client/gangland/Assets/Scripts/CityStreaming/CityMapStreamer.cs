@@ -9,7 +9,7 @@ namespace Gangland.CityStreaming
 {
     public sealed class CityMapStreamer : MonoBehaviour
     {
-        const string RendererVersion = "no-ground-grid-v16";
+        const string RendererVersion = "clean-flat-streets-v17";
         const string StreetLampPath = "Assets/Night Modular City Pack/Prefabs/PropsWithColliders/NC_Street_Lamp.prefab";
         const string TrafficSignalPath = "Assets/Night Modular City Pack/Prefabs/PropsWithColliders/NC_Traffic_Signal.prefab";
         const string BusStopPath = "Assets/Night Modular City Pack/Prefabs/PropsWithColliders/NC_Bus_Stop.prefab";
@@ -89,6 +89,9 @@ namespace Gangland.CityStreaming
         [SerializeField] Material windowMaterial;
         [SerializeField] Material areaMaterial;
         [SerializeField] Material poiMaterial;
+        [SerializeField] bool renderSidewalks = false;
+        [SerializeField] bool renderCurbs = false;
+        [SerializeField] bool renderRoadEdgeMarkings = false;
         [SerializeField] bool spawnPois = true;
         [SerializeField] bool configureEnvironment = true;
         [SerializeField] bool renderProceduralBuildings = false;
@@ -293,12 +296,21 @@ namespace Gangland.CityStreaming
             }
             AddMeshObject(chunkRoot.transform, "Urban Ground", CityChunkMeshBuilder.BuildChunkGroundMesh(chunk.bounds), urbanGroundMaterial);
             AddMeshObject(chunkRoot.transform, "Areas", CityChunkMeshBuilder.BuildAreaMesh(chunk.areas), areaMaterial);
-            AddMeshObject(chunkRoot.transform, "Sidewalks", CityChunkMeshBuilder.BuildSidewalkMesh(chunk.streets), sidewalkMaterial);
-            AddMeshObject(chunkRoot.transform, "Curbs", CityChunkMeshBuilder.BuildCurbMesh(chunk.streets), sidewalkMaterial);
+            if (renderSidewalks)
+            {
+                AddMeshObject(chunkRoot.transform, "Sidewalks", CityChunkMeshBuilder.BuildSidewalkMesh(chunk.streets), sidewalkMaterial);
+            }
+            if (renderCurbs)
+            {
+                AddMeshObject(chunkRoot.transform, "Curbs", CityChunkMeshBuilder.BuildCurbMesh(chunk.streets), sidewalkMaterial);
+            }
             AddMeshObject(chunkRoot.transform, "Walkways", CityChunkMeshBuilder.BuildWalkwayMesh(chunk.streets), walkwayMaterial);
             AddMeshObject(chunkRoot.transform, "Roads", CityChunkMeshBuilder.BuildRoadMesh(chunk.streets), roadMaterial);
             AddMeshObject(chunkRoot.transform, "Junctions", CityChunkMeshBuilder.BuildJunctionMesh(chunk.junctions, chunk.streets), roadMaterial);
-            AddMeshObject(chunkRoot.transform, "Road Edge Markings", CityChunkMeshBuilder.BuildRoadEdgeMarkingMesh(chunk.streets), roadEdgeMarkingMaterial);
+            if (renderRoadEdgeMarkings)
+            {
+                AddMeshObject(chunkRoot.transform, "Road Edge Markings", CityChunkMeshBuilder.BuildRoadEdgeMarkingMesh(chunk.streets), roadEdgeMarkingMaterial);
+            }
             AddMeshObject(chunkRoot.transform, "Lane Markings", CityChunkMeshBuilder.BuildLaneMarkingMesh(chunk.streets), laneMarkingMaterial);
             AddMeshObject(chunkRoot.transform, "Intersection Markings", CityChunkMeshBuilder.BuildIntersectionMarkingMesh(chunk.streets), roadEdgeMarkingMaterial);
             if (renderProceduralBuildings || !useAssetPackBuildings)
