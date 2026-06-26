@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://gangland.vip">
-    <img src="https://raw.githubusercontent.com/ganglandvip/gangland/main/gangland.banner.png" alt="Gangland" width="100%">
+    <img src="https://raw.githubusercontent.com/ganglandvip/ganglandvip/main/gangland.banner.png" alt="Gangland" width="100%">
   </a>
 </p>
 
@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://gangland.vip"><img alt="Website" src="https://img.shields.io/badge/Website-gangland.vip-f6c85f?style=for-the-badge"></a>
-  <a href="https://github.com/ganglandvip/gangland"><img alt="Repository" src="https://img.shields.io/badge/Repository-Gangland-171717?style=for-the-badge&logo=github"></a>
+  <a href="https://github.com/ganglandvip/ganglandvip"><img alt="Repository" src="https://img.shields.io/badge/Repository-Gangland-171717?style=for-the-badge&logo=github"></a>
   <img alt="Status" src="https://img.shields.io/badge/Status-In%20Development-c64f4f?style=for-the-badge">
 </p>
 
@@ -42,7 +42,7 @@ This is not a short-round shooter with a reset button. It is a social, economic,
 
 ## Featured Repository
 
-### [ganglandvip/gangland](https://github.com/ganglandvip/gangland)
+### [ganglandvip/ganglandvip](https://github.com/ganglandvip/ganglandvip)
 
 The main Gangland repository contains the product vision, Unity client work, and city data utilities powering the first playable world.
 
@@ -59,5 +59,5 @@ Build a persistent VR crime world where every player has something to gain, some
 <p align="center">
   <a href="https://gangland.vip"><strong>Visit gangland.vip</strong></a>
   &nbsp;|&nbsp;
-  <a href="https://github.com/ganglandvip/gangland"><strong>Explore the repo</strong></a>
+  <a href="https://github.com/ganglandvip/ganglandvip"><strong>Explore the repo</strong></a>
 </p>

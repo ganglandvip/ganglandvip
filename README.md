@@ -1,14 +1,34 @@
-# Gangland
+<p align="center">
+  <a href="https://gangland.vip">
+    <img src="https://raw.githubusercontent.com/ganglandvip/ganglandvip/main/gangland.banner.png" alt="Gangland" width="100%">
+  </a>
+</p>
+
+<h1 align="center">Gangland</h1>
 
 <p align="center">
-  <img src="gangland.banner.png" alt="Gangland banner" width="100%">
+  <strong>A persistent VR crime world built around territory, deception, reputation, and player-made stories.</strong>
 </p>
+
+<p align="center">
+  <a href="https://gangland.vip"><img alt="Website" src="https://img.shields.io/badge/Website-gangland.vip-f6c85f?style=for-the-badge"></a>
+  <a href="https://github.com/ganglandvip/ganglandvip"><img alt="Repository" src="https://img.shields.io/badge/Repository-Gangland-171717?style=for-the-badge&logo=github"></a>
+  <img alt="Status" src="https://img.shields.io/badge/Status-In%20Development-c64f4f?style=for-the-badge">
+</p>
+
+---
 
 Website: https://gangland.vip
 
 Gangland is a multiplayer VR crime simulator set inside a persistent living city.
 
 The goal is not to force every player into one loop or one role. Instead, every player becomes part of the city's criminal, legal, social, and economic ecosystem. Some players build empires. Some enforce the law. Some run businesses. Some betray everyone. The city keeps moving either way.
+
+## The World
+
+Gangland is an open-world multiplayer VR crime simulator set inside a living city inspired by South Central Los Angeles. The game is centered around persistence: crews gain and lose territory, businesses generate money, reputations spread, weapons move through the streets, and player decisions keep shaping the world after a session ends.
+
+This is not a short-round shooter with a reset button. It is a social, economic, and territorial sandbox where the best content comes from the people inside it.
 
 ## Setting
 
@@ -38,6 +58,15 @@ Players can become:
 - Journalists
 
 Nobody is locked into one gameplay style. The city supports both legal and illegal paths, and every role can matter.
+
+## What Makes It Different
+
+| System | Player Impact |
+| --- | --- |
+| Persistent territory | Gangs fight for neighborhoods, businesses, warehouses, clubs, and income streams. |
+| Social deception | Undercover cops, informants, betrayals, witnesses, lawyers, journalists, and double-crosses create stories without scripts. |
+| Role freedom | Players can become gang members, detectives, business owners, hitmen, EMTs, civilians, police, or something no one planned for. |
+| Long-term stakes | Money, reputation, weapons, properties, vehicles, and relationships can be built, protected, stolen, or lost. |
 
 ## Like Pavlov, But Persistent
 
@@ -118,6 +147,13 @@ Players build:
 
 Losing a war hurts because players have invested time. A betrayal matters because trust has value. A police raid matters because something real can be lost.
 
+## Current Focus
+
+- Real-world city data pipeline for believable streets, buildings, intersections, and landmarks.
+- Unity-based VR client with streamed city chunks and dense urban environments.
+- Persistent multiplayer systems for crews, territory, economy, player roles, and consequences.
+- A tone that feels cinematic, street-level, social, and dangerous without relying on scripted missions.
+
 ## Why It Could Become Popular
 
 Gangland is not only about combat. It is about stories players remember and repeat.
@@ -130,10 +166,22 @@ Like classic social-deception modes, the best moments come from people:
 
 Those are the moments players tell their friends about.
 
+## Key Areas
+
+- `gangland-client/` - Unity VR client project.
+- `utility-folder/` - OSM and map-data pipeline for the Slauson-area city build.
+- `README.md` - Full game concept, setting, and design vision.
+
 ## Vision
 
 Gangland is less about making another GTA and more about building a player-driven city.
 
 GTA focuses on a scripted world with multiplayer layered on top. Gangland puts the players at the center. The content comes from the people, the economy, the territory, the social deception, and the consequences of every decision.
 
-The result is a persistent VR crime world where every player has something to gain and something to lose.
+The result is a persistent VR crime world where every player has something to gain and something to hide, and something to lose.
+
+<p align="center">
+  <a href="https://gangland.vip"><strong>Visit gangland.vip</strong></a>
+  &nbsp;|&nbsp;
+  <a href="https://github.com/ganglandvip/ganglandvip"><strong>Explore the repo</strong></a>
+</p>
