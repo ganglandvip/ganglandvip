@@ -6,6 +6,12 @@ Gangland is a multiplayer VR crime simulator set inside a persistent living city
 
 The goal is not to force every player into one loop or one role. Instead, every player becomes part of the city's criminal, legal, social, and economic ecosystem. Some players build empires. Some enforce the law. Some run businesses. Some betray everyone. The city keeps moving either way.
 
+## Setting
+
+**Gangland** takes place in a realistic recreation of **South Central Los Angeles**, centered around **3420 W. Slauson Avenue, Los Angeles, CA 90043** (the Crenshaw & Slauson area).
+
+The game uses real-world map and geographic data to accurately recreate the streets, intersections, landmarks, buildings, terrain, and overall neighborhood layout. The goal is an authentic, living open-world environment inspired by the real area while remaining a fictional game world.
+
 ## Core Idea
 
 Gangland is an open-world VR multiplayer crime simulator where hundreds of players create their own stories through alliances, betrayals, businesses, territorial wars, and social interaction.
