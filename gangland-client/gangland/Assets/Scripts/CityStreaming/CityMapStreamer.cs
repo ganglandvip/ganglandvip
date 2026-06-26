@@ -219,8 +219,10 @@ namespace Gangland.CityStreaming
             AddMeshObject(chunkRoot.transform, "Curbs", CityChunkMeshBuilder.BuildCurbMesh(chunk.streets), sidewalkMaterial);
             AddMeshObject(chunkRoot.transform, "Walkways", CityChunkMeshBuilder.BuildWalkwayMesh(chunk.streets), walkwayMaterial);
             AddMeshObject(chunkRoot.transform, "Roads", CityChunkMeshBuilder.BuildRoadMesh(chunk.streets), roadMaterial);
+            AddMeshObject(chunkRoot.transform, "Junctions", CityChunkMeshBuilder.BuildJunctionMesh(chunk.junctions, chunk.streets), roadMaterial);
             AddMeshObject(chunkRoot.transform, "Road Edge Markings", CityChunkMeshBuilder.BuildRoadEdgeMarkingMesh(chunk.streets), roadEdgeMarkingMaterial);
             AddMeshObject(chunkRoot.transform, "Lane Markings", CityChunkMeshBuilder.BuildLaneMarkingMesh(chunk.streets), laneMarkingMaterial);
+            AddMeshObject(chunkRoot.transform, "Intersection Markings", CityChunkMeshBuilder.BuildIntersectionMarkingMesh(chunk.streets), roadEdgeMarkingMaterial);
             AddMeshObject(chunkRoot.transform, "OSM Buildings", CityChunkMeshBuilder.BuildBuildingMesh(chunk.buildings), buildingMaterial);
             AddMeshObject(chunkRoot.transform, "OSM Building Windows", CityChunkMeshBuilder.BuildBuildingWindowMesh(chunk.buildings), windowMaterial);
             if (useAssetPackBuildings)

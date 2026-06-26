@@ -498,14 +498,20 @@ namespace Gangland.CityStreaming
                 }
 
                 float halfWidth = RoadWidth(street) * 0.5f;
+                List<Vector3> trimmedPoints = TrimmedPolyline(street, JunctionY);
+                if (trimmedPoints.Count < 2)
+                {
+                    continue;
+                }
+
                 if (street.start_node_id == junction.id)
                 {
-                    AddJunctionEdgePoints(edgePoints, center, ToVector(street.centerline[0], JunctionY), halfWidth, maxDistance);
+                    AddJunctionEdgePoints(edgePoints, center, trimmedPoints[0], halfWidth, maxDistance);
                 }
 
                 if (street.end_node_id == junction.id)
                 {
-                    AddJunctionEdgePoints(edgePoints, center, ToVector(street.centerline[street.centerline.Length - 1], JunctionY), halfWidth, maxDistance);
+                    AddJunctionEdgePoints(edgePoints, center, trimmedPoints[trimmedPoints.Count - 1], halfWidth, maxDistance);
                 }
             }
 
