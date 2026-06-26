@@ -348,6 +348,183 @@
         text-transform: uppercase;
       }
 
+      .location-panel {
+        padding: 16px 18px 18px;
+        background: rgba(6, 7, 10, 0.72);
+      }
+
+      .address-label {
+        display: grid;
+        gap: 5px;
+        margin-bottom: 14px;
+      }
+
+      .address-label span {
+        color: var(--muted);
+        font-size: 0.68rem;
+        font-weight: 900;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .address-label b {
+        color: var(--ink);
+        font-size: 0.92rem;
+        line-height: 1.35;
+      }
+
+      .street-map {
+        position: relative;
+        min-height: 220px;
+        overflow: hidden;
+        border: 1px solid rgba(47, 248, 210, 0.28);
+        background:
+          radial-gradient(circle at 52% 47%, rgba(246, 200, 95, 0.14), transparent 14%),
+          linear-gradient(rgba(255, 244, 220, 0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 244, 220, 0.04) 1px, transparent 1px),
+          #090b10;
+        background-size:
+          auto,
+          28px 28px,
+          28px 28px,
+          auto;
+        box-shadow:
+          inset 0 0 34px rgba(0, 0, 0, 0.72),
+          0 0 28px rgba(47, 248, 210, 0.12);
+      }
+
+      .street-map::before,
+      .street-map::after {
+        position: absolute;
+        content: "";
+        background: rgba(255, 244, 220, 0.82);
+        box-shadow: 0 0 14px rgba(255, 244, 220, 0.22);
+      }
+
+      .street-map::before {
+        left: -10%;
+        top: 45%;
+        width: 120%;
+        height: 18px;
+        transform: rotate(-3deg);
+      }
+
+      .street-map::after {
+        left: 48%;
+        top: -14%;
+        width: 16px;
+        height: 128%;
+        transform: rotate(9deg);
+      }
+
+      .street {
+        position: absolute;
+        z-index: 1;
+        border-radius: 999px;
+        background: rgba(255, 244, 220, 0.32);
+      }
+
+      .street.one {
+        left: -12%;
+        top: 28%;
+        width: 130%;
+        height: 7px;
+        transform: rotate(-8deg);
+      }
+
+      .street.two {
+        left: -8%;
+        top: 68%;
+        width: 118%;
+        height: 6px;
+        transform: rotate(7deg);
+      }
+
+      .street.three {
+        left: 20%;
+        top: -10%;
+        width: 7px;
+        height: 120%;
+        transform: rotate(-11deg);
+      }
+
+      .street.four {
+        left: 72%;
+        top: -8%;
+        width: 6px;
+        height: 112%;
+        transform: rotate(14deg);
+      }
+
+      .map-name {
+        position: absolute;
+        z-index: 2;
+        color: rgba(9, 10, 12, 0.82);
+        font-size: 0.57rem;
+        font-weight: 950;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .map-name.slauson {
+        left: 16px;
+        top: calc(45% + 13px);
+        transform: rotate(-3deg);
+      }
+
+      .map-name.crenshaw {
+        left: calc(48% + 20px);
+        top: 14px;
+        writing-mode: vertical-rl;
+      }
+
+      .map-marker {
+        position: absolute;
+        left: 51%;
+        top: 47%;
+        z-index: 3;
+        width: 18px;
+        height: 18px;
+        border: 3px solid #090a0c;
+        border-radius: 50% 50% 50% 0;
+        background: var(--red);
+        box-shadow:
+          0 0 0 2px rgba(246, 200, 95, 0.92),
+          0 0 24px rgba(255, 52, 77, 0.86);
+        transform: translate(-50%, -92%) rotate(-45deg);
+      }
+
+      .map-marker::after {
+        position: absolute;
+        inset: 3px;
+        content: "";
+        border-radius: 999px;
+        background: var(--gold);
+      }
+
+      .map-scale {
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        z-index: 4;
+        width: 58px;
+        height: 8px;
+        border-right: 2px solid rgba(255, 244, 220, 0.75);
+        border-bottom: 2px solid rgba(255, 244, 220, 0.75);
+        border-left: 2px solid rgba(255, 244, 220, 0.75);
+      }
+
+      .map-scale span {
+        position: absolute;
+        top: -16px;
+        right: 0;
+        color: rgba(255, 244, 220, 0.72);
+        font-size: 0.55rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+      }
+
       .mini-banner {
         display: block;
         width: calc(100% - 36px);
@@ -693,6 +870,10 @@
           flex-direction: column;
           gap: 5px;
         }
+
+        .street-map {
+          min-height: 190px;
+        }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -749,7 +930,7 @@
           </div>
         </div>
 
-        <aside class="signal-card" aria-label="Gangland systems">
+        <aside class="signal-card" aria-label="Gangland location and systems">
           <div class="signal-head">
             <span>Street Signal</span>
             <span class="traffic-light" aria-hidden="true">
@@ -757,6 +938,22 @@
               <i></i>
               <i></i>
             </span>
+          </div>
+          <div class="location-panel">
+            <div class="address-label">
+              <span>Current Address</span>
+              <b>3420 W. Slauson Avenue, Los Angeles, CA 90043</b>
+            </div>
+            <div class="street-map" aria-label="Zoomed-out street map centered on 3420 W. Slauson Avenue">
+              <span class="street one"></span>
+              <span class="street two"></span>
+              <span class="street three"></span>
+              <span class="street four"></span>
+              <span class="map-name slauson">W. Slauson Ave</span>
+              <span class="map-name crenshaw">Crenshaw Blvd</span>
+              <span class="map-marker" aria-hidden="true"></span>
+              <span class="map-scale" aria-hidden="true"><span>0.5 mi</span></span>
+            </div>
           </div>
           <ul class="system-list">
             <li><span>Territory</span><b>Live</b></li>
