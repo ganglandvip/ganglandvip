@@ -14,7 +14,7 @@
     "buildings": 0,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 2
   },
   "id": "-9_-5",
   "junctions": [],
@@ -24,119 +24,19 @@
     {
       "centerline": [
         {
-          "x": -831.849,
-          "z": -799.567
-        },
-        {
-          "x": -922.996,
-          "z": -799.812
-        },
-        {
-          "x": -929.752,
-          "z": -799.957
-        },
-        {
-          "x": -936.398,
-          "z": -799.968
-        },
-        {
-          "x": -1024.185,
-          "z": -800.959
-        },
-        {
-          "x": -1030.655,
-          "z": -801.003
-        },
-        {
-          "x": -1038.316,
-          "z": -800.981
-        },
-        {
-          "x": -1124.303,
-          "z": -801.905
-        },
-        {
-          "x": -1126.057,
-          "z": -801.916
-        },
-        {
-          "x": -1134.105,
-          "z": -802.005
-        },
-        {
-          "x": -1142.994,
-          "z": -801.96
-        },
-        {
-          "x": -1186.061,
-          "z": -801.749
-        },
-        {
-          "x": -1266.64,
-          "z": -800.881
+          "x": -1440.0,
+          "z": -802.081
         },
         {
           "x": -1445.001,
           "z": -802.116
-        },
-        {
-          "x": -1687.992,
-          "z": -803.797
-        },
-        {
-          "x": -1766.428,
-          "z": -804.343
-        },
-        {
-          "x": -1805.702,
-          "z": -804.61
-        },
-        {
-          "x": -1893.582,
-          "z": -805.222
-        },
-        {
-          "x": -1989.251,
-          "z": -805.879
-        },
-        {
-          "x": -2102.135,
-          "z": -805.634
-        },
-        {
-          "x": -2134.661,
-          "z": -806.024
-        },
-        {
-          "x": -2176.87,
-          "z": -805.545
-        },
-        {
-          "x": -2194.306,
-          "z": -805.233
-        },
-        {
-          "x": -2207.182,
-          "z": -805.133
-        },
-        {
-          "x": -2207.865,
-          "z": -805.122
-        },
-        {
-          "x": -2270.648,
-          "z": -806.224
-        },
-        {
-          "x": -2283.468,
-          "z": -807.905
         }
       ],
       "crossing": null,
       "end_node_id": "123272425",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13446430#section/4",
+      "id": "way/13446430#section/4#tile/15",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -146,9 +46,43 @@
       "parent_id": "way/13446430",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 4,
+      "section_index": 171,
       "start_node_id": "123272411",
       "surface": null,
+      "tile_index": 15,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1445.001,
+          "z": -802.116
+        },
+        {
+          "x": -1620.0,
+          "z": -803.327
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123272425",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13446430#section/4#tile/16",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 64th Street",
+      "oneway": false,
+      "parent_id": "way/13446430",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 171,
+      "start_node_id": "123272411",
+      "surface": null,
+      "tile_index": 16,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

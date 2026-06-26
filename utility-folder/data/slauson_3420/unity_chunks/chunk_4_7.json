@@ -14,7 +14,7 @@
     "buildings": 0,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 3
   },
   "id": "4_7",
   "junctions": [],
@@ -24,47 +24,52 @@
     {
       "centerline": [
         {
-          "x": 849.488,
-          "z": 1642.694
+          "x": 747.967,
+          "z": 1440.0
         },
         {
-          "x": 849.506,
-          "z": 1632.218
-        },
+          "x": 749.208,
+          "z": 1260.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123712142",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295753830#section/0#tile/24",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "6th Avenue",
+      "oneway": false,
+      "parent_id": "way/295753830",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 274,
+      "start_node_id": "1732243793",
+      "surface": null,
+      "tile_index": 24,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
-          "x": 849.294,
-          "z": 1591.932
-        },
-        {
-          "x": 849.183,
-          "z": 1562.755
+          "x": 848.703,
+          "z": 1440.0
         },
         {
           "x": 848.103,
           "z": 1286.726
-        },
-        {
-          "x": 848.74,
-          "z": 1238.958
-        },
-        {
-          "x": 847.272,
-          "z": 1058.742
-        },
-        {
-          "x": 846.516,
-          "z": 865.903
-        },
-        {
-          "x": 845.593,
-          "z": 767.885
         }
       ],
       "crossing": null,
       "end_node_id": "6792064389",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1347432657#section/0",
+      "id": "way/1347432657#section/0#tile/5",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -74,9 +79,43 @@
       "parent_id": "way/1347432657",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 902,
       "start_node_id": "123217352",
       "surface": "asphalt",
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 848.103,
+          "z": 1286.726
+        },
+        {
+          "x": 848.459,
+          "z": 1260.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6792064389",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1347432657#section/0#tile/6",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "5th Avenue",
+      "oneway": false,
+      "parent_id": "way/1347432657",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 902,
+      "start_node_id": "123217352",
+      "surface": "asphalt",
+      "tile_index": 6,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

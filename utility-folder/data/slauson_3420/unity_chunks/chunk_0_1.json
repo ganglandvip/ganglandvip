@@ -1314,9 +1314,9 @@
   "counts": {
     "areas": 1,
     "buildings": 26,
-    "junctions": 16,
+    "junctions": 15,
     "pois": 11,
-    "streets": 59
+    "streets": 114
   },
   "id": "0_1",
   "junctions": [
@@ -1334,7 +1334,7 @@
       "radius_m": 6.268
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "service"
       ],
@@ -1358,7 +1358,7 @@
       "radius_m": 3.2
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential",
         "service"
@@ -1369,18 +1369,6 @@
         "z": 216.907
       },
       "radius_m": 3.684
-    },
-    {
-      "connected_road_count": 2,
-      "highways": [
-        "service"
-      ],
-      "id": "13092587571",
-      "position": {
-        "x": 164.646,
-        "z": 227.549
-      },
-      "radius_m": 3.2
     },
     {
       "connected_road_count": 4,
@@ -1409,7 +1397,7 @@
       "radius_m": 6.268
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential",
         "service"
@@ -1422,7 +1410,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential",
         "service"
@@ -1448,7 +1436,7 @@
       "radius_m": 6.268
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential",
         "service"
@@ -1461,7 +1449,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "service"
       ],
@@ -1486,7 +1474,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential",
         "service"
@@ -1512,7 +1500,7 @@
       "radius_m": 6.268
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "primary",
         "service"
@@ -1686,6 +1674,39 @@
     {
       "centerline": [
         {
+          "x": 180.0,
+          "z": 216.992
+        },
+        {
+          "x": 164.646,
+          "z": 216.907
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13092587570",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295757629#section/7#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/295757629",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 295,
+      "start_node_id": "122572234",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
           "x": 164.646,
           "z": 216.907
         },
@@ -1698,7 +1719,7 @@
       "end_node_id": "6792601230",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/295757629#section/8",
+      "id": "way/295757629#section/8#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -1708,11 +1729,12 @@
       "parent_id": "way/295757629",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 8,
+      "section_index": 296,
       "start_node_id": "13092587570",
       "surface": "asphalt",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     },
     {
@@ -1724,7 +1746,65 @@
         {
           "x": 109.025,
           "z": 216.985
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572237",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295757629#section/9#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/295757629",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 297,
+      "start_node_id": "6792601230",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 109.025,
+          "z": 216.985
         },
+        {
+          "x": 104.946,
+          "z": 217.007
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572237",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295757629#section/9#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/295757629",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 297,
+      "start_node_id": "6792601230",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 104.946,
           "z": 217.007
@@ -1738,7 +1818,7 @@
       "end_node_id": "122572237",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/295757629#section/9",
+      "id": "way/295757629#section/9#tile/2",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -1748,10 +1828,176 @@
       "parent_id": "way/295757629",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 9,
+      "section_index": 297,
       "start_node_id": "6792601230",
       "surface": "asphalt",
+      "tile_index": 2,
+      "trim_end_m": 6.268,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 93.587,
+          "z": 360.0
+        },
+        {
+          "x": 91.821,
+          "z": 226.469
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572237",
+      "estimated_road_width_m": 13.6,
+      "highway": "primary",
+      "id": "way/398366976#section/0#graph/way/398366996#section/0#tile/4",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Crenshaw Boulevard",
+      "oneway": true,
+      "parent_id": "way/398366976",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 363,
+      "start_node_id": "122742780",
+      "surface": "asphalt",
+      "tile_index": 4,
       "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": "left|||"
+    },
+    {
+      "centerline": [
+        {
+          "x": 91.821,
+          "z": 226.469
+        },
+        {
+          "x": 91.691,
+          "z": 217.063
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572237",
+      "estimated_road_width_m": 13.6,
+      "highway": "primary",
+      "id": "way/398366976#section/0#graph/way/398366996#section/0#tile/5",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Crenshaw Boulevard",
+      "oneway": true,
+      "parent_id": "way/398366976",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 363,
+      "start_node_id": "122742780",
+      "surface": "asphalt",
+      "tile_index": 5,
+      "trim_end_m": 6.268,
+      "trim_start_m": 0,
+      "turn_lanes": "left|||"
+    },
+    {
+      "centerline": [
+        {
+          "x": 67.083,
+          "z": 180.0
+        },
+        {
+          "x": 66.752,
+          "z": 208.814
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "1474993475",
+      "estimated_road_width_m": 13.6,
+      "highway": "primary",
+      "id": "way/398366983#section/0#graph/way/398367000#section/0#graph/way/1053559359#section/0#tile/5",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Crenshaw Boulevard",
+      "oneway": true,
+      "parent_id": "way/398366983",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 370,
+      "start_node_id": "1474993473",
+      "surface": "asphalt",
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": "left|||"
+    },
+    {
+      "centerline": [
+        {
+          "x": 66.752,
+          "z": 208.814
+        },
+        {
+          "x": 66.659,
+          "z": 217.074
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "1474993475",
+      "estimated_road_width_m": 13.6,
+      "highway": "primary",
+      "id": "way/398366983#section/0#graph/way/398367000#section/0#graph/way/1053559359#section/0#tile/6",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Crenshaw Boulevard",
+      "oneway": true,
+      "parent_id": "way/398366983",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 370,
+      "start_node_id": "1474993473",
+      "surface": "asphalt",
+      "tile_index": 6,
+      "trim_end_m": 6.268,
+      "trim_start_m": 0,
+      "turn_lanes": "left|||"
+    },
+    {
+      "centerline": [
+        {
+          "x": 91.53,
+          "z": 180.0
+        },
+        {
+          "x": 91.442,
+          "z": 188.743
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6792601232",
+      "estimated_road_width_m": 10.2,
+      "highway": "primary",
+      "id": "way/398366990#section/2#graph/way/398367001#section/0#tile/2",
+      "lane_count": 3,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Crenshaw Boulevard",
+      "oneway": true,
+      "parent_id": "way/398366990",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 379,
+      "start_node_id": "4818905884",
+      "surface": "asphalt",
+      "tile_index": 2,
+      "trim_end_m": 6.268,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -1764,7 +2010,65 @@
         {
           "x": 66.604,
           "z": 229.598
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "1474993475",
+      "estimated_road_width_m": 13.6,
+      "highway": "primary",
+      "id": "way/398366991#section/0#tile/0",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Crenshaw Boulevard",
+      "oneway": true,
+      "parent_id": "way/398366991",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 380,
+      "start_node_id": "4011301821",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 6.268,
+      "turn_lanes": "left|||"
+    },
+    {
+      "centerline": [
+        {
+          "x": 66.604,
+          "z": 229.598
         },
+        {
+          "x": 66.622,
+          "z": 226.369
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "1474993475",
+      "estimated_road_width_m": 13.6,
+      "highway": "primary",
+      "id": "way/398366991#section/0#tile/1",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Crenshaw Boulevard",
+      "oneway": true,
+      "parent_id": "way/398366991",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 380,
+      "start_node_id": "4011301821",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": "left|||"
+    },
+    {
+      "centerline": [
         {
           "x": 66.622,
           "z": 226.369
@@ -1778,7 +2082,7 @@
       "end_node_id": "1474993475",
       "estimated_road_width_m": 13.6,
       "highway": "primary",
-      "id": "way/398366991#section/0",
+      "id": "way/398366991#section/0#tile/2",
       "lane_count": 4,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -1788,45 +2092,76 @@
       "parent_id": "way/398366991",
       "render_kind": "road",
       "road_width_m": 13.6,
-      "section_index": 0,
+      "section_index": 380,
       "start_node_id": "4011301821",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 2,
+      "trim_end_m": 6.268,
       "trim_start_m": 0,
       "turn_lanes": "left|||"
     },
     {
       "centerline": [
         {
-          "x": 91.691,
-          "z": 217.063
+          "x": 66.023,
+          "z": 339.003
         },
         {
-          "x": 91.821,
-          "z": 226.469
-        },
-        {
-          "x": 94.377,
-          "z": 419.699
+          "x": 66.17,
+          "z": 345.448
         }
       ],
       "crossing": null,
-      "end_node_id": "4011301822",
+      "end_node_id": "7153239400",
       "estimated_road_width_m": 10.2,
       "highway": "primary",
-      "id": "way/398366996#section/0",
+      "id": "way/398367006#section/0#graph/way/1055952161#section/1#tile/0",
       "lane_count": 3,
       "lane_source": "osm",
       "lane_width_m": 3.4,
       "maxspeed": null,
       "name": "Crenshaw Boulevard",
       "oneway": true,
-      "parent_id": "way/398366996",
+      "parent_id": "way/398367006",
       "render_kind": "road",
-      "road_width_m": 10.2,
-      "section_index": 0,
-      "start_node_id": "122572237",
+      "road_width_m": 13.6,
+      "section_index": 391,
+      "start_node_id": "8410714749",
       "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 4.976,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 66.17,
+          "z": 345.448
+        },
+        {
+          "x": 66.165,
+          "z": 360.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7153239400",
+      "estimated_road_width_m": 10.2,
+      "highway": "primary",
+      "id": "way/398367006#section/0#graph/way/1055952161#section/1#tile/1",
+      "lane_count": 3,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Crenshaw Boulevard",
+      "oneway": true,
+      "parent_id": "way/398367006",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 391,
+      "start_node_id": "8410714749",
+      "surface": "asphalt",
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -1846,7 +2181,7 @@
       "end_node_id": "8410714745",
       "estimated_road_width_m": 10.2,
       "highway": "primary",
-      "id": "way/398367006#section/1",
+      "id": "way/398367006#section/1#tile/0",
       "lane_count": 3,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -1856,9 +2191,76 @@
       "parent_id": "way/398367006",
       "render_kind": "road",
       "road_width_m": 10.2,
-      "section_index": 1,
+      "section_index": 392,
       "start_node_id": "8410714749",
       "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 6.268,
+      "trim_start_m": 4.976,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 12.747,
+          "z": 216.217
+        },
+        {
+          "x": 12.811,
+          "z": 209.048
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "5572564188",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/582757387#section/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/582757387",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 475,
+      "start_node_id": "5572564187",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 12.811,
+          "z": 209.048
+        },
+        {
+          "x": 13.092,
+          "z": 180.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "5572564188",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/582757387#section/0#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/582757387",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 475,
+      "start_node_id": "5572564187",
+      "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -1872,11 +2274,98 @@
         {
           "x": 146.942,
           "z": 211.497
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6792601232",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/724290124#section/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/724290124",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 613,
+      "start_node_id": "6792601230",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 146.942,
+          "z": 211.497
         },
         {
           "x": 147.256,
           "z": 189.233
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6792601232",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/724290124#section/0#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/724290124",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 613,
+      "start_node_id": "6792601230",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 147.256,
+          "z": 189.233
         },
+        {
+          "x": 104.872,
+          "z": 188.866
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6792601232",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/724290124#section/0#tile/2",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/724290124",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 613,
+      "start_node_id": "6792601230",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 104.872,
           "z": 188.866
@@ -1890,7 +2379,7 @@
       "end_node_id": "6792601232",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/724290124#section/0",
+      "id": "way/724290124#section/0#tile/3",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -1900,10 +2389,11 @@
       "parent_id": "way/724290124",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
+      "section_index": 613,
       "start_node_id": "6792601230",
       "surface": null,
-      "trim_end_m": 0,
+      "tile_index": 3,
+      "trim_end_m": 6.268,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -1916,11 +2406,98 @@
         {
           "x": 54.476,
           "z": 269.561
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7811932585",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/837021489#section/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/837021489",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 688,
+      "start_node_id": "4011301821",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 6.268,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 54.476,
+          "z": 269.561
         },
         {
           "x": 8.012,
           "z": 269.773
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7811932585",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/837021489#section/0#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/837021489",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 688,
+      "start_node_id": "4011301821",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 8.012,
+          "z": 269.773
         },
+        {
+          "x": 6.858,
+          "z": 224.61
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7811932585",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/837021489#section/0#tile/2",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/837021489",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 688,
+      "start_node_id": "4011301821",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 6.858,
           "z": 224.61
@@ -1934,7 +2511,7 @@
       "end_node_id": "7811932585",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/837021489#section/0",
+      "id": "way/837021489#section/0#tile/3",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -1944,9 +2521,43 @@
       "parent_id": "way/837021489",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
+      "section_index": 688,
       "start_node_id": "4011301821",
       "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 180.0,
+          "z": 285.019
+        },
+        {
+          "x": 172.805,
+          "z": 284.868
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7867245176",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/843393318#section/0#tile/2",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/843393318",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 694,
+      "start_node_id": "7867245171",
+      "surface": null,
+      "tile_index": 2,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -1954,25 +2565,71 @@
     {
       "centerline": [
         {
-          "x": 208.618,
-          "z": 285.614
-        },
-        {
-          "x": 196.729,
-          "z": 285.369
-        },
-        {
           "x": 172.805,
           "z": 284.868
         },
         {
           "x": 169.288,
           "z": 284.066
-        },
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7867245176",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/843393318#section/0#tile/3",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/843393318",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 694,
+      "start_node_id": "7867245171",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 168.218,
           "z": 282.786
         },
+        {
+          "x": 167.895,
+          "z": 279.692
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7867245176",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/843393318#section/0#tile/4",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/843393318",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 694,
+      "start_node_id": "7867245171",
+      "surface": null,
+      "tile_index": 4,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 167.895,
           "z": 279.692
@@ -1986,7 +2643,7 @@
       "end_node_id": "7867245176",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/843393318#section/0",
+      "id": "way/843393318#section/0#tile/5",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -1996,11 +2653,45 @@
       "parent_id": "way/843393318",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
+      "section_index": 694,
       "start_node_id": "7867245171",
       "surface": null,
-      "trim_end_m": 0,
+      "tile_index": 5,
+      "trim_end_m": 3.2,
       "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 168.43,
+          "z": 262.704
+        },
+        {
+          "x": 180.0,
+          "z": 262.898
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7867245180",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/843393318#section/1#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/843393318",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 695,
+      "start_node_id": "7867245176",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.2,
       "turn_lanes": null
     },
     {
@@ -2012,7 +2703,65 @@
         {
           "x": 40.612,
           "z": 224.822
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 40.612,
+          "z": 224.822
         },
+        {
+          "x": 40.566,
+          "z": 241.308
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 40.566,
           "z": 241.308
@@ -2020,7 +2769,65 @@
         {
           "x": 39.975,
           "z": 243.858
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/2",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 39.975,
+          "z": 243.858
         },
+        {
+          "x": 38.406,
+          "z": 246.206
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/3",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 38.406,
           "z": 246.206
@@ -2028,7 +2835,65 @@
         {
           "x": 34.004,
           "z": 248.255
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/4",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 4,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 34.004,
+          "z": 248.255
         },
+        {
+          "x": 26.564,
+          "z": 249.724
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/5",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 26.564,
           "z": 249.724
@@ -2036,7 +2901,65 @@
         {
           "x": 23.721,
           "z": 249.234
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/6",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 6,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 23.721,
+          "z": 249.234
         },
+        {
+          "x": 21.275,
+          "z": 247.375
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/7",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 7,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 21.275,
           "z": 247.375
@@ -2044,11 +2967,98 @@
         {
           "x": 19.125,
           "z": 244.837
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/8",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 8,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 19.125,
+          "z": 244.837
         },
         {
           "x": 18.922,
           "z": 235.631
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/9",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 9,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 18.922,
+          "z": 235.631
         },
+        {
+          "x": 19.152,
+          "z": 224.688
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714744",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682974#section/0#tile/10",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": true,
+      "parent_id": "way/905682974",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 735,
+      "start_node_id": "8410714734",
+      "surface": null,
+      "tile_index": 10,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 19.152,
           "z": 224.688
@@ -2062,7 +3072,7 @@
       "end_node_id": "8410714744",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/905682974#section/0",
+      "id": "way/905682974#section/0#tile/11",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2072,10 +3082,11 @@
       "parent_id": "way/905682974",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
+      "section_index": 735,
       "start_node_id": "8410714734",
       "surface": null,
-      "trim_end_m": 0,
+      "tile_index": 11,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -2088,11 +3099,98 @@
         {
           "x": 54.531,
           "z": 296.501
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714747",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682975#section/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/905682975",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 736,
+      "start_node_id": "8410714745",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 6.268,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 54.531,
+          "z": 296.501
         },
         {
           "x": 40.28,
           "z": 296.467
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714747",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682975#section/0#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/905682975",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 736,
+      "start_node_id": "8410714745",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 40.28,
+          "z": 296.467
         },
+        {
+          "x": 10.052,
+          "z": 296.323
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714747",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682975#section/0#tile/2",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/905682975",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 736,
+      "start_node_id": "8410714745",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 10.052,
           "z": 296.323
@@ -2106,7 +3204,7 @@
       "end_node_id": "8410714747",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/905682975#section/0",
+      "id": "way/905682975#section/0#tile/3",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2116,9 +3214,10 @@
       "parent_id": "way/905682975",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
+      "section_index": 736,
       "start_node_id": "8410714745",
       "surface": null,
+      "tile_index": 3,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2132,7 +3231,65 @@
         {
           "x": 54.633,
           "z": 339.092
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714752",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682976#section/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/905682976",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 737,
+      "start_node_id": "8410714749",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 4.976,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 54.633,
+          "z": 339.092
         },
+        {
+          "x": 51.836,
+          "z": 339.114
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714752",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682976#section/0#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/905682976",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 737,
+      "start_node_id": "8410714749",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 51.836,
           "z": 339.114
@@ -2140,7 +3297,65 @@
         {
           "x": 29.047,
           "z": 339.214
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714752",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682976#section/0#tile/2",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/905682976",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 737,
+      "start_node_id": "8410714749",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 29.047,
+          "z": 339.214
         },
+        {
+          "x": 22.041,
+          "z": 339.214
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714752",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905682976#section/0#tile/3",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/905682976",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 737,
+      "start_node_id": "8410714749",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 22.041,
           "z": 339.214
@@ -2154,7 +3369,7 @@
       "end_node_id": "8410714752",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/905682976#section/0",
+      "id": "way/905682976#section/0#tile/4",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2164,9 +3379,43 @@
       "parent_id": "way/905682976",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
+      "section_index": 737,
       "start_node_id": "8410714749",
       "surface": null,
+      "tile_index": 4,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 171.088,
+          "z": 298.048
+        },
+        {
+          "x": 180.0,
+          "z": 298.083
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8460219359",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/911125236#section/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/911125236",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 751,
+      "start_node_id": "8460219357",
+      "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2180,7 +3429,65 @@
         {
           "x": 81.732,
           "z": 216.907
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "1474993475",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1036292354#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1036292354",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 805,
+      "start_node_id": "122572237",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 6.268,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 81.732,
+          "z": 216.907
         },
+        {
+          "x": 77.265,
+          "z": 217.096
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "1474993475",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1036292354#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1036292354",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 805,
+      "start_node_id": "122572237",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 77.265,
           "z": 217.096
@@ -2194,7 +3501,7 @@
       "end_node_id": "1474993475",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1036292354#section/0",
+      "id": "way/1036292354#section/0#tile/2",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -2204,10 +3511,11 @@
       "parent_id": "way/1036292354",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 805,
       "start_node_id": "122572237",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 2,
+      "trim_end_m": 6.268,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -2220,7 +3528,65 @@
         {
           "x": 91.581,
           "z": 204.105
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572237",
+      "estimated_road_width_m": 13.6,
+      "highway": "primary",
+      "id": "way/1036292355#section/0#tile/0",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Crenshaw Boulevard",
+      "oneway": true,
+      "parent_id": "way/1036292355",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 806,
+      "start_node_id": "6792601232",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 6.268,
+      "turn_lanes": "left|||"
+    },
+    {
+      "centerline": [
+        {
+          "x": 91.581,
+          "z": 204.105
         },
+        {
+          "x": 91.617,
+          "z": 208.647
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572237",
+      "estimated_road_width_m": 13.6,
+      "highway": "primary",
+      "id": "way/1036292355#section/0#tile/1",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Crenshaw Boulevard",
+      "oneway": true,
+      "parent_id": "way/1036292355",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 806,
+      "start_node_id": "6792601232",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": "left|||"
+    },
+    {
+      "centerline": [
         {
           "x": 91.617,
           "z": 208.647
@@ -2234,7 +3600,7 @@
       "end_node_id": "122572237",
       "estimated_road_width_m": 13.6,
       "highway": "primary",
-      "id": "way/1036292355#section/0",
+      "id": "way/1036292355#section/0#tile/2",
       "lane_count": 4,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -2244,10 +3610,11 @@
       "parent_id": "way/1036292355",
       "render_kind": "road",
       "road_width_m": 13.6,
-      "section_index": 0,
+      "section_index": 806,
       "start_node_id": "6792601232",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 2,
+      "trim_end_m": 6.268,
       "trim_start_m": 0,
       "turn_lanes": "left|||"
     },
@@ -2260,7 +3627,65 @@
         {
           "x": 54.328,
           "z": 217.007
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714734",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1036292356#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1036292356",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 807,
+      "start_node_id": "1474993475",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 6.268,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 54.328,
+          "z": 217.007
         },
+        {
+          "x": 50.599,
+          "z": 216.985
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8410714734",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1036292356#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1036292356",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 807,
+      "start_node_id": "1474993475",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 50.599,
           "z": 216.985
@@ -2274,7 +3699,7 @@
       "end_node_id": "8410714734",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1036292356#section/0",
+      "id": "way/1036292356#section/0#tile/2",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -2284,46 +3709,11 @@
       "parent_id": "way/1036292356",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 807,
       "start_node_id": "1474993475",
       "surface": "asphalt",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
-      "turn_lanes": null
-    },
-    {
-      "centerline": [
-        {
-          "x": 66.659,
-          "z": 217.074
-        },
-        {
-          "x": 66.752,
-          "z": 208.814
-        },
-        {
-          "x": 67.232,
-          "z": 167.058
-        }
-      ],
-      "crossing": null,
-      "end_node_id": "9682114285",
-      "estimated_road_width_m": 10.2,
-      "highway": "primary",
-      "id": "way/1053559359#section/0",
-      "lane_count": 3,
-      "lane_source": "osm",
-      "lane_width_m": 3.4,
-      "maxspeed": null,
-      "name": "Crenshaw Boulevard",
-      "oneway": true,
-      "parent_id": "way/1053559359",
-      "render_kind": "road",
-      "road_width_m": 10.2,
-      "section_index": 0,
-      "start_node_id": "1474993475",
-      "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 2,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -2342,7 +3732,7 @@
       "end_node_id": "4011301821",
       "estimated_road_width_m": 13.6,
       "highway": "primary",
-      "id": "way/1055952162#section/0",
+      "id": "way/1055952162#section/0#tile/0",
       "lane_count": 4,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -2352,11 +3742,12 @@
       "parent_id": "way/1055952162",
       "render_kind": "road",
       "road_width_m": 13.6,
-      "section_index": 0,
+      "section_index": 809,
       "start_node_id": "8410714745",
       "surface": "asphalt",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
+      "tile_index": 0,
+      "trim_end_m": 6.268,
+      "trim_start_m": 6.268,
       "turn_lanes": "left|||"
     },
     {
@@ -2374,7 +3765,7 @@
       "end_node_id": "8410714744",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1111523013#section/0",
+      "id": "way/1111523013#section/0#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -2384,11 +3775,12 @@
       "parent_id": "way/1111523013",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 823,
       "start_node_id": "8410714734",
       "surface": "asphalt",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     },
     {
@@ -2406,7 +3798,7 @@
       "end_node_id": "5572564187",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1111523013#section/1",
+      "id": "way/1111523013#section/1#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -2416,11 +3808,12 @@
       "parent_id": "way/1111523013",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 824,
       "start_node_id": "8410714744",
       "surface": "asphalt",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     },
     {
@@ -2438,7 +3831,7 @@
       "end_node_id": "7811932585",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1111523013#section/2",
+      "id": "way/1111523013#section/2#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -2448,9 +3841,77 @@
       "parent_id": "way/1111523013",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 2,
+      "section_index": 825,
       "start_node_id": "5572564187",
       "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 6.646,
+          "z": 216.25
+        },
+        {
+          "x": 0.0,
+          "z": 216.194
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572240",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1111523013#section/3#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1111523013",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 826,
+      "start_node_id": "7811932585",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 54.025,
+          "z": 180.0
+        },
+        {
+          "x": 54.263,
+          "z": 208.881
+        }
+      ],
+      "crossing": null,
+      "end_node_id": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/1424251091#segment/4#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1424251091",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "section_index": 1022,
+      "segment_index": 4,
+      "start_node_id": null,
+      "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2467,9 +3928,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424251091#segment/5",
+      "id": "way/1424251091#segment/5#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2479,8 +3941,45 @@
       "parent_id": "way/1424251091",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1023,
       "segment_index": 5,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 104.896,
+          "z": 180.0
+        },
+        {
+          "x": 104.872,
+          "z": 188.866
+        }
+      ],
+      "crossing": null,
+      "end_node_id": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/1424251098#segment/8#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1424251098",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "section_index": 1044,
+      "segment_index": 8,
+      "start_node_id": null,
+      "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2497,9 +3996,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424251098#segment/9",
+      "id": "way/1424251098#segment/9#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2509,8 +4009,11 @@
       "parent_id": "way/1424251098",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1045,
       "segment_index": 9,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2527,9 +4030,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424251098#segment/10",
+      "id": "way/1424251098#segment/10#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2539,8 +4043,11 @@
       "parent_id": "way/1424251098",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1046,
       "segment_index": 10,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2557,9 +4064,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413262#segment/0",
+      "id": "way/1424413262#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2569,8 +4077,11 @@
       "parent_id": "way/1424413262",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1185,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2587,9 +4098,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413262#segment/1",
+      "id": "way/1424413262#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2599,8 +4111,11 @@
       "parent_id": "way/1424413262",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1186,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2617,9 +4132,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413262#segment/2",
+      "id": "way/1424413262#segment/2#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2629,8 +4145,11 @@
       "parent_id": "way/1424413262",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1187,
       "segment_index": 2,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2647,9 +4166,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413262#segment/3",
+      "id": "way/1424413262#segment/3#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2659,8 +4179,11 @@
       "parent_id": "way/1424413262",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1188,
       "segment_index": 3,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2677,9 +4200,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413262#segment/4",
+      "id": "way/1424413262#segment/4#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2689,8 +4213,11 @@
       "parent_id": "way/1424413262",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1189,
       "segment_index": 4,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2707,9 +4234,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413263#segment/0",
+      "id": "way/1424413263#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2719,8 +4247,11 @@
       "parent_id": "way/1424413263",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1190,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2737,9 +4268,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413263#segment/1",
+      "id": "way/1424413263#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2749,8 +4281,11 @@
       "parent_id": "way/1424413263",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1191,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2767,9 +4302,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413264#segment/0",
+      "id": "way/1424413264#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2779,8 +4315,11 @@
       "parent_id": "way/1424413264",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1192,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2797,9 +4336,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413264#segment/1",
+      "id": "way/1424413264#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2809,8 +4349,11 @@
       "parent_id": "way/1424413264",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1193,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2827,9 +4370,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413264#segment/2",
+      "id": "way/1424413264#segment/2#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2839,8 +4383,11 @@
       "parent_id": "way/1424413264",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1194,
       "segment_index": 2,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2857,9 +4404,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413264#segment/3",
+      "id": "way/1424413264#segment/3#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2869,8 +4417,11 @@
       "parent_id": "way/1424413264",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1195,
       "segment_index": 3,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2887,9 +4438,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413264#segment/4",
+      "id": "way/1424413264#segment/4#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2899,8 +4451,11 @@
       "parent_id": "way/1424413264",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1196,
       "segment_index": 4,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2917,9 +4472,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413265#segment/0",
+      "id": "way/1424413265#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2929,8 +4485,11 @@
       "parent_id": "way/1424413265",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1197,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2947,9 +4506,10 @@
         }
       ],
       "crossing": "traffic_signals",
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413265#segment/1",
+      "id": "way/1424413265#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2959,8 +4519,11 @@
       "parent_id": "way/1424413265",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1198,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -2977,9 +4540,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413266#segment/0",
+      "id": "way/1424413266#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -2989,8 +4553,11 @@
       "parent_id": "way/1424413266",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1199,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3007,9 +4574,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413266#segment/1",
+      "id": "way/1424413266#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3019,8 +4587,11 @@
       "parent_id": "way/1424413266",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1200,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3037,9 +4608,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413266#segment/2",
+      "id": "way/1424413266#segment/2#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3049,8 +4621,11 @@
       "parent_id": "way/1424413266",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1201,
       "segment_index": 2,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3070,7 +4645,7 @@
       "end_node_id": "13092587567",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/1424413267#section/0",
+      "id": "way/1424413267#section/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3080,11 +4655,12 @@
       "parent_id": "way/1424413267",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
+      "section_index": 1202,
       "start_node_id": "7867245176",
       "surface": null,
-      "trim_end_m": 0,
-      "trim_start_m": 0,
+      "tile_index": 0,
+      "trim_end_m": 3.2,
+      "trim_start_m": 3.2,
       "turn_lanes": null
     },
     {
@@ -3102,7 +4678,7 @@
       "end_node_id": "13092587568",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/1424413267#section/1",
+      "id": "way/1424413267#section/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3112,33 +4688,30 @@
       "parent_id": "way/1424413267",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 1,
+      "section_index": 1203,
       "start_node_id": "13092587567",
       "surface": null,
-      "trim_end_m": 0,
-      "trim_start_m": 0,
+      "tile_index": 0,
+      "trim_end_m": 3.2,
+      "trim_start_m": 3.2,
       "turn_lanes": null
     },
     {
       "centerline": [
         {
           "x": 164.646,
-          "z": 227.549
+          "z": 216.907
         },
         {
           "x": 164.646,
           "z": 224.8
-        },
-        {
-          "x": 164.646,
-          "z": 216.907
         }
       ],
       "crossing": null,
-      "end_node_id": "13092587570",
+      "end_node_id": "13092587568",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/1424413268#section/0",
+      "id": "way/1424413268#section/0#graph/way/1424413271#section/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3148,11 +4721,144 @@
       "parent_id": "way/1424413268",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
-      "start_node_id": "13092587571",
+      "section_index": 1204,
+      "start_node_id": "13092587570",
       "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 164.646,
+          "z": 224.8
+        },
+        {
+          "x": 164.646,
+          "z": 227.549
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13092587568",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/1424413268#section/0#graph/way/1424413271#section/0#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1424413268",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 1204,
+      "start_node_id": "13092587570",
+      "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 164.646,
+          "z": 227.549
+        },
+        {
+          "x": 164.646,
+          "z": 232.625
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13092587568",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/1424413268#section/0#graph/way/1424413271#section/0#tile/2",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1424413268",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 1204,
+      "start_node_id": "13092587570",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 164.646,
+          "z": 232.625
+        },
+        {
+          "x": 171.097,
+          "z": 235.052
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13092587568",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/1424413268#section/0#graph/way/1424413271#section/0#tile/3",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1424413268",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 1204,
+      "start_node_id": "13092587570",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 3.2,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 171.097,
+          "z": 247.464
+        },
+        {
+          "x": 180.0,
+          "z": 247.557
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13092587572",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/1424413269#section/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1424413269",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 1205,
+      "start_node_id": "13092587567",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.2,
       "turn_lanes": null
     },
     {
@@ -3162,33 +4868,30 @@
           "z": 235.052
         },
         {
-          "x": 164.646,
-          "z": 232.625
-        },
-        {
-          "x": 164.646,
-          "z": 227.549
+          "x": 180.0,
+          "z": 235.018
         }
       ],
       "crossing": null,
-      "end_node_id": "13092587571",
+      "end_node_id": "13092587573",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/1424413271#section/0",
+      "id": "way/1424413270#section/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
       "maxspeed": null,
       "name": null,
-      "oneway": true,
-      "parent_id": "way/1424413271",
+      "oneway": false,
+      "parent_id": "way/1424413270",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
+      "section_index": 1206,
       "start_node_id": "13092587568",
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 3.2,
       "turn_lanes": null
     },
     {
@@ -3203,9 +4906,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413272#segment/0",
+      "id": "way/1424413272#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3215,8 +4919,11 @@
       "parent_id": "way/1424413272",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1207,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3233,9 +4940,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413272#segment/1",
+      "id": "way/1424413272#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3245,8 +4953,11 @@
       "parent_id": "way/1424413272",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1208,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3263,9 +4974,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413272#segment/2",
+      "id": "way/1424413272#segment/2#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3275,8 +4987,11 @@
       "parent_id": "way/1424413272",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1209,
       "segment_index": 2,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3293,9 +5008,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413273#segment/0",
+      "id": "way/1424413273#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3305,8 +5021,11 @@
       "parent_id": "way/1424413273",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1210,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3318,14 +5037,15 @@
           "z": 225.345
         },
         {
-          "x": 106.229,
-          "z": 457.247
+          "x": 105.699,
+          "z": 360.0
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413273#segment/1",
+      "id": "way/1424413273#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3335,8 +5055,11 @@
       "parent_id": "way/1424413273",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1211,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3353,9 +5076,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413274#segment/0",
+      "id": "way/1424413274#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3365,8 +5089,11 @@
       "parent_id": "way/1424413274",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1213,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3383,9 +5110,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413274#segment/1",
+      "id": "way/1424413274#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3395,8 +5123,11 @@
       "parent_id": "way/1424413274",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1214,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3413,9 +5144,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413274#segment/2",
+      "id": "way/1424413274#segment/2#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3425,8 +5157,11 @@
       "parent_id": "way/1424413274",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1215,
       "segment_index": 2,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3443,9 +5178,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413274#segment/3",
+      "id": "way/1424413274#segment/3#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3455,8 +5191,45 @@
       "parent_id": "way/1424413274",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1216,
       "segment_index": 3,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 54.633,
+          "z": 339.092
+        },
+        {
+          "x": 54.679,
+          "z": 360.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/1424413274#segment/4#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/1424413274",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "section_index": 1217,
+      "segment_index": 4,
+      "start_node_id": null,
+      "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3473,9 +5246,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413277#segment/0",
+      "id": "way/1424413277#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3485,8 +5259,11 @@
       "parent_id": "way/1424413277",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1221,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3503,9 +5280,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413277#segment/1",
+      "id": "way/1424413277#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3515,8 +5293,11 @@
       "parent_id": "way/1424413277",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1222,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3533,9 +5314,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413277#segment/2",
+      "id": "way/1424413277#segment/2#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3545,8 +5327,11 @@
       "parent_id": "way/1424413277",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1223,
       "segment_index": 2,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3563,9 +5348,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413277#segment/3",
+      "id": "way/1424413277#segment/3#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3575,8 +5361,11 @@
       "parent_id": "way/1424413277",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1224,
       "segment_index": 3,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3593,9 +5382,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413277#segment/4",
+      "id": "way/1424413277#segment/4#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3605,8 +5395,11 @@
       "parent_id": "way/1424413277",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1225,
       "segment_index": 4,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3623,9 +5416,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413278#segment/0",
+      "id": "way/1424413278#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3635,8 +5429,11 @@
       "parent_id": "way/1424413278",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1226,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3653,9 +5450,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1424413278#segment/1",
+      "id": "way/1424413278#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3665,8 +5463,11 @@
       "parent_id": "way/1424413278",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1227,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

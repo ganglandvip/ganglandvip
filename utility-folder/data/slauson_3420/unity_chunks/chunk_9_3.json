@@ -1,0 +1,59 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 1800,
+    "max_z": 720,
+    "min_x": 1620,
+    "min_z": 540
+  },
+  "buildings": [],
+  "coord_x": 9,
+  "coord_z": 3,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "9_3",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 1646.641,
+          "z": 682.447
+        },
+        {
+          "x": 1620.0,
+          "z": 682.266
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273752",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/817114847#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 52nd Street",
+      "oneway": false,
+      "parent_id": "way/817114847",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 673,
+      "start_node_id": "122736927",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

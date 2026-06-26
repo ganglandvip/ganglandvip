@@ -1,0 +1,92 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -1620,
+    "max_z": 0,
+    "min_x": -1800,
+    "min_z": -180
+  },
+  "buildings": [],
+  "coord_x": -10,
+  "coord_z": -1,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 2
+  },
+  "id": "-10_-1",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -1620.0,
+          "z": -103.654
+        },
+        {
+          "x": -1694.979,
+          "z": -104.196
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122799693",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295757630#section/3#tile/10",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 58th Place",
+      "oneway": false,
+      "parent_id": "way/295757630",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 301,
+      "start_node_id": "123526136",
+      "surface": "asphalt",
+      "tile_index": 10,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1694.979,
+          "z": -104.196
+        },
+        {
+          "x": -1800.0,
+          "z": -105.168
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122799693",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295757630#section/3#tile/11",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 58th Place",
+      "oneway": false,
+      "parent_id": "way/295757630",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 301,
+      "start_node_id": "123526136",
+      "surface": "asphalt",
+      "tile_index": 11,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

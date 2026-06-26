@@ -14,7 +14,7 @@
     "buildings": 0,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 2
   },
   "id": "-9_-1",
   "junctions": [],
@@ -24,63 +24,19 @@
     {
       "centerline": [
         {
-          "x": -755.756,
-          "z": -95.624
-        },
-        {
-          "x": -948.111,
-          "z": -97.36
-        },
-        {
-          "x": -1134.872,
-          "z": -98.997
-        },
-        {
-          "x": -1212.007,
-          "z": -99.709
-        },
-        {
-          "x": -1332.736,
-          "z": -100.834
+          "x": -1440.0,
+          "z": -102.189
         },
         {
           "x": -1470.144,
           "z": -102.57
-        },
-        {
-          "x": -1694.979,
-          "z": -104.196
-        },
-        {
-          "x": -1858.507,
-          "z": -105.709
-        },
-        {
-          "x": -1948.344,
-          "z": -105.876
-        },
-        {
-          "x": -2018.317,
-          "z": -105.843
-        },
-        {
-          "x": -2030.592,
-          "z": -105.019
-        },
-        {
-          "x": -2067.19,
-          "z": -99.887
-        },
-        {
-          "x": -2083.481,
-          "z": -98.652
         }
       ],
       "crossing": null,
       "end_node_id": "122799693",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/295757630#section/3",
+      "id": "way/295757630#section/3#tile/8",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -90,9 +46,43 @@
       "parent_id": "way/295757630",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 3,
+      "section_index": 301,
       "start_node_id": "123526136",
       "surface": "asphalt",
+      "tile_index": 8,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1470.144,
+          "z": -102.57
+        },
+        {
+          "x": -1620.0,
+          "z": -103.654
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122799693",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295757630#section/3#tile/9",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 58th Place",
+      "oneway": false,
+      "parent_id": "way/295757630",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 301,
+      "start_node_id": "123526136",
+      "surface": "asphalt",
+      "tile_index": 9,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

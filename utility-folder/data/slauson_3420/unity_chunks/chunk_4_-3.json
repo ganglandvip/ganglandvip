@@ -4883,12 +4883,12 @@
     "buildings": 108,
     "junctions": 2,
     "pois": 0,
-    "streets": 3
+    "streets": 7
   },
   "id": "4_-3",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4900,7 +4900,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4918,19 +4918,19 @@
     {
       "centerline": [
         {
-          "x": 841.587,
-          "z": -384.822
+          "x": 841.685,
+          "z": -360.0
         },
         {
-          "x": 840.821,
-          "z": -586.423
+          "x": 841.587,
+          "z": -384.822
         }
       ],
       "crossing": null,
-      "end_node_id": "122994046",
+      "end_node_id": "123273762",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13392502#section/6",
+      "id": "way/13392502#section/5#tile/1",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4940,10 +4940,77 @@
       "parent_id": "way/13392502",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 6,
+      "section_index": 105,
+      "start_node_id": "123273759",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 841.587,
+          "z": -384.822
+        },
+        {
+          "x": 840.997,
+          "z": -540.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122994046",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13392502#section/6#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "5th Avenue",
+      "oneway": false,
+      "parent_id": "way/13392502",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 106,
       "start_node_id": "123273762",
       "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 900.0,
+          "z": -384.421
+        },
+        {
+          "x": 841.587,
+          "z": -384.822
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273762",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13392821#section/0#tile/8",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 60th Street",
+      "oneway": false,
+      "parent_id": "way/13392821",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 108,
+      "start_node_id": "122728901",
+      "surface": "asphalt",
+      "tile_index": 8,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -4962,7 +5029,7 @@
       "end_node_id": "123275844",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13392821#section/1",
+      "id": "way/13392821#section/1#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -4972,10 +5039,77 @@
       "parent_id": "way/13392821",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 109,
       "start_node_id": "123273762",
       "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 752.729,
+          "z": -385.445
+        },
+        {
+          "x": 720.0,
+          "z": -385.688
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123070072",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13392821#section/2#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 60th Street",
+      "oneway": false,
+      "parent_id": "way/13392821",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 110,
+      "start_node_id": "123275844",
+      "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 752.907,
+          "z": -360.0
+        },
+        {
+          "x": 752.729,
+          "z": -385.445
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123275844",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165884087#section/1#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "6th Avenue",
+      "oneway": false,
+      "parent_id": "way/165884087",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 253,
+      "start_node_id": "123723118",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -4986,15 +5120,15 @@
           "z": -385.445
         },
         {
-          "x": 751.381,
-          "z": -587.046
+          "x": 751.696,
+          "z": -540.0
         }
       ],
       "crossing": null,
       "end_node_id": "122994048",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/165884087#section/2",
+      "id": "way/165884087#section/2#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -5004,11 +5138,12 @@
       "parent_id": "way/165884087",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 2,
+      "section_index": 254,
       "start_node_id": "123275844",
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

@@ -11,7 +11,7 @@ namespace Gangland.CityStreaming
         const float TerrainVerticalScale = 0.08f;
         const float TerrainYBias = -5.8f;
         const float RoadY = 0.04f;
-        const float JunctionY = 0.052f;
+        const float JunctionY = RoadY;
         const float CurbY = 0.105f;
         const float SidewalkY = 0.075f;
         const float LaneMarkingY = 0.1f;
@@ -28,6 +28,27 @@ namespace Gangland.CityStreaming
         const float LaneDashGap = 6.4f;
         const float WalkwayWidth = 2.4f;
         const float CurbWidth = 0.28f;
+        const float GroundY = -0.02f;
+
+        public static Mesh BuildChunkGroundMesh(CityChunkBounds bounds)
+        {
+            var vertices = new List<Vector3>();
+            var triangles = new List<int>();
+
+            if (bounds == null)
+            {
+                return CreateMesh("UrbanGround", vertices, triangles);
+            }
+
+            float padding = 1f;
+            int start = vertices.Count;
+            vertices.Add(new Vector3(bounds.min_x - padding, GroundY, bounds.min_z - padding));
+            vertices.Add(new Vector3(bounds.max_x + padding, GroundY, bounds.min_z - padding));
+            vertices.Add(new Vector3(bounds.max_x + padding, GroundY, bounds.max_z + padding));
+            vertices.Add(new Vector3(bounds.min_x - padding, GroundY, bounds.max_z + padding));
+            AddUpwardQuad(vertices, triangles, start, start + 1, start + 2, start + 3);
+            return CreateMesh("UrbanGround", vertices, triangles);
+        }
 
         public static Mesh BuildTerrainMesh(CityTerrain terrain)
         {
@@ -134,22 +155,11 @@ namespace Gangland.CityStreaming
                     continue;
                 }
 
-                float roadHalfWidth = RoadWidth(street) * 0.5f;
                 List<Vector3> points = TrimmedPolyline(street, SidewalkY);
-                for (int i = 0; i < points.Count - 1; i++)
-                {
-                    Vector3 a = points[i];
-                    Vector3 b = points[i + 1];
-                    Vector3 direction = b - a;
-                    if (direction.sqrMagnitude < 0.001f)
-                    {
-                        continue;
-                    }
-
-                    Vector3 right = Vector3.Cross(Vector3.up, direction.normalized);
-                    AddStrip(vertices, triangles, a, b, right, roadHalfWidth + 0.25f, roadHalfWidth + SidewalkWidth);
-                    AddStrip(vertices, triangles, a, b, -right, roadHalfWidth + 0.25f, roadHalfWidth + SidewalkWidth);
-                }
+                float sidewalkWidth = Mathf.Max(0.25f, SidewalkWidth - 0.25f);
+                float centerOffset = RoadWidth(street) * 0.5f + 0.25f + sidewalkWidth * 0.5f;
+                AddOffsetPolylineRibbon(vertices, triangles, points, centerOffset, sidewalkWidth * 0.5f);
+                AddOffsetPolylineRibbon(vertices, triangles, points, -centerOffset, sidewalkWidth * 0.5f);
             }
 
             return CreateMesh("Sidewalks", vertices, triangles);
@@ -172,22 +182,10 @@ namespace Gangland.CityStreaming
                     continue;
                 }
 
-                float roadHalfWidth = RoadWidth(street) * 0.5f;
                 List<Vector3> points = TrimmedPolyline(street, CurbY);
-                for (int i = 0; i < points.Count - 1; i++)
-                {
-                    Vector3 a = points[i];
-                    Vector3 b = points[i + 1];
-                    Vector3 direction = b - a;
-                    if (direction.sqrMagnitude < 0.001f)
-                    {
-                        continue;
-                    }
-
-                    Vector3 right = Vector3.Cross(Vector3.up, direction.normalized);
-                    AddStrip(vertices, triangles, a, b, right, roadHalfWidth - CurbWidth, roadHalfWidth + CurbWidth);
-                    AddStrip(vertices, triangles, a, b, -right, roadHalfWidth - CurbWidth, roadHalfWidth + CurbWidth);
-                }
+                float curbCenterOffset = RoadWidth(street) * 0.5f;
+                AddOffsetPolylineRibbon(vertices, triangles, points, curbCenterOffset, CurbWidth);
+                AddOffsetPolylineRibbon(vertices, triangles, points, -curbCenterOffset, CurbWidth);
             }
 
             return CreateMesh("Curbs", vertices, triangles);
@@ -226,7 +224,7 @@ namespace Gangland.CityStreaming
                     vertices.Add(a + right);
                     vertices.Add(b + right);
                     vertices.Add(b - right);
-                    AddTwoSidedQuad(triangles, start, start + 1, start + 2, start + 3);
+                    AddUpwardQuad(vertices, triangles, start, start + 1, start + 2, start + 3);
                 }
             }
 
@@ -277,22 +275,10 @@ namespace Gangland.CityStreaming
                     continue;
                 }
 
-                float halfWidth = RoadWidth(street) * 0.5f;
                 List<Vector3> points = TrimmedPolyline(street, RoadEdgeMarkingY);
-                for (int i = 0; i < points.Count - 1; i++)
-                {
-                    Vector3 a = points[i];
-                    Vector3 b = points[i + 1];
-                    Vector3 direction = b - a;
-                    if (direction.sqrMagnitude < 0.001f)
-                    {
-                        continue;
-                    }
-
-                    Vector3 right = Vector3.Cross(Vector3.up, direction.normalized);
-                    AddStrip(vertices, triangles, a, b, right, halfWidth - EdgeLineWidth, halfWidth);
-                    AddStrip(vertices, triangles, a, b, -right, halfWidth - EdgeLineWidth, halfWidth);
-                }
+                float edgeCenterOffset = RoadWidth(street) * 0.5f - EdgeLineWidth * 0.5f;
+                AddOffsetPolylineRibbon(vertices, triangles, points, edgeCenterOffset, EdgeLineWidth * 0.5f);
+                AddOffsetPolylineRibbon(vertices, triangles, points, -edgeCenterOffset, EdgeLineWidth * 0.5f);
             }
 
             return CreateMesh("RoadEdgeMarkings", vertices, triangles);
@@ -479,8 +465,24 @@ namespace Gangland.CityStreaming
             for (int i = 0; i < points.Count - 1; i++)
             {
                 int index = start + i * 2;
-                AddTwoSidedQuad(triangles, index, index + 1, index + 3, index + 2);
+                AddUpwardQuad(vertices, triangles, index, index + 1, index + 3, index + 2);
             }
+        }
+
+        static void AddOffsetPolylineRibbon(List<Vector3> vertices, List<int> triangles, List<Vector3> points, float centerOffset, float halfWidth)
+        {
+            if (points == null || points.Count < 2 || halfWidth <= 0.001f)
+            {
+                return;
+            }
+
+            var offsetPoints = new List<Vector3>(points.Count);
+            for (int i = 0; i < points.Count; i++)
+            {
+                offsetPoints.Add(points[i] + PolylineOffset(points, i, centerOffset));
+            }
+
+            AddPolylineRibbon(vertices, triangles, offsetPoints, halfWidth);
         }
 
         static void AddJunctionConnectors(List<Vector3> vertices, List<int> triangles, CityJunction junction, CityStreet[] streets)
@@ -575,7 +577,7 @@ namespace Gangland.CityStreaming
                 int a = start;
                 int b = start + 1 + i;
                 int c = start + 1 + ((i + 1) % edgePoints.Count);
-                AddTwoSidedTriangle(triangles, a, b, c);
+                AddUpwardTriangle(vertices, triangles, a, b, c);
             }
         }
 
@@ -632,7 +634,7 @@ namespace Gangland.CityStreaming
             vertices.Add(a + side * outerOffset);
             vertices.Add(b + side * outerOffset);
             vertices.Add(b + side * innerOffset);
-            AddTwoSidedQuad(triangles, start, start + 1, start + 2, start + 3);
+            AddUpwardQuad(vertices, triangles, start, start + 1, start + 2, start + 3);
         }
 
         static void TrimSegment(ref Vector3 a, ref Vector3 b, float trimMeters)
@@ -671,7 +673,7 @@ namespace Gangland.CityStreaming
                 vertices.Add(start + right);
                 vertices.Add(end + right);
                 vertices.Add(end - right);
-                AddTwoSidedQuad(triangles, index, index + 1, index + 2, index + 3);
+                AddUpwardQuad(vertices, triangles, index, index + 1, index + 2, index + 3);
             }
         }
 
@@ -683,8 +685,15 @@ namespace Gangland.CityStreaming
                 return;
             }
 
-            AddStopBar(vertices, triangles, points[0], points[1], RoadWidth(street));
-            AddStopBar(vertices, triangles, points[points.Count - 1], points[points.Count - 2], RoadWidth(street));
+            if (street.trim_start_m > 0.01f)
+            {
+                AddStopBar(vertices, triangles, points[0], points[1], RoadWidth(street));
+            }
+
+            if (street.trim_end_m > 0.01f)
+            {
+                AddStopBar(vertices, triangles, points[points.Count - 1], points[points.Count - 2], RoadWidth(street));
+            }
         }
 
         static void AddStopBar(List<Vector3> vertices, List<int> triangles, Vector3 junctionEnd, Vector3 interiorPoint, float roadWidth)
@@ -750,7 +759,7 @@ namespace Gangland.CityStreaming
 
             for (int i = 1; i < count - 1; i++)
             {
-                AddTwoSidedTriangle(triangles, start, start + i, start + i + 1);
+                AddUpwardTriangle(vertices, triangles, start, start + i, start + i + 1);
             }
         }
 
@@ -1020,6 +1029,29 @@ namespace Gangland.CityStreaming
                 }
 
                 return Mathf.Abs(hash);
+            }
+        }
+
+        static void AddUpwardQuad(List<Vector3> vertices, List<int> triangles, int a, int b, int c, int d)
+        {
+            AddUpwardTriangle(vertices, triangles, a, b, c);
+            AddUpwardTriangle(vertices, triangles, a, c, d);
+        }
+
+        static void AddUpwardTriangle(List<Vector3> vertices, List<int> triangles, int a, int b, int c)
+        {
+            Vector3 normal = Vector3.Cross(vertices[b] - vertices[a], vertices[c] - vertices[a]);
+            if (normal.y >= 0f)
+            {
+                triangles.Add(a);
+                triangles.Add(b);
+                triangles.Add(c);
+            }
+            else
+            {
+                triangles.Add(a);
+                triangles.Add(c);
+                triangles.Add(b);
             }
         }
 

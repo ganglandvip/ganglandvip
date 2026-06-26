@@ -1183,12 +1183,12 @@
     "buildings": 21,
     "junctions": 1,
     "pois": 0,
-    "streets": 2
+    "streets": 7
   },
   "id": "1_4",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential",
         "service"
@@ -1207,31 +1207,19 @@
     {
       "centerline": [
         {
-          "x": 211.054,
-          "z": 821.386
+          "x": 211.654,
+          "z": 900.0
         },
         {
-          "x": 210.74,
-          "z": 781.4
-        },
-        {
-          "x": 211.064,
-          "z": 686.978
-        },
-        {
-          "x": 211.064,
-          "z": 683.894
-        },
-        {
-          "x": 211.285,
-          "z": 674.109
+          "x": 211.534,
+          "z": 882.645
         }
       ],
       "crossing": null,
-      "end_node_id": "123335064",
+      "end_node_id": "13253934700",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/165665960#section/1",
+      "id": "way/165665960#section/0#tile/15",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -1241,9 +1229,175 @@
       "parent_id": "way/165665960",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 241,
+      "start_node_id": "123217358",
+      "surface": "asphalt",
+      "tile_index": 15,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 211.534,
+          "z": 882.645
+        },
+        {
+          "x": 211.054,
+          "z": 821.386
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13253934700",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665960#section/0#tile/16",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "11th Avenue",
+      "oneway": false,
+      "parent_id": "way/165665960",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 241,
+      "start_node_id": "123217358",
+      "surface": "asphalt",
+      "tile_index": 16,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 211.054,
+          "z": 821.386
+        },
+        {
+          "x": 210.74,
+          "z": 781.4
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123335064",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665960#section/1#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "11th Avenue",
+      "oneway": false,
+      "parent_id": "way/165665960",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 242,
       "start_node_id": "13253934700",
       "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 210.74,
+          "z": 781.4
+        },
+        {
+          "x": 210.951,
+          "z": 720.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123335064",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665960#section/1#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "11th Avenue",
+      "oneway": false,
+      "parent_id": "way/165665960",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 242,
+      "start_node_id": "13253934700",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 315.022,
+          "z": 808.551
+        },
+        {
+          "x": 315.428,
+          "z": 766.327
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6774962997",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/722264745#section/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/722264745",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 601,
+      "start_node_id": "6792711776",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 315.428,
+          "z": 766.327
+        },
+        {
+          "x": 360.0,
+          "z": 765.848
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6774962997",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/722264745#section/0#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/722264745",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 601,
+      "start_node_id": "6792711776",
+      "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -1263,7 +1417,7 @@
       "end_node_id": "13253941601",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/1444478990#section/0",
+      "id": "way/1444478990#section/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -1273,11 +1427,12 @@
       "parent_id": "way/1444478990",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
+      "section_index": 1345,
       "start_node_id": "13253934700",
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

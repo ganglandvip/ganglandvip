@@ -21,7 +21,7 @@ DEFAULT_ADDRESS = "3420 W. Slauson Avenue, Los Angeles, CA 90043"
 DEFAULT_RADIUS_METERS = 900
 DEFAULT_CHUNK_SIZE_METERS = 180
 DEFAULT_TERRAIN_SAMPLE_SPACING_METERS = 90
-ROAD_TILE_OVERLAP_METERS = 5.0
+ROAD_TILE_OVERLAP_METERS = 0.75
 MIN_ROAD_TILE_LENGTH_METERS = 2.5
 USER_AGENT = "gangland-osm-data-prep/0.1"
 LANE_WIDTH_METERS = 3.4
@@ -474,11 +474,140 @@ def junction_radius(width_m: float) -> float:
     return max(3.2, width_m * 0.38 + 1.1)
 
 
+def unit_direction(a: dict[str, float], b: dict[str, float]) -> tuple[float, float] | None:
+    dx = b["x"] - a["x"]
+    dz = b["z"] - a["z"]
+    length = math.hypot(dx, dz)
+    if length <= 0.001:
+        return None
+    return dx / length, dz / length
+
+
+def add_direction_cluster(clusters: list[tuple[float, float]], direction: tuple[float, float], *, max_angle_degrees: float = 18.0) -> None:
+    threshold = math.cos(math.radians(max_angle_degrees))
+    for existing in clusters:
+        if existing[0] * direction[0] + existing[1] * direction[1] >= threshold:
+            return
+    clusters.append(direction)
+
+
+def direction_clusters(directions: list[tuple[float, float]]) -> list[tuple[float, float]]:
+    clusters: list[tuple[float, float]] = []
+    for direction in directions:
+        add_direction_cluster(clusters, direction)
+    return clusters
+
+
+def is_straight_continuation(clusters: list[tuple[float, float]]) -> bool:
+    if len(clusters) != 2:
+        return False
+    return clusters[0][0] * clusters[1][0] + clusters[0][1] * clusters[1][1] <= -0.92
+
+
+def oriented_section_points(section: dict[str, Any], from_node_id: str) -> tuple[list[dict[str, float]], str] | None:
+    points = [dict(point) for point in section.get("centerline") or []]
+    if len(points) < 2:
+        return None
+    if section.get("start_node_id") == from_node_id:
+        return points, section.get("end_node_id")
+    if section.get("end_node_id") == from_node_id:
+        points.reverse()
+        return points, section.get("start_node_id")
+    return None
+
+
+def merge_graph_sections(
+    sections: list[dict[str, Any]],
+    junction_ids: set[str],
+    node_max_width: dict[str, float],
+) -> list[dict[str, Any]]:
+    endpoint_sections: dict[str, list[int]] = {}
+    for index, section in enumerate(sections):
+        endpoint_sections.setdefault(section.get("start_node_id"), []).append(index)
+        endpoint_sections.setdefault(section.get("end_node_id"), []).append(index)
+
+    def is_graph_boundary(node_id: str) -> bool:
+        if node_id in junction_ids:
+            return True
+        return len(endpoint_sections.get(node_id, [])) != 2
+
+    merged: list[dict[str, Any]] = []
+    visited: set[int] = set()
+
+    def walk(start_index: int, start_node_id: str) -> dict[str, Any]:
+        first = deepcopy(sections[start_index])
+        current_index = start_index
+        current_node_id = start_node_id
+        merged_points: list[dict[str, float]] = []
+        merged_ids: list[str] = []
+        max_width = 0.0
+        end_node_id = start_node_id
+
+        while True:
+            visited.add(current_index)
+            section = sections[current_index]
+            oriented = oriented_section_points(section, current_node_id)
+            if oriented is None:
+                break
+
+            points, next_node_id = oriented
+            if not merged_points:
+                merged_points.extend(points)
+            else:
+                merged_points.extend(points[1:])
+            merged_ids.append(str(section.get("id")))
+            max_width = max(max_width, float(section.get("road_width_m") or 0))
+            end_node_id = next_node_id
+
+            if is_graph_boundary(next_node_id):
+                break
+
+            candidates = [
+                candidate
+                for candidate in endpoint_sections.get(next_node_id, [])
+                if candidate != current_index and candidate not in visited
+            ]
+            if len(candidates) != 1:
+                break
+
+            current_index = candidates[0]
+            current_node_id = next_node_id
+
+        first["id"] = "#graph/".join(merged_ids) if len(merged_ids) > 1 else merged_ids[0]
+        first["centerline"] = merged_points
+        first["start_node_id"] = start_node_id
+        first["end_node_id"] = end_node_id
+        if max_width > 0:
+            first["road_width_m"] = round(max_width, 3)
+        first["trim_start_m"] = round(junction_radius(node_max_width.get(start_node_id, max_width)), 3) if start_node_id in junction_ids else 0
+        first["trim_end_m"] = round(junction_radius(node_max_width.get(end_node_id, max_width)), 3) if end_node_id in junction_ids else 0
+        return first
+
+    for index, section in enumerate(sections):
+        if index in visited:
+            continue
+        start_node_id = section.get("start_node_id")
+        end_node_id = section.get("end_node_id")
+        if is_graph_boundary(start_node_id):
+            merged.append(walk(index, start_node_id))
+        elif is_graph_boundary(end_node_id):
+            merged.append(walk(index, end_node_id))
+
+    for index, section in enumerate(sections):
+        if index not in visited:
+            merged.append(walk(index, section.get("start_node_id")))
+
+    for index, section in enumerate(merged):
+        section["section_index"] = index
+    return merged
+
+
 def build_street_topology(prepared: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     node_usage: dict[str, int] = {}
     node_positions: dict[str, dict[str, float]] = {}
     node_max_width: dict[str, float] = {}
     node_highways: dict[str, set[str]] = {}
+    node_directions: dict[str, list[tuple[float, float]]] = {}
 
     for street in prepared.get("streets", []):
         if not is_drivable_street(street):
@@ -495,7 +624,30 @@ def build_street_topology(prepared: dict[str, Any]) -> tuple[list[dict[str, Any]
             node_max_width[node_id] = max(node_max_width.get(node_id, 0), width)
             node_highways.setdefault(node_id, set()).add(street.get("highway") or "")
 
-    junction_ids: set[str] = {node_id for node_id, count in node_usage.items() if count > 1}
+            directions = node_directions.setdefault(node_id, [])
+            if index > 0:
+                direction = unit_direction(centerline[index], centerline[index - 1])
+                if direction:
+                    directions.append(direction)
+            if index < len(centerline) - 1:
+                direction = unit_direction(centerline[index], centerline[index + 1])
+                if direction:
+                    directions.append(direction)
+
+    node_direction_clusters = {
+        node_id: direction_clusters(directions)
+        for node_id, directions in node_directions.items()
+    }
+    junction_ids: set[str] = set()
+    for node_id, count in node_usage.items():
+        if count <= 1:
+            continue
+        clusters = node_direction_clusters.get(node_id, [])
+        if len(clusters) >= 3:
+            junction_ids.add(node_id)
+        elif len(clusters) == 2 and not is_straight_continuation(clusters):
+            junction_ids.add(node_id)
+
     sections: list[dict[str, Any]] = []
 
     for street in prepared.get("streets", []):
@@ -557,6 +709,8 @@ def build_street_topology(prepared: dict[str, Any]) -> tuple[list[dict[str, Any]
             sections.append(section)
             section_index += 1
 
+    sections = merge_graph_sections(sections, junction_ids, node_max_width)
+
     junctions = []
     for node_id in sorted(junction_ids):
         position = node_positions.get(node_id)
@@ -567,7 +721,7 @@ def build_street_topology(prepared: dict[str, Any]) -> tuple[list[dict[str, Any]
                 "id": node_id,
                 "position": position,
                 "radius_m": round(junction_radius(node_max_width.get(node_id, LANE_WIDTH_METERS)), 3),
-                "connected_road_count": node_usage.get(node_id, 0),
+                "connected_road_count": len(node_direction_clusters.get(node_id, [])),
                 "highways": sorted(value for value in node_highways.get(node_id, set()) if value),
             }
         )
@@ -597,8 +751,8 @@ def tiled_street_sections(sections: list[dict[str, Any]], chunk_size_m: int) -> 
                 tile = deepcopy(section)
                 tile["id"] = f"{section.get('id')}#tile/{tile_index}"
                 tile["centerline"] = [segment_start, segment_end]
-                tile["trim_start_m"] = 0
-                tile["trim_end_m"] = 0
+                tile["trim_start_m"] = section.get("trim_start_m", 0) if index == 0 and point_distance(segment_start, points[0]) < 0.01 else 0
+                tile["trim_end_m"] = section.get("trim_end_m", 0) if index == len(points) - 2 and point_distance(segment_end, points[-1]) < 0.01 else 0
                 tile["tile_index"] = tile_index
                 tiled.append(tile)
                 tile_index += 1
@@ -839,7 +993,7 @@ def build_chunked_map(
     for collection_name in ("streets", "junctions", "buildings", "areas", "pois"):
         source_features: list[dict[str, Any]] = []
         if collection_name == "streets":
-            source_features = street_sections
+            source_features = tiled_streets
         elif collection_name == "junctions":
             source_features = junctions
         else:
@@ -923,8 +1077,8 @@ def unity_chunk_feature(feature: dict[str, Any], collection_name: str) -> dict[s
         unity_feature["lane_width_m"] = unity_feature.get("lane_width_m") or LANE_WIDTH_METERS
         unity_feature["estimated_road_width_m"] = unity_feature.get("estimated_road_width_m") or LANE_WIDTH_METERS
         unity_feature["road_width_m"] = unity_feature.get("road_width_m") or road_width_m(unity_feature)
-        unity_feature["trim_start_m"] = 0
-        unity_feature["trim_end_m"] = 0
+        unity_feature["trim_start_m"] = unity_feature.get("trim_start_m") or 0
+        unity_feature["trim_end_m"] = unity_feature.get("trim_end_m") or 0
 
     unity_feature.pop("osm_tags", None)
     unity_feature.pop("node_ids", None)

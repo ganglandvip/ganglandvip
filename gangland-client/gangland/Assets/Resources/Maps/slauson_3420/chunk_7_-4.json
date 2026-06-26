@@ -1,0 +1,125 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 1440,
+    "max_z": -540,
+    "min_x": 1260,
+    "min_z": -720
+  },
+  "buildings": [],
+  "coord_x": 7,
+  "coord_z": -4,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 3
+  },
+  "id": "7_-4",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 1291.164,
+          "z": -620.075
+        },
+        {
+          "x": 1286.134,
+          "z": -621.388
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1286.134,
+          "z": -621.388
+        },
+        {
+          "x": 1283.817,
+          "z": -622.368
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1283.817,
+          "z": -622.368
+        },
+        {
+          "x": 1260.0,
+          "z": -635.418
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/2",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

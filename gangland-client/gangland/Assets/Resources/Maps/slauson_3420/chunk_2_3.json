@@ -3335,12 +3335,12 @@
     "buildings": 63,
     "junctions": 1,
     "pois": 0,
-    "streets": 3
+    "streets": 5
   },
   "id": "2_3",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential"
       ],
@@ -3362,15 +3362,15 @@
           "z": 675.167
         },
         {
-          "x": 436.203,
-          "z": 471.106
+          "x": 436.552,
+          "z": 540.0
         }
       ],
       "crossing": null,
       "end_node_id": "122742776",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13369424#section/0",
+      "id": "way/13369424#section/0#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3380,9 +3380,43 @@
       "parent_id": "way/13369424",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 92,
       "start_node_id": "123094486",
       "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 540.0,
+          "z": 677.919
+        },
+        {
+          "x": 532.722,
+          "z": 677.861
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123094486",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/817114847#section/4#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 52nd Street",
+      "oneway": false,
+      "parent_id": "way/817114847",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 677,
+      "start_node_id": "123712144",
+      "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3390,13 +3424,38 @@
     {
       "centerline": [
         {
-          "x": 542.496,
-          "z": 677.939
-        },
-        {
           "x": 532.722,
           "z": 677.861
         },
+        {
+          "x": 529.048,
+          "z": 677.861
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123094486",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/817114847#section/4#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 52nd Street",
+      "oneway": false,
+      "parent_id": "way/817114847",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 677,
+      "start_node_id": "123712144",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": 529.048,
           "z": 677.861
@@ -3410,7 +3469,7 @@
       "end_node_id": "123094486",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/817114847#section/4",
+      "id": "way/817114847#section/4#tile/2",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3420,10 +3479,11 @@
       "parent_id": "way/817114847",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 4,
+      "section_index": 677,
       "start_node_id": "123712144",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 2,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -3434,15 +3494,15 @@
           "z": 675.167
         },
         {
-          "x": 324.122,
-          "z": 674.844
+          "x": 360.0,
+          "z": 674.946
         }
       ],
       "crossing": null,
       "end_node_id": "122808497",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/817114847#section/5",
+      "id": "way/817114847#section/5#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3452,11 +3512,12 @@
       "parent_id": "way/817114847",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 5,
+      "section_index": 678,
       "start_node_id": "123094486",
       "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

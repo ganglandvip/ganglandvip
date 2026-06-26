@@ -1,0 +1,92 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 0,
+    "max_z": -1260,
+    "min_x": -180,
+    "min_z": -1440
+  },
+  "buildings": [],
+  "coord_x": -1,
+  "coord_z": -8,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 2
+  },
+  "id": "-1_-8",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -51.854,
+          "z": -1290.444
+        },
+        {
+          "x": -61.721,
+          "z": -1274.213
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617890",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/651573513#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/651573513",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 499,
+      "start_node_id": "11274476844",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -61.721,
+          "z": -1274.213
+        },
+        {
+          "x": -61.791,
+          "z": -1260.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617890",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/651573513#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/651573513",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 499,
+      "start_node_id": "11274476844",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

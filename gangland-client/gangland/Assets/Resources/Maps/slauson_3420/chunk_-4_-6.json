@@ -14,7 +14,7 @@
     "buildings": 0,
     "junctions": 0,
     "pois": 0,
-    "streets": 2
+    "streets": 8
   },
   "id": "-4_-6",
   "junctions": [],
@@ -24,39 +24,52 @@
     {
       "centerline": [
         {
+          "x": -720.0,
+          "z": -924.223
+        },
+        {
+          "x": -674.996,
+          "z": -900.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123073886",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13365731#section/0#tile/14",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Brett Street",
+      "oneway": false,
+      "parent_id": "way/13365731",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 89,
+      "start_node_id": "123073883",
+      "surface": null,
+      "tile_index": 14,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
           "x": -573.454,
           "z": -1077.9
         },
         {
           "x": -578.438,
           "z": -1074.661
-        },
-        {
-          "x": -587.456,
-          "z": -1053.109
-        },
-        {
-          "x": -589.662,
-          "z": -1047.855
-        },
-        {
-          "x": -615.958,
-          "z": -985.026
-        },
-        {
-          "x": -618.921,
-          "z": -974.172
-        },
-        {
-          "x": -633.781,
-          "z": -899.154
         }
       ],
       "crossing": null,
       "end_node_id": "122627847",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/167009411#section/0",
+      "id": "way/167009411#section/0#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -66,9 +79,10 @@
       "parent_id": "way/167009411",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 257,
       "start_node_id": "122627843",
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -76,27 +90,184 @@
     {
       "centerline": [
         {
-          "x": -511.815,
-          "z": -907.046
+          "x": -578.438,
+          "z": -1074.661
         },
         {
-          "x": -526.316,
-          "z": -903.317
+          "x": -587.456,
+          "z": -1053.109
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122627847",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/167009411#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "North Long Street",
+      "oneway": false,
+      "parent_id": "way/167009411",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 257,
+      "start_node_id": "122627843",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -587.456,
+          "z": -1053.109
         },
         {
-          "x": -551.357,
-          "z": -898.686
+          "x": -589.662,
+          "z": -1047.855
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122627847",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/167009411#section/0#tile/2",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "North Long Street",
+      "oneway": false,
+      "parent_id": "way/167009411",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 257,
+      "start_node_id": "122627843",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -589.662,
+          "z": -1047.855
         },
         {
-          "x": -633.781,
-          "z": -899.154
+          "x": -615.958,
+          "z": -985.026
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122627847",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/167009411#section/0#tile/3",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "North Long Street",
+      "oneway": false,
+      "parent_id": "way/167009411",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 257,
+      "start_node_id": "122627843",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -615.958,
+          "z": -985.026
+        },
+        {
+          "x": -618.921,
+          "z": -974.172
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122627847",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/167009411#section/0#tile/4",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "North Long Street",
+      "oneway": false,
+      "parent_id": "way/167009411",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 257,
+      "start_node_id": "122627843",
+      "surface": null,
+      "tile_index": 4,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -618.921,
+          "z": -974.172
+        },
+        {
+          "x": -633.613,
+          "z": -900.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122627847",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/167009411#section/0#tile/5",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "North Long Street",
+      "oneway": false,
+      "parent_id": "way/167009411",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 257,
+      "start_node_id": "122627843",
+      "surface": null,
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -540.0,
+          "z": -900.786
+        },
+        {
+          "x": -544.252,
+          "z": -900.0
         }
       ],
       "crossing": null,
       "end_node_id": "122627847",
       "estimated_road_width_m": 6.8,
       "highway": "tertiary",
-      "id": "way/607179440#section/0",
+      "id": "way/607179440#section/0#tile/2",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -106,9 +277,10 @@
       "parent_id": "way/607179440",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 495,
       "start_node_id": "1784065994",
       "surface": "asphalt",
+      "tile_index": 2,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

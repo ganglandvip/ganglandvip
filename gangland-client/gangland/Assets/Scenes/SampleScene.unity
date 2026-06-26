@@ -489,8 +489,8 @@ MonoBehaviour:
   resourcesMapRoot: Maps/slauson_3420
   streamingTarget: {fileID: 330585546}
   loadOnStart: 1
-  loadRadiusMeters: 2200
-  unloadRadiusMeters: 2400
+  loadRadiusMeters: 420
+  unloadRadiusMeters: 560
   updateIntervalSeconds: 0.35
   renderTerrain: 0
   terrainMaterial: {fileID: 0}
@@ -504,13 +504,15 @@ MonoBehaviour:
   windowMaterial: {fileID: 0}
   areaMaterial: {fileID: 0}
   poiMaterial: {fileID: 0}
-  spawnPois: 0
+  spawnPois: 1
   configureEnvironment: 1
+  renderProceduralBuildings: 0
+  useAssetPackMaterials: 0
   useAssetPackProps: 1
-  useAssetPackBuildings: 0
+  useAssetPackBuildings: 1
   spawnAssetPackPreview: 0
   maxPropsPerChunk: 18
-  maxAssetBuildingsPerChunk: 3
+  maxAssetBuildingsPerChunk: 96
   streetLampPrefab: {fileID: 0}
   trafficSignalPrefab: {fileID: 0}
   busStopPrefab: {fileID: 0}

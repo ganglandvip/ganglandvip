@@ -4139,12 +4139,12 @@
     "buildings": 80,
     "junctions": 1,
     "pois": 0,
-    "streets": 2
+    "streets": 5
   },
   "id": "-3_1",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4162,8 +4162,8 @@
     {
       "centerline": [
         {
-          "x": -359.566,
-          "z": 212.844
+          "x": -461.545,
+          "z": 360.0
         },
         {
           "x": -461.669,
@@ -4174,20 +4174,21 @@
       "end_node_id": "122572255",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1111523013#section/7",
+      "id": "way/165665958#section/2#tile/2",
       "lane_count": 2,
-      "lane_source": "osm",
+      "lane_source": "inferred",
       "lane_width_m": 3.4,
       "maxspeed": null,
-      "name": "West 57th Street",
+      "name": "Hillcrest Drive",
       "oneway": false,
-      "parent_id": "way/1111523013",
+      "parent_id": "way/165665958",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 7,
-      "start_node_id": "122572252",
+      "section_index": 239,
+      "start_node_id": "122742787",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 2,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -4198,15 +4199,81 @@
           "z": 211.497
         },
         {
-          "x": -564.639,
-          "z": 210.629
+          "x": -461.724,
+          "z": 199.719
         }
       ],
       "crossing": null,
-      "end_node_id": "122572261",
+      "end_node_id": "123633215",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1111523013#section/8",
+      "id": "way/165665958#section/3#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Hillcrest Drive",
+      "oneway": false,
+      "parent_id": "way/165665958",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 240,
+      "start_node_id": "122572255",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -461.724,
+          "z": 199.719
+        },
+        {
+          "x": -461.815,
+          "z": 180.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123633215",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665958#section/3#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Hillcrest Drive",
+      "oneway": false,
+      "parent_id": "way/165665958",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 240,
+      "start_node_id": "122572255",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -360.0,
+          "z": 212.838
+        },
+        {
+          "x": -461.669,
+          "z": 211.497
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572255",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1111523013#section/7#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -4216,11 +4283,45 @@
       "parent_id": "way/1111523013",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 8,
+      "section_index": 830,
+      "start_node_id": "122572252",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -461.669,
+          "z": 211.497
+        },
+        {
+          "x": -540.0,
+          "z": 210.837
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572261",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1111523013#section/8#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1111523013",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 831,
       "start_node_id": "122572255",
       "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

@@ -154,13 +154,113 @@
     "buildings": 3,
     "junctions": 0,
     "pois": 0,
-    "streets": 0
+    "streets": 3
   },
   "id": "-3_-6",
   "junctions": [],
   "pois": [],
   "schema": "gangland.unity_city_chunk.v1",
-  "streets": [],
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -384.096,
+          "z": -900.0
+        },
+        {
+          "x": -384.321,
+          "z": -927.351
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "705825484",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/56242254#section/10#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": "15 mph",
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/56242254",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 199,
+      "start_node_id": "705825483",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -511.815,
+          "z": -907.046
+        },
+        {
+          "x": -526.316,
+          "z": -903.317
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122627847",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/607179440#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Fairview Boulevard",
+      "oneway": false,
+      "parent_id": "way/607179440",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 495,
+      "start_node_id": "1784065994",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -526.316,
+          "z": -903.317
+        },
+        {
+          "x": -540.0,
+          "z": -900.786
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122627847",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/607179440#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Fairview Boulevard",
+      "oneway": false,
+      "parent_id": "way/607179440",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 495,
+      "start_node_id": "1784065994",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
   "terrain": {
     "columns": 2,
     "origin_elevation_m": 58.0,

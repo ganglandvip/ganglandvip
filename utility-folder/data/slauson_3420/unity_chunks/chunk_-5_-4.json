@@ -5055,7 +5055,7 @@
     "buildings": 112,
     "junctions": 0,
     "pois": 0,
-    "streets": 2
+    "streets": 4
   },
   "id": "-5_-4",
   "junctions": [],
@@ -5065,19 +5065,19 @@
     {
       "centerline": [
         {
-          "x": -732.755,
-          "z": -397.012
+          "x": -733.257,
+          "z": -540.0
         },
         {
-          "x": -734.167,
-          "z": -799.233
+          "x": -733.889,
+          "z": -720.0
         }
       ],
       "crossing": null,
       "end_node_id": "123272408",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13427782#section/0",
+      "id": "way/13427782#section/0#tile/1",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -5087,9 +5087,77 @@
       "parent_id": "way/13427782",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 159,
       "start_node_id": "123275861",
       "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -830.955,
+          "z": -540.0
+        },
+        {
+          "x": -831.575,
+          "z": -720.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123272411",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13431472#section/0#tile/2",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Harcourt Avenue",
+      "oneway": false,
+      "parent_id": "way/13431472",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 166,
+      "start_node_id": "123275865",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -838.622,
+          "z": -540.0
+        },
+        {
+          "x": -838.79,
+          "z": -608.531
+        }
+      ],
+      "crossing": null,
+      "end_node_id": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/771821247#segment/0#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/771821247",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "section_index": 664,
+      "segment_index": 0,
+      "start_node_id": null,
+      "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -5101,14 +5169,15 @@
           "z": -608.531
         },
         {
-          "x": -838.975,
-          "z": -794.469
+          "x": -838.901,
+          "z": -720.0
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/771821247#segment/1",
+      "id": "way/771821247#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -5118,8 +5187,11 @@
       "parent_id": "way/771821247",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 665,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

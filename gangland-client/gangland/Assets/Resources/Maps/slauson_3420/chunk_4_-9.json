@@ -1,0 +1,125 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 900,
+    "max_z": -1440,
+    "min_x": 720,
+    "min_z": -1620
+  },
+  "buildings": [],
+  "coord_x": 4,
+  "coord_z": -9,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 3
+  },
+  "id": "4_-9",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 837.106,
+          "z": -1440.0
+        },
+        {
+          "x": 836.806,
+          "z": -1544.743
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273704",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13392493#section/0#tile/7",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "5th Avenue",
+      "oneway": false,
+      "parent_id": "way/13392493",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 99,
+      "start_node_id": "122991563",
+      "surface": null,
+      "tile_index": 7,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 836.806,
+          "z": -1544.743
+        },
+        {
+          "x": 836.741,
+          "z": -1580.733
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273704",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13392493#section/0#tile/8",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "5th Avenue",
+      "oneway": false,
+      "parent_id": "way/13392493",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 99,
+      "start_node_id": "122991563",
+      "surface": null,
+      "tile_index": 8,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 836.741,
+          "z": -1580.733
+        },
+        {
+          "x": 836.658,
+          "z": -1596.752
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273704",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13392493#section/0#tile/9",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "5th Avenue",
+      "oneway": false,
+      "parent_id": "way/13392493",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 99,
+      "start_node_id": "122991563",
+      "surface": null,
+      "tile_index": 9,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

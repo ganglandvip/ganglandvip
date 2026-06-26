@@ -566,7 +566,7 @@
     "buildings": 4,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 4
   },
   "id": "2_4",
   "junctions": [],
@@ -576,55 +576,19 @@
     {
       "centerline": [
         {
-          "x": 315.022,
-          "z": 808.551
-        },
-        {
-          "x": 315.428,
-          "z": 766.327
+          "x": 360.0,
+          "z": 765.848
         },
         {
           "x": 415.888,
           "z": 765.247
-        },
-        {
-          "x": 415.851,
-          "z": 797.33
-        },
-        {
-          "x": 415.758,
-          "z": 818.87
-        },
-        {
-          "x": 414.494,
-          "z": 898.152
-        },
-        {
-          "x": 413.922,
-          "z": 964.198
-        },
-        {
-          "x": 413.903,
-          "z": 970.098
-        },
-        {
-          "x": 413.82,
-          "z": 1009.127
-        },
-        {
-          "x": 413.802,
-          "z": 1019.469
-        },
-        {
-          "x": 413.774,
-          "z": 1029.821
         }
       ],
       "crossing": null,
       "end_node_id": "6774962997",
       "estimated_road_width_m": 3.4,
       "highway": "service",
-      "id": "way/722264745#section/0",
+      "id": "way/722264745#section/0#tile/2",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -634,9 +598,109 @@
       "parent_id": "way/722264745",
       "render_kind": "road",
       "road_width_m": 3.4,
-      "section_index": 0,
+      "section_index": 601,
       "start_node_id": "6792711776",
       "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 415.888,
+          "z": 765.247
+        },
+        {
+          "x": 415.851,
+          "z": 797.33
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6774962997",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/722264745#section/0#tile/3",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/722264745",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 601,
+      "start_node_id": "6792711776",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 415.851,
+          "z": 797.33
+        },
+        {
+          "x": 415.758,
+          "z": 818.87
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6774962997",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/722264745#section/0#tile/4",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/722264745",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 601,
+      "start_node_id": "6792711776",
+      "surface": null,
+      "tile_index": 4,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 415.758,
+          "z": 818.87
+        },
+        {
+          "x": 414.494,
+          "z": 898.152
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6774962997",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/722264745#section/0#tile/5",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/722264745",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 601,
+      "start_node_id": "6792711776",
+      "surface": null,
+      "tile_index": 5,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

@@ -14,7 +14,7 @@
     "buildings": 0,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 8
   },
   "id": "-1_-7",
   "junctions": [],
@@ -24,79 +24,19 @@
     {
       "centerline": [
         {
-          "x": -51.854,
-          "z": -1290.444
-        },
-        {
-          "x": -61.721,
-          "z": -1274.213
+          "x": -61.791,
+          "z": -1260.0
         },
         {
           "x": -62.035,
           "z": -1210.182
-        },
-        {
-          "x": -62.044,
-          "z": -1207.978
-        },
-        {
-          "x": -62.081,
-          "z": -1200.853
-        },
-        {
-          "x": -62.091,
-          "z": -1194.842
-        },
-        {
-          "x": -62.091,
-          "z": -1191.625
-        },
-        {
-          "x": -62.146,
-          "z": -1145.928
-        },
-        {
-          "x": -62.109,
-          "z": -1135.097
-        },
-        {
-          "x": -62.174,
-          "z": -1126.503
-        },
-        {
-          "x": -62.201,
-          "z": -1065.177
-        },
-        {
-          "x": -62.321,
-          "z": -1005.309
-        },
-        {
-          "x": -62.349,
-          "z": -977.679
-        },
-        {
-          "x": -62.294,
-          "z": -973.126
-        },
-        {
-          "x": -62.303,
-          "z": -970.276
-        },
-        {
-          "x": -62.414,
-          "z": -925.347
-        },
-        {
-          "x": -62.469,
-          "z": -877.981
         }
       ],
       "crossing": null,
       "end_node_id": "6755617890",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/651573513#section/0",
+      "id": "way/651573513#section/0#tile/2",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -106,9 +46,241 @@
       "parent_id": "way/651573513",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 499,
       "start_node_id": "11274476844",
       "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -62.044,
+          "z": -1207.978
+        },
+        {
+          "x": -62.081,
+          "z": -1200.853
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617890",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/651573513#section/0#tile/3",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/651573513",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 499,
+      "start_node_id": "11274476844",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -62.081,
+          "z": -1200.853
+        },
+        {
+          "x": -62.091,
+          "z": -1194.842
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617890",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/651573513#section/0#tile/4",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/651573513",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 499,
+      "start_node_id": "11274476844",
+      "surface": null,
+      "tile_index": 4,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -62.091,
+          "z": -1194.842
+        },
+        {
+          "x": -62.091,
+          "z": -1191.625
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617890",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/651573513#section/0#tile/5",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/651573513",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 499,
+      "start_node_id": "11274476844",
+      "surface": null,
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -62.091,
+          "z": -1191.625
+        },
+        {
+          "x": -62.146,
+          "z": -1145.928
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617890",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/651573513#section/0#tile/6",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/651573513",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 499,
+      "start_node_id": "11274476844",
+      "surface": null,
+      "tile_index": 6,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -62.146,
+          "z": -1145.928
+        },
+        {
+          "x": -62.109,
+          "z": -1135.097
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617890",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/651573513#section/0#tile/7",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/651573513",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 499,
+      "start_node_id": "11274476844",
+      "surface": null,
+      "tile_index": 7,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -62.109,
+          "z": -1135.097
+        },
+        {
+          "x": -62.174,
+          "z": -1126.503
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617890",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/651573513#section/0#tile/8",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/651573513",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 499,
+      "start_node_id": "11274476844",
+      "surface": null,
+      "tile_index": 8,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -62.174,
+          "z": -1126.503
+        },
+        {
+          "x": -62.194,
+          "z": -1080.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "6755617890",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/651573513#section/0#tile/9",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/651573513",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 499,
+      "start_node_id": "11274476844",
+      "surface": null,
+      "tile_index": 9,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

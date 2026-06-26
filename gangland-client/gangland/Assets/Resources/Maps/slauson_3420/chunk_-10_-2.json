@@ -14,7 +14,7 @@
     "buildings": 0,
     "junctions": 0,
     "pois": 0,
-    "streets": 2
+    "streets": 8
   },
   "id": "-10_-2",
   "junctions": [],
@@ -24,95 +24,19 @@
     {
       "centerline": [
         {
-          "x": -756.661,
-          "z": -297.736
-        },
-        {
-          "x": -948.314,
-          "z": -300.096
-        },
-        {
-          "x": -1134.05,
-          "z": -301.744
-        },
-        {
-          "x": -1356.753,
-          "z": -303.314
-        },
-        {
-          "x": -1364.404,
-          "z": -303.147
+          "x": -1620.0,
+          "z": -304.067
         },
         {
           "x": -1688.785,
           "z": -304.315
-        },
-        {
-          "x": -1694.582,
-          "z": -304.338
-        },
-        {
-          "x": -1702.501,
-          "z": -304.46
-        },
-        {
-          "x": -1850.69,
-          "z": -306.82
-        },
-        {
-          "x": -1856.883,
-          "z": -306.909
-        },
-        {
-          "x": -1863.787,
-          "z": -306.954
-        },
-        {
-          "x": -2060.516,
-          "z": -308.156
-        },
-        {
-          "x": -2103.048,
-          "z": -301.911
-        },
-        {
-          "x": -2117.392,
-          "z": -299.807
-        },
-        {
-          "x": -2132.465,
-          "z": -297.135
-        },
-        {
-          "x": -2149.669,
-          "z": -293.696
-        },
-        {
-          "x": -2168.056,
-          "z": -288.519
-        },
-        {
-          "x": -2177.775,
-          "z": -283.499
-        },
-        {
-          "x": -2188.666,
-          "z": -276.319
-        },
-        {
-          "x": -2200.056,
-          "z": -268.649
-        },
-        {
-          "x": -2212.775,
-          "z": -260.244
         }
       ],
       "crossing": null,
       "end_node_id": "122799705",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/295756012#section/7",
+      "id": "way/295756012#section/7#tile/9",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -122,9 +46,10 @@
       "parent_id": "way/295756012",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 7,
+      "section_index": 287,
       "start_node_id": "122865612",
       "surface": "asphalt",
+      "tile_index": 9,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -132,91 +57,118 @@
     {
       "centerline": [
         {
-          "x": -755.729,
-          "z": -196.302
+          "x": -1688.785,
+          "z": -304.315
         },
         {
-          "x": -948.84,
-          "z": -198.595
+          "x": -1694.582,
+          "z": -304.338
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122799705",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295756012#section/7#tile/10",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Place",
+      "oneway": false,
+      "parent_id": "way/295756012",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 287,
+      "start_node_id": "122865612",
+      "surface": "asphalt",
+      "tile_index": 10,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1694.582,
+          "z": -304.338
         },
         {
-          "x": -1133.589,
-          "z": -200.031
+          "x": -1702.501,
+          "z": -304.46
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122799705",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295756012#section/7#tile/11",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Place",
+      "oneway": false,
+      "parent_id": "way/295756012",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 287,
+      "start_node_id": "122865612",
+      "surface": "asphalt",
+      "tile_index": 11,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1702.501,
+          "z": -304.46
         },
         {
-          "x": -1349.461,
-          "z": -201.712
-        },
+          "x": -1800.0,
+          "z": -306.013
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122799705",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295756012#section/7#tile/12",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Place",
+      "oneway": false,
+      "parent_id": "way/295756012",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 287,
+      "start_node_id": "122865612",
+      "surface": "asphalt",
+      "tile_index": 12,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
-          "x": -1356.282,
-          "z": -201.767
-        },
-        {
-          "x": -1364.164,
-          "z": -201.834
-        },
-        {
-          "x": -1364.875,
-          "z": -201.834
-        },
-        {
-          "x": -1458.136,
-          "z": -202.591
+          "x": -1620.0,
+          "z": -203.839
         },
         {
           "x": -1687.641,
           "z": -204.361
-        },
-        {
-          "x": -1689.302,
-          "z": -204.372
-        },
-        {
-          "x": -1696.732,
-          "z": -204.428
-        },
-        {
-          "x": -1702.612,
-          "z": -204.484
-        },
-        {
-          "x": -1703.516,
-          "z": -204.495
-        },
-        {
-          "x": -1849.776,
-          "z": -205.775
-        },
-        {
-          "x": -1857.391,
-          "z": -205.842
-        },
-        {
-          "x": -2043.007,
-          "z": -205.998
-        },
-        {
-          "x": -2099.938,
-          "z": -198.161
-        },
-        {
-          "x": -2151.294,
-          "z": -189.032
-        },
-        {
-          "x": -2191.232,
-          "z": -182.108
-        },
-        {
-          "x": -2199.696,
-          "z": -180.639
         }
       ],
       "crossing": null,
       "end_node_id": "123579884",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1265686427#section/20",
+      "id": "way/1265686427#section/20#tile/11",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -226,9 +178,109 @@
       "parent_id": "way/1265686427",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 20,
+      "section_index": 881,
       "start_node_id": "123526139",
       "surface": "asphalt",
+      "tile_index": 11,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1689.302,
+          "z": -204.372
+        },
+        {
+          "x": -1696.732,
+          "z": -204.428
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123579884",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/20#tile/12",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 881,
+      "start_node_id": "123526139",
+      "surface": "asphalt",
+      "tile_index": 12,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1696.732,
+          "z": -204.428
+        },
+        {
+          "x": -1702.612,
+          "z": -204.484
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123579884",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/20#tile/13",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 881,
+      "start_node_id": "123526139",
+      "surface": "asphalt",
+      "tile_index": 13,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1703.516,
+          "z": -204.495
+        },
+        {
+          "x": -1800.0,
+          "z": -205.339
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123579884",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/20#tile/14",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 881,
+      "start_node_id": "123526139",
+      "surface": "asphalt",
+      "tile_index": 14,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

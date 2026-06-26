@@ -5399,12 +5399,12 @@
     "buildings": 108,
     "junctions": 2,
     "pois": 0,
-    "streets": 2
+    "streets": 7
   },
   "id": "-4_-4",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential"
       ],
@@ -5416,7 +5416,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential"
       ],
@@ -5434,9 +5434,38 @@
     {
       "centerline": [
         {
-          "x": -635.083,
-          "z": -496.632
+          "x": -635.202,
+          "z": -540.0
         },
+        {
+          "x": -635.267,
+          "z": -563.88
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122634340",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13290818#section/1#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Long Street",
+      "oneway": false,
+      "parent_id": "way/13290818",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 30,
+      "start_node_id": "122634332",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": -635.267,
           "z": -563.88
@@ -5450,7 +5479,7 @@
       "end_node_id": "122634340",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13290818#section/1",
+      "id": "way/13290818#section/1#tile/2",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -5460,10 +5489,11 @@
       "parent_id": "way/13290818",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 30,
       "start_node_id": "122634332",
       "surface": null,
-      "trim_end_m": 0,
+      "tile_index": 2,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -5473,6 +5503,35 @@
           "x": -635.387,
           "z": -596.341
         },
+        {
+          "x": -635.498,
+          "z": -626.275
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122634344",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13290818#section/2#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Long Street",
+      "oneway": false,
+      "parent_id": "way/13290818",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 31,
+      "start_node_id": "122634340",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": -635.498,
           "z": -626.275
@@ -5486,7 +5545,7 @@
       "end_node_id": "122634344",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13290818#section/2",
+      "id": "way/13290818#section/2#tile/1",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -5496,10 +5555,110 @@
       "parent_id": "way/13290818",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 2,
+      "section_index": 31,
       "start_node_id": "122634340",
       "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -635.775,
+          "z": -696.218
+        },
+        {
+          "x": -635.897,
+          "z": -720.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122627849",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13290818#section/3#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Long Street",
+      "oneway": false,
+      "parent_id": "way/13290818",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 32,
+      "start_node_id": "122634344",
+      "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -540.0,
+          "z": -595.674
+        },
+        {
+          "x": -635.387,
+          "z": -596.341
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122634340",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13351172#section/1#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 62nd Street",
+      "oneway": false,
+      "parent_id": "way/13351172",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 69,
+      "start_node_id": "705825481",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -540.0,
+          "z": -695.317
+        },
+        {
+          "x": -635.775,
+          "z": -696.218
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122634344",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13470892#section/1#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 63rd Street",
+      "oneway": false,
+      "parent_id": "way/13470892",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 188,
+      "start_node_id": "705825482",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     }

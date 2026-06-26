@@ -1,0 +1,125 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -1620,
+    "max_z": -720,
+    "min_x": -1800,
+    "min_z": -900
+  },
+  "buildings": [],
+  "coord_x": -10,
+  "coord_z": -5,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 3
+  },
+  "id": "-10_-5",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -1620.0,
+          "z": -803.327
+        },
+        {
+          "x": -1687.992,
+          "z": -803.797
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123272425",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13446430#section/4#tile/17",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 64th Street",
+      "oneway": false,
+      "parent_id": "way/13446430",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 171,
+      "start_node_id": "123272411",
+      "surface": null,
+      "tile_index": 17,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1687.992,
+          "z": -803.797
+        },
+        {
+          "x": -1766.428,
+          "z": -804.343
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123272425",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13446430#section/4#tile/18",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 64th Street",
+      "oneway": false,
+      "parent_id": "way/13446430",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 171,
+      "start_node_id": "123272411",
+      "surface": null,
+      "tile_index": 18,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1766.428,
+          "z": -804.343
+        },
+        {
+          "x": -1800.0,
+          "z": -804.571
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123272425",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13446430#section/4#tile/19",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 64th Street",
+      "oneway": false,
+      "parent_id": "way/13446430",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 171,
+      "start_node_id": "123272411",
+      "surface": null,
+      "tile_index": 19,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

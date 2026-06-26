@@ -374,7 +374,7 @@
     "buildings": 11,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 3
   },
   "id": "5_1",
   "junctions": [],
@@ -384,31 +384,19 @@
     {
       "centerline": [
         {
-          "x": 1143.668,
-          "z": 225.045
-        },
-        {
-          "x": 1091.878,
-          "z": 224.766
+          "x": 1080.0,
+          "z": 224.626
         },
         {
           "x": 1043.762,
           "z": 224.198
-        },
-        {
-          "x": 943.579,
-          "z": 224.243
-        },
-        {
-          "x": 843.968,
-          "z": 222.518
         }
       ],
       "crossing": null,
       "end_node_id": "122572212",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/295757629#section/0",
+      "id": "way/295757629#section/0#tile/2",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -418,9 +406,76 @@
       "parent_id": "way/295757629",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 288,
       "start_node_id": "122516968",
       "surface": "asphalt",
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1043.762,
+          "z": 224.198
+        },
+        {
+          "x": 943.579,
+          "z": 224.243
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572212",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295757629#section/0#tile/3",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/295757629",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 288,
+      "start_node_id": "122516968",
+      "surface": "asphalt",
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 943.579,
+          "z": 224.243
+        },
+        {
+          "x": 900.0,
+          "z": 223.488
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572212",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295757629#section/0#tile/4",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/295757629",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 288,
+      "start_node_id": "122516968",
+      "surface": "asphalt",
+      "tile_index": 4,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

@@ -14,7 +14,7 @@
     "buildings": 0,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 2
   },
   "id": "1_7",
   "junctions": [],
@@ -24,75 +24,19 @@
     {
       "centerline": [
         {
-          "x": 214.719,
-          "z": 1640.2
-        },
-        {
-          "x": 214.977,
-          "z": 1628.745
-        },
-        {
-          "x": 215.411,
-          "z": 1589.305
-        },
-        {
-          "x": 215.245,
-          "z": 1553.437
-        },
-        {
-          "x": 214.922,
-          "z": 1495.328
-        },
-        {
-          "x": 213.546,
-          "z": 1445.123
-        },
-        {
-          "x": 213.5,
-          "z": 1443.631
-        },
-        {
           "x": 213.343,
           "z": 1437.909
         },
         {
           "x": 213.334,
           "z": 1432.432
-        },
-        {
-          "x": 213.325,
-          "z": 1430.718
-        },
-        {
-          "x": 212.808,
-          "z": 1237.723
-        },
-        {
-          "x": 212.91,
-          "z": 1126.97
-        },
-        {
-          "x": 212.983,
-          "z": 1029.821
-        },
-        {
-          "x": 212.217,
-          "z": 981.208
-        },
-        {
-          "x": 211.534,
-          "z": 882.645
-        },
-        {
-          "x": 211.054,
-          "z": 821.386
         }
       ],
       "crossing": null,
       "end_node_id": "13253934700",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/165665960#section/0",
+      "id": "way/165665960#section/0#tile/7",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -102,9 +46,43 @@
       "parent_id": "way/165665960",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 241,
       "start_node_id": "123217358",
       "surface": "asphalt",
+      "tile_index": 7,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 213.325,
+          "z": 1430.718
+        },
+        {
+          "x": 212.868,
+          "z": 1260.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13253934700",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665960#section/0#tile/8",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "11th Avenue",
+      "oneway": false,
+      "parent_id": "way/165665960",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 241,
+      "start_node_id": "123217358",
+      "surface": "asphalt",
+      "tile_index": 8,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

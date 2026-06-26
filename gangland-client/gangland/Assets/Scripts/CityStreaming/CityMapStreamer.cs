@@ -16,13 +16,49 @@ namespace Gangland.CityStreaming
         const string BenchPath = "Assets/Night Modular City Pack/Prefabs/PropsWithColliders/NC_Bench.prefab";
         const string HydrantPath = "Assets/Night Modular City Pack/Prefabs/PropsWithColliders/NC_Hydrant.prefab";
         const string CharacterPreviewPath = "Assets/Street Gangs - Miami Beach/Prefabs/Gangster_1.prefab";
+        const string RoadMaterialPath = "Assets/Night Modular City Pack/Materials/NC_Asphalt_Road Texture_M_01.mat";
+        const string IntersectionMaterialPath = "Assets/Night Modular City Pack/Materials/NC_Asphalt_Cross and Corner.mat";
+        const string SidewalkMaterialPath = "Assets/Night Modular City Pack/Materials/NC_Footpath.mat";
+        const string BuildingMaterialPath = "Assets/Night Modular City Pack/Materials/NC_Building_B_diffuse.mat";
         static readonly string[] BuildingPaths =
         {
             "Assets/Night Modular City Pack/Prefabs/Buildings/SmallBuildings/NC_SmallBuilding_A.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/SmallBuildings/NC_SmallBuilding_B.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/SmallBuildings/NC_SmallBuilding_C.prefab",
             "Assets/Night Modular City Pack/Prefabs/Buildings/SmallBuildings/NC_SmallBuilding_D.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/SmallBuildings/NC_SmallBuilding_E.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/SmallBuildings/NC_SmallBuilding_F.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/SmallBuildings/NC_SmallBuilding_G.prefab",
             "Assets/Night Modular City Pack/Prefabs/Buildings/Apartments/NC_Apartment_A.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Apartments/NC_Apartment_B.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Apartments/NC_Apartment_C.prefab",
             "Assets/Night Modular City Pack/Prefabs/Buildings/Apartments/NC_Apartment_D.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Apartments/NC_Apartment_E.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Apartments/NC_Apartment_F.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Apartments/NC_Apartment_G.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Apartments/NC_Apartment_H.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Apartments/NC_Apartment_I.prefab",
             "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_A.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_B.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_C.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_D.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_E.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_F.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_G.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_I.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_J.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_K.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/LargeBuildings/NC_LargeBuilding_L.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Skyscrapers/NC_Skyscraper_A.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Skyscrapers/NC_Skyscraper_B.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Skyscrapers/NC_Skyscraper_C.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Skyscrapers/NC_Skyscraper_D.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Skyscrapers/NC_Skyscraper_E.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Skyscrapers/NC_Skyscraper_F.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Skyscrapers/NC_Skyscraper_G.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Skyscrapers/NC_Skyscraper_H.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Skyscrapers/NC_Skyscraper_I.prefab",
+            "Assets/Night Modular City Pack/Prefabs/Buildings/Skyscrapers/NC_Skyscraper_J.prefab",
         };
 
         [Header("Map")]
@@ -31,8 +67,8 @@ namespace Gangland.CityStreaming
         [SerializeField] bool loadOnStart = true;
 
         [Header("Streaming")]
-        [SerializeField] float loadRadiusMeters = 2200f;
-        [SerializeField] float unloadRadiusMeters = 2400f;
+        [SerializeField] float loadRadiusMeters = 420f;
+        [SerializeField] float unloadRadiusMeters = 560f;
         [SerializeField] float updateIntervalSeconds = 0.35f;
 
         [Header("Rendering")]
@@ -50,13 +86,15 @@ namespace Gangland.CityStreaming
         [SerializeField] Material poiMaterial;
         [SerializeField] bool spawnPois = true;
         [SerializeField] bool configureEnvironment = true;
+        [SerializeField] bool renderProceduralBuildings = false;
+        [SerializeField] bool useAssetPackMaterials = false;
 
         [Header("Asset Pack Dressing")]
         [SerializeField] bool useAssetPackProps = true;
         [SerializeField] bool useAssetPackBuildings = true;
-        [SerializeField] bool spawnAssetPackPreview = true;
+        [SerializeField] bool spawnAssetPackPreview = false;
         [SerializeField] int maxPropsPerChunk = 18;
-        [SerializeField] int maxAssetBuildingsPerChunk = 20;
+        [SerializeField] int maxAssetBuildingsPerChunk = 96;
         [SerializeField] GameObject streetLampPrefab;
         [SerializeField] GameObject trafficSignalPrefab;
         [SerializeField] GameObject busStopPrefab;
@@ -100,6 +138,15 @@ namespace Gangland.CityStreaming
             benchPrefab = LoadEditorPrefab(BenchPath, benchPrefab);
             hydrantPrefab = LoadEditorPrefab(HydrantPath, hydrantPrefab);
             characterPreviewPrefab = LoadEditorPrefab(CharacterPreviewPath, characterPreviewPrefab);
+            if (useAssetPackMaterials)
+            {
+                roadMaterial = LoadEditorMaterial(RoadMaterialPath, roadMaterial);
+                roadEdgeMarkingMaterial = LoadEditorMaterial(IntersectionMaterialPath, roadEdgeMarkingMaterial);
+                sidewalkMaterial = LoadEditorMaterial(SidewalkMaterialPath, sidewalkMaterial);
+                walkwayMaterial = LoadEditorMaterial(SidewalkMaterialPath, walkwayMaterial);
+                buildingMaterial = LoadEditorMaterial(BuildingMaterialPath, buildingMaterial);
+            }
+
             buildingPrefabs.Clear();
             for (int i = 0; i < BuildingPaths.Length; i++)
             {
@@ -117,6 +164,12 @@ namespace Gangland.CityStreaming
         {
             GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(path);
             return prefab != null ? prefab : currentValue;
+        }
+
+        static Material LoadEditorMaterial(string path, Material currentValue)
+        {
+            Material material = AssetDatabase.LoadAssetAtPath<Material>(path);
+            return material != null ? material : currentValue;
         }
 #endif
 
@@ -214,6 +267,7 @@ namespace Gangland.CityStreaming
             {
                 AddMeshObject(chunkRoot.transform, "Terrain", CityChunkMeshBuilder.BuildTerrainMesh(chunk.terrain), terrainMaterial);
             }
+            AddMeshObject(chunkRoot.transform, "Urban Ground", CityChunkMeshBuilder.BuildChunkGroundMesh(chunk.bounds), urbanGroundMaterial);
             AddMeshObject(chunkRoot.transform, "Areas", CityChunkMeshBuilder.BuildAreaMesh(chunk.areas), areaMaterial);
             AddMeshObject(chunkRoot.transform, "Sidewalks", CityChunkMeshBuilder.BuildSidewalkMesh(chunk.streets), sidewalkMaterial);
             AddMeshObject(chunkRoot.transform, "Curbs", CityChunkMeshBuilder.BuildCurbMesh(chunk.streets), sidewalkMaterial);
@@ -223,8 +277,12 @@ namespace Gangland.CityStreaming
             AddMeshObject(chunkRoot.transform, "Road Edge Markings", CityChunkMeshBuilder.BuildRoadEdgeMarkingMesh(chunk.streets), roadEdgeMarkingMaterial);
             AddMeshObject(chunkRoot.transform, "Lane Markings", CityChunkMeshBuilder.BuildLaneMarkingMesh(chunk.streets), laneMarkingMaterial);
             AddMeshObject(chunkRoot.transform, "Intersection Markings", CityChunkMeshBuilder.BuildIntersectionMarkingMesh(chunk.streets), roadEdgeMarkingMaterial);
-            AddMeshObject(chunkRoot.transform, "OSM Buildings", CityChunkMeshBuilder.BuildBuildingMesh(chunk.buildings), buildingMaterial);
-            AddMeshObject(chunkRoot.transform, "OSM Building Windows", CityChunkMeshBuilder.BuildBuildingWindowMesh(chunk.buildings), windowMaterial);
+            if (renderProceduralBuildings || !useAssetPackBuildings)
+            {
+                AddMeshObject(chunkRoot.transform, "OSM Buildings", CityChunkMeshBuilder.BuildBuildingMesh(chunk.buildings), buildingMaterial);
+                AddMeshObject(chunkRoot.transform, "OSM Building Windows", CityChunkMeshBuilder.BuildBuildingWindowMesh(chunk.buildings), windowMaterial);
+            }
+
             if (useAssetPackBuildings)
             {
                 AddAssetPackBuildingAccents(chunkRoot.transform, chunk.buildings, chunk.id);
@@ -246,14 +304,19 @@ namespace Gangland.CityStreaming
 
         void AddAssetPackBuildingAccents(Transform parent, CityBuilding[] buildings, string chunkId)
         {
-            if (buildings == null || buildingPrefabs.Count == 0)
+            if (buildings == null)
             {
                 return;
             }
 
+            if (buildingPrefabs.Count == 0)
+            {
+                Debug.LogWarning("Asset-pack buildings are enabled, but no Night Modular City Pack building prefabs resolved. Procedural building fallback is disabled; check prefab paths/imports.", this);
+                return;
+            }
+
             int placed = 0;
-            int accentLimit = Mathf.Min(maxAssetBuildingsPerChunk, 3);
-            for (int i = 0; i < buildings.Length && placed < accentLimit; i++)
+            for (int i = 0; i < buildings.Length && placed < maxAssetBuildingsPerChunk; i++)
             {
                 CityBuilding building = buildings[i];
                 if (building.footprint == null || building.footprint.Length < 3)
@@ -263,14 +326,14 @@ namespace Gangland.CityStreaming
 
                 Vector3 center = BuildingCenter(building);
                 Vector2 size = BuildingFootprintSize(building);
-                if (size.x < 18f || size.y < 18f)
+                if (size.x < 4f || size.y < 4f)
                 {
                     continue;
                 }
 
                 int hash = StableHash($"{chunkId}:{building.id}");
                 GameObject prefab = buildingPrefabs[hash % buildingPrefabs.Count];
-                Quaternion rotation = Quaternion.Euler(0f, (hash % 4) * 90f, 0f);
+                Quaternion rotation = BuildingRotation(building, hash);
                 GameObject instance = PlacePrefab(parent, prefab, center, rotation, 1f);
                 if (instance == null)
                 {
@@ -650,6 +713,33 @@ namespace Gangland.CityStreaming
             return new Vector2(maxX - minX, maxZ - minZ);
         }
 
+        static Quaternion BuildingRotation(CityBuilding building, int hash)
+        {
+            Vector3 bestDirection = Vector3.zero;
+            float bestLength = 0f;
+            int count = building.footprint != null ? building.footprint.Length : 0;
+            for (int i = 0; i < count - 1; i++)
+            {
+                CityPoint current = building.footprint[i];
+                CityPoint next = building.footprint[i + 1];
+                Vector3 direction = new Vector3(next.x - current.x, 0f, next.z - current.z);
+                float length = direction.sqrMagnitude;
+                if (length > bestLength)
+                {
+                    bestLength = length;
+                    bestDirection = direction;
+                }
+            }
+
+            if (bestDirection.sqrMagnitude < 0.01f)
+            {
+                return Quaternion.Euler(0f, (hash % 4) * 90f, 0f);
+            }
+
+            bestDirection.Normalize();
+            return Quaternion.LookRotation(bestDirection, Vector3.up);
+        }
+
         static void FitToFootprint(GameObject instance, Vector2 footprintSize)
         {
             Renderer[] renderers = instance.GetComponentsInChildren<Renderer>();
@@ -831,28 +921,28 @@ namespace Gangland.CityStreaming
         static void ConfigureEnvironment()
         {
             RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Trilight;
-            RenderSettings.ambientSkyColor = new Color(0.63f, 0.68f, 0.74f);
-            RenderSettings.ambientEquatorColor = new Color(0.42f, 0.39f, 0.33f);
-            RenderSettings.ambientGroundColor = new Color(0.22f, 0.2f, 0.17f);
+            RenderSettings.ambientSkyColor = new Color(0.42f, 0.49f, 0.56f);
+            RenderSettings.ambientEquatorColor = new Color(0.34f, 0.34f, 0.31f);
+            RenderSettings.ambientGroundColor = new Color(0.18f, 0.17f, 0.15f);
             RenderSettings.fog = true;
             RenderSettings.fogMode = FogMode.Linear;
-            RenderSettings.fogColor = new Color(0.58f, 0.64f, 0.68f);
-            RenderSettings.fogStartDistance = 180f;
-            RenderSettings.fogEndDistance = 900f;
+            RenderSettings.fogColor = new Color(0.43f, 0.48f, 0.52f);
+            RenderSettings.fogStartDistance = 240f;
+            RenderSettings.fogEndDistance = 1100f;
 
             Camera mainCamera = Camera.main;
             if (mainCamera != null)
             {
-                mainCamera.clearFlags = CameraClearFlags.Skybox;
-                mainCamera.backgroundColor = new Color(0.52f, 0.68f, 0.86f);
+                mainCamera.clearFlags = CameraClearFlags.SolidColor;
+                mainCamera.backgroundColor = new Color(0.43f, 0.52f, 0.60f);
                 mainCamera.farClipPlane = Mathf.Max(mainCamera.farClipPlane, 1400f);
             }
 
-            Light sun = Object.FindFirstObjectByType<Light>();
+            Light sun = Object.FindAnyObjectByType<Light>();
             if (sun != null && sun.type == LightType.Directional)
             {
-                sun.color = new Color(1f, 0.93f, 0.82f);
-                sun.intensity = 1.35f;
+                sun.color = new Color(1f, 0.94f, 0.84f);
+                sun.intensity = 0.85f;
                 sun.transform.rotation = Quaternion.Euler(42f, -35f, 0f);
             }
         }

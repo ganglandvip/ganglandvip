@@ -4870,7 +4870,7 @@
     "buildings": 95,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 4
   },
   "id": "3_4",
   "junctions": [],
@@ -4880,47 +4880,52 @@
     {
       "centerline": [
         {
-          "x": 544.195,
-          "z": 1237.8
+          "x": 644.076,
+          "z": 900.0
         },
         {
-          "x": 543.733,
-          "z": 1029.821
-        },
+          "x": 644.006,
+          "z": 720.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123070191",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13365011#section/0#tile/9",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "7th Avenue",
+      "oneway": false,
+      "parent_id": "way/13365011",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 85,
+      "start_node_id": "123070183",
+      "surface": null,
+      "tile_index": 9,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
-          "x": 543.604,
-          "z": 987.386
-        },
-        {
-          "x": 543.521,
-          "z": 941.778
+          "x": 542.645,
+          "z": 900.0
         },
         {
           "x": 541.629,
           "z": 851.587
-        },
-        {
-          "x": 541.472,
-          "z": 765.503
-        },
-        {
-          "x": 541.896,
-          "z": 689.416
-        },
-        {
-          "x": 541.924,
-          "z": 685.353
-        },
-        {
-          "x": 542.496,
-          "z": 677.939
         }
       ],
       "crossing": null,
       "end_node_id": "123712144",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/173879349#section/0",
+      "id": "way/173879349#section/0#tile/5",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4930,9 +4935,76 @@
       "parent_id": "way/173879349",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 264,
       "start_node_id": "122840939",
       "surface": "asphalt",
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 541.629,
+          "z": 851.587
+        },
+        {
+          "x": 541.472,
+          "z": 765.503
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123712144",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/173879349#section/0#tile/6",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "8th Avenue",
+      "oneway": false,
+      "parent_id": "way/173879349",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 264,
+      "start_node_id": "122840939",
+      "surface": "asphalt",
+      "tile_index": 6,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 541.472,
+          "z": 765.503
+        },
+        {
+          "x": 541.726,
+          "z": 720.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123712144",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/173879349#section/0#tile/7",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "8th Avenue",
+      "oneway": false,
+      "parent_id": "way/173879349",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 264,
+      "start_node_id": "122840939",
+      "surface": "asphalt",
+      "tile_index": 7,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

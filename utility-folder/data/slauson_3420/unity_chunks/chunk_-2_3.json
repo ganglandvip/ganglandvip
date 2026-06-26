@@ -3646,12 +3646,12 @@
     "buildings": 75,
     "junctions": 2,
     "pois": 0,
-    "streets": 3
+    "streets": 6
   },
   "id": "-2_3",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential",
         "tertiary"
@@ -3664,7 +3664,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -3682,40 +3682,8 @@
     {
       "centerline": [
         {
-          "x": -253.78,
-          "z": 670.614
-        },
-        {
-          "x": -254.029,
-          "z": 464.483
-        }
-      ],
-      "crossing": null,
-      "end_node_id": "122742783",
-      "estimated_road_width_m": 6.8,
-      "highway": "residential",
-      "id": "way/165665937#section/2",
-      "lane_count": 2,
-      "lane_source": "inferred",
-      "lane_width_m": 3.4,
-      "maxspeed": null,
-      "name": "Chesley Avenue",
-      "oneway": false,
-      "parent_id": "way/165665937",
-      "render_kind": "road",
-      "road_width_m": 6.8,
-      "section_index": 2,
-      "start_node_id": "123487003",
-      "surface": "asphalt",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
-      "turn_lanes": null
-    },
-    {
-      "centerline": [
-        {
-          "x": -150.09,
-          "z": 671.449
+          "x": -253.523,
+          "z": 720.0
         },
         {
           "x": -253.78,
@@ -3726,7 +3694,139 @@
       "end_node_id": "123487003",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/509313137#section/3",
+      "id": "way/165665937#section/1#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Chesley Avenue",
+      "oneway": false,
+      "parent_id": "way/165665937",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 227,
+      "start_node_id": "122900182",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -253.78,
+          "z": 670.614
+        },
+        {
+          "x": -253.938,
+          "z": 540.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122742783",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665937#section/2#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Chesley Avenue",
+      "oneway": false,
+      "parent_id": "way/165665937",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 228,
+      "start_node_id": "123487003",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -357.34,
+          "z": 720.0
+        },
+        {
+          "x": -357.563,
+          "z": 670.024
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123224177",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/165665943#section/1#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West Boulevard",
+      "oneway": false,
+      "parent_id": "way/165665943",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 233,
+      "start_node_id": "122900185",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -357.563,
+          "z": 670.024
+        },
+        {
+          "x": -357.311,
+          "z": 540.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122742785",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/165665943#section/2#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West Boulevard",
+      "oneway": false,
+      "parent_id": "way/165665943",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 234,
+      "start_node_id": "123224177",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -180.0,
+          "z": 671.208
+        },
+        {
+          "x": -253.78,
+          "z": 670.614
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123487003",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/509313137#section/3#tile/1",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -3736,10 +3836,11 @@
       "parent_id": "way/509313137",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 3,
+      "section_index": 469,
       "start_node_id": "122601723",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -3758,7 +3859,7 @@
       "end_node_id": "123224177",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/509313137#section/4",
+      "id": "way/509313137#section/4#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -3768,11 +3869,12 @@
       "parent_id": "way/509313137",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 4,
+      "section_index": 470,
       "start_node_id": "123487003",
       "surface": "asphalt",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

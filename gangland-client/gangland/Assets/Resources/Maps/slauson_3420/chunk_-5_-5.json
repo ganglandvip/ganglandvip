@@ -4577,12 +4577,12 @@
     "buildings": 98,
     "junctions": 2,
     "pois": 0,
-    "streets": 3
+    "streets": 9
   },
   "id": "-5_-5",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential"
       ],
@@ -4594,7 +4594,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential"
       ],
@@ -4612,6 +4612,105 @@
     {
       "centerline": [
         {
+          "x": -733.889,
+          "z": -720.0
+        },
+        {
+          "x": -734.167,
+          "z": -799.233
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123272408",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13427782#section/0#tile/2",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Rimpau Boulevard",
+      "oneway": false,
+      "parent_id": "way/13427782",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 159,
+      "start_node_id": "123275861",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -831.575,
+          "z": -720.0
+        },
+        {
+          "x": -831.849,
+          "z": -799.567
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123272411",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13431472#section/0#tile/3",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Harcourt Avenue",
+      "oneway": false,
+      "parent_id": "way/13431472",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 166,
+      "start_node_id": "123275865",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -720.0,
+          "z": -799.127
+        },
+        {
+          "x": -734.167,
+          "z": -799.233
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123272408",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13446430#section/2#tile/2",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 64th Street",
+      "oneway": false,
+      "parent_id": "way/13446430",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 169,
+      "start_node_id": "122627849",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
           "x": -734.167,
           "z": -799.233
         },
@@ -4624,7 +4723,7 @@
       "end_node_id": "123272411",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13446430#section/3",
+      "id": "way/13446430#section/3#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4634,9 +4733,110 @@
       "parent_id": "way/13446430",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 3,
+      "section_index": 170,
       "start_node_id": "123272408",
       "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -831.849,
+          "z": -799.567
+        },
+        {
+          "x": -900.0,
+          "z": -799.75
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123272425",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13446430#section/4#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 64th Street",
+      "oneway": false,
+      "parent_id": "way/13446430",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 171,
+      "start_node_id": "123272411",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -720.0,
+          "z": -898.731
+        },
+        {
+          "x": -885.93,
+          "z": -900.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123208685",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/607179440#section/2#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Fairview Boulevard",
+      "oneway": false,
+      "parent_id": "way/607179440",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 497,
+      "start_node_id": "123073886",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -838.901,
+          "z": -720.0
+        },
+        {
+          "x": -838.975,
+          "z": -794.469
+        }
+      ],
+      "crossing": null,
+      "end_node_id": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/771821247#segment/1#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/771821247",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "section_index": 665,
+      "segment_index": 1,
+      "start_node_id": null,
+      "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -4648,14 +4848,15 @@
           "z": -794.469
         },
         {
-          "x": -922.968,
-          "z": -795.159
+          "x": -900.0,
+          "z": -794.97
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/771821248#segment/0",
+      "id": "way/771821248#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4665,8 +4866,11 @@
       "parent_id": "way/771821248",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 666,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -4674,18 +4878,19 @@
     {
       "centerline": [
         {
-          "x": -923.042,
-          "z": -805.935
+          "x": -900.0,
+          "z": -805.783
         },
         {
-          "x": -643.427,
-          "z": -804.087
+          "x": -720.0,
+          "z": -804.593
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/771821255#segment/0",
+      "id": "way/771821255#segment/0#tile/1",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4695,8 +4900,11 @@
       "parent_id": "way/771821255",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 667,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

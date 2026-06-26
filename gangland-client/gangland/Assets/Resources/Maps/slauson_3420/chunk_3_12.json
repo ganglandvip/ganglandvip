@@ -1,0 +1,92 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 720,
+    "max_z": 2340,
+    "min_x": 540,
+    "min_z": 2160
+  },
+  "buildings": [],
+  "coord_x": 3,
+  "coord_z": 12,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 2
+  },
+  "id": "3_12",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 715.763,
+          "z": 2215.747
+        },
+        {
+          "x": 715.67,
+          "z": 2165.953
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123712142",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295753830#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "6th Avenue",
+      "oneway": false,
+      "parent_id": "way/295753830",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 274,
+      "start_node_id": "1732243793",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 715.67,
+          "z": 2165.953
+        },
+        {
+          "x": 715.703,
+          "z": 2160.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123712142",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295753830#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "6th Avenue",
+      "oneway": false,
+      "parent_id": "way/295753830",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 274,
+      "start_node_id": "1732243793",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

@@ -14,7 +14,7 @@
     "buildings": 0,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 2
   },
   "id": "4_-8",
   "junctions": [],
@@ -24,39 +24,19 @@
     {
       "centerline": [
         {
-          "x": 838.753,
-          "z": -874.597
-        },
-        {
-          "x": 838.393,
-          "z": -994.154
-        },
-        {
-          "x": 837.812,
-          "z": -1194.542
+          "x": 837.624,
+          "z": -1260.0
         },
         {
           "x": 837.23,
           "z": -1396.654
-        },
-        {
-          "x": 836.806,
-          "z": -1544.743
-        },
-        {
-          "x": 836.741,
-          "z": -1580.733
-        },
-        {
-          "x": 836.658,
-          "z": -1596.752
         }
       ],
       "crossing": null,
       "end_node_id": "123273704",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13392493#section/0",
+      "id": "way/13392493#section/0#tile/5",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -66,9 +46,43 @@
       "parent_id": "way/13392493",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 99,
       "start_node_id": "122991563",
       "surface": null,
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 837.23,
+          "z": -1396.654
+        },
+        {
+          "x": 837.106,
+          "z": -1440.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273704",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13392493#section/0#tile/6",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "5th Avenue",
+      "oneway": false,
+      "parent_id": "way/13392493",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 99,
+      "start_node_id": "122991563",
+      "surface": null,
+      "tile_index": 6,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

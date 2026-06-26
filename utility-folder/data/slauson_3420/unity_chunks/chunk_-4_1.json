@@ -3731,12 +3731,12 @@
     "buildings": 76,
     "junctions": 2,
     "pois": 0,
-    "streets": 4
+    "streets": 7
   },
   "id": "-4_1",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -3748,7 +3748,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -3766,8 +3766,8 @@
     {
       "centerline": [
         {
-          "x": -564.824,
-          "z": 410.515
+          "x": -564.777,
+          "z": 360.0
         },
         {
           "x": -564.639,
@@ -3778,7 +3778,7 @@
       "end_node_id": "122572261",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13418324#section/1",
+      "id": "way/13418324#section/1#tile/1",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3788,18 +3788,52 @@
       "parent_id": "way/13418324",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 137,
       "start_node_id": "2995090790",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
     {
       "centerline": [
         {
-          "x": -660.272,
-          "z": 409.78
+          "x": -564.639,
+          "z": 210.629
+        },
+        {
+          "x": -564.614,
+          "z": 180.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "705825516",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13418324#section/2#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": "25 mph",
+      "name": "Deane Avenue",
+      "oneway": false,
+      "parent_id": "way/13418324",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 138,
+      "start_node_id": "122572261",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -660.161,
+          "z": 360.0
         },
         {
           "x": -659.829,
@@ -3810,7 +3844,7 @@
       "end_node_id": "122572264",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13448145#section/4",
+      "id": "way/13448145#section/4#tile/1",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -3820,10 +3854,77 @@
       "parent_id": "way/13448145",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 4,
+      "section_index": 176,
       "start_node_id": "2995090744",
       "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -659.829,
+          "z": 210.473
+        },
+        {
+          "x": -659.746,
+          "z": 180.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "705825514",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13448145#section/5#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Mullen Avenue",
+      "oneway": false,
+      "parent_id": "way/13448145",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 177,
+      "start_node_id": "122572264",
+      "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -540.0,
+          "z": 210.837
+        },
+        {
+          "x": -564.639,
+          "z": 210.629
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572261",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1111523013#section/8#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1111523013",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 831,
+      "start_node_id": "122572255",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -3842,7 +3943,7 @@
       "end_node_id": "122572264",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1111523013#section/9",
+      "id": "way/1111523013#section/9#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -3852,11 +3953,12 @@
       "parent_id": "way/1111523013",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 9,
+      "section_index": 832,
       "start_node_id": "122572261",
       "surface": "asphalt",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     },
     {
@@ -3866,15 +3968,15 @@
           "z": 210.473
         },
         {
-          "x": -758.092,
-          "z": 208.992
+          "x": -720.0,
+          "z": 209.566
         }
       ],
       "crossing": null,
       "end_node_id": "122572267",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1111523013#section/10",
+      "id": "way/1111523013#section/10#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -3884,11 +3986,12 @@
       "parent_id": "way/1111523013",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 10,
+      "section_index": 833,
       "start_node_id": "122572264",
       "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

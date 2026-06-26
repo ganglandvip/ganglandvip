@@ -1,0 +1,125 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 0,
+    "max_z": 1260,
+    "min_x": -180,
+    "min_z": 1080
+  },
+  "buildings": [],
+  "coord_x": -1,
+  "coord_z": 6,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 3
+  },
+  "id": "-1_6",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -31.796,
+          "z": 1260.0
+        },
+        {
+          "x": -32.204,
+          "z": 1234.427
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13090737240",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/829119490#section/0#tile/12",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/829119490",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 680,
+      "start_node_id": "123111798",
+      "surface": "asphalt",
+      "tile_index": 12,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -32.204,
+          "z": 1234.427
+        },
+        {
+          "x": -32.656,
+          "z": 1140.084
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13090737240",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/829119490#section/0#tile/13",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/829119490",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 680,
+      "start_node_id": "123111798",
+      "surface": "asphalt",
+      "tile_index": 13,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -32.656,
+          "z": 1140.084
+        },
+        {
+          "x": -32.07,
+          "z": 1080.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13090737240",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/829119490#section/0#tile/14",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/829119490",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 680,
+      "start_node_id": "123111798",
+      "surface": "asphalt",
+      "tile_index": 14,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

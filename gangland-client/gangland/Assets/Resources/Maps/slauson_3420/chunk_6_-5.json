@@ -1,0 +1,92 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 1260,
+    "max_z": -720,
+    "min_x": 1080,
+    "min_z": -900
+  },
+  "buildings": [],
+  "coord_x": 6,
+  "coord_z": -5,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 2
+  },
+  "id": "6_-5",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 1109.415,
+          "z": -720.619
+        },
+        {
+          "x": 1094.915,
+          "z": -728.79
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/6",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 6,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1094.915,
+          "z": -728.79
+        },
+        {
+          "x": 1080.0,
+          "z": -737.236
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/7",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 7,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

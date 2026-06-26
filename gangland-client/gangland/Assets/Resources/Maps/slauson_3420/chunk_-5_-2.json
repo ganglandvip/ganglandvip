@@ -3971,12 +3971,12 @@
     "buildings": 88,
     "junctions": 2,
     "pois": 0,
-    "streets": 1
+    "streets": 7
   },
   "id": "-5_-2",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -3988,7 +3988,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4006,6 +4006,39 @@
     {
       "centerline": [
         {
+          "x": -755.733,
+          "z": -180.0
+        },
+        {
+          "x": -755.729,
+          "z": -196.302
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123526139",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13427781#section/8#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Rimpau Boulevard",
+      "oneway": false,
+      "parent_id": "way/13427781",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 156,
+      "start_node_id": "123526136",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
           "x": -755.729,
           "z": -196.302
         },
@@ -4018,7 +4051,7 @@
       "end_node_id": "122865612",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13427781#section/9",
+      "id": "way/13427781#section/9#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4028,11 +4061,177 @@
       "parent_id": "way/13427781",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 9,
+      "section_index": 157,
       "start_node_id": "123526139",
       "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -756.661,
+          "z": -297.736
+        },
+        {
+          "x": -756.585,
+          "z": -360.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123275863",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13427781#section/10#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Rimpau Boulevard",
+      "oneway": false,
+      "parent_id": "way/13427781",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 158,
+      "start_node_id": "122865612",
+      "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -720.0,
+          "z": -297.384
+        },
+        {
+          "x": -756.661,
+          "z": -297.736
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122865612",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295756012#section/6#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Place",
+      "oneway": false,
+      "parent_id": "way/295756012",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 286,
+      "start_node_id": "122865611",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -756.661,
+          "z": -297.736
+        },
+        {
+          "x": -900.0,
+          "z": -299.501
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122799705",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295756012#section/7#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Place",
+      "oneway": false,
+      "parent_id": "way/295756012",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 287,
+      "start_node_id": "122865612",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -720.0,
+          "z": -196.179
+        },
+        {
+          "x": -755.729,
+          "z": -196.302
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123526139",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/19#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 880,
+      "start_node_id": "123451129",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -755.729,
+          "z": -196.302
+        },
+        {
+          "x": -900.0,
+          "z": -198.015
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123579884",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/20#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 881,
+      "start_node_id": "123526139",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

@@ -4228,7 +4228,7 @@
     "buildings": 85,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 5
   },
   "id": "-3_4",
   "junctions": [],
@@ -4238,39 +4238,52 @@
     {
       "centerline": [
         {
-          "x": -525.227,
-          "z": 965.267
+          "x": -363.422,
+          "z": 900.0
         },
         {
-          "x": -518.803,
-          "z": 956.25
-        },
+          "x": -360.0,
+          "z": 886.369
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122900185",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/165665943#section/0#tile/7",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West Boulevard",
+      "oneway": false,
+      "parent_id": "way/165665943",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 232,
+      "start_node_id": "1772062290",
+      "surface": "asphalt",
+      "tile_index": 7,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
-          "x": -481.412,
-          "z": 904.13
+          "x": -479.28,
+          "z": 900.0
         },
         {
           "x": -473.068,
           "z": 887.966
-        },
-        {
-          "x": -464.696,
-          "z": 864.11
-        },
-        {
-          "x": -460.256,
-          "z": 843.36
-        },
-        {
-          "x": -460.09,
-          "z": 669.401
         }
       ],
       "crossing": null,
       "end_node_id": "123633214",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/165665958#section/0",
+      "id": "way/165665958#section/0#tile/3",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4280,9 +4293,109 @@
       "parent_id": "way/165665958",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 237,
       "start_node_id": "1772062186",
       "surface": "asphalt",
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -473.068,
+          "z": 887.966
+        },
+        {
+          "x": -464.696,
+          "z": 864.11
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123633214",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665958#section/0#tile/4",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Hillcrest Drive",
+      "oneway": false,
+      "parent_id": "way/165665958",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 237,
+      "start_node_id": "1772062186",
+      "surface": "asphalt",
+      "tile_index": 4,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -464.696,
+          "z": 864.11
+        },
+        {
+          "x": -460.256,
+          "z": 843.36
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123633214",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665958#section/0#tile/5",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Hillcrest Drive",
+      "oneway": false,
+      "parent_id": "way/165665958",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 237,
+      "start_node_id": "1772062186",
+      "surface": "asphalt",
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -460.256,
+          "z": 843.36
+        },
+        {
+          "x": -460.138,
+          "z": 720.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123633214",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665958#section/0#tile/6",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Hillcrest Drive",
+      "oneway": false,
+      "parent_id": "way/165665958",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 237,
+      "start_node_id": "1772062186",
+      "surface": "asphalt",
+      "tile_index": 6,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

@@ -14,7 +14,7 @@
     "buildings": 0,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 6
   },
   "id": "-2_-7",
   "junctions": [],
@@ -24,91 +24,19 @@
     {
       "centerline": [
         {
-          "x": -195.732,
-          "z": -863.487
-        },
-        {
-          "x": -196.489,
-          "z": -927.173
-        },
-        {
-          "x": -196.323,
-          "z": -970.855
-        },
-        {
-          "x": -196.369,
-          "z": -974.273
-        },
-        {
-          "x": -196.166,
-          "z": -1035.254
-        },
-        {
-          "x": -196.185,
-          "z": -1048.2
-        },
-        {
-          "x": -196.092,
-          "z": -1062.883
-        },
-        {
           "x": -196.037,
           "z": -1080.917
         },
         {
           "x": -195.982,
           "z": -1099.63
-        },
-        {
-          "x": -195.935,
-          "z": -1146.808
-        },
-        {
-          "x": -195.816,
-          "z": -1195.51
-        },
-        {
-          "x": -195.797,
-          "z": -1201.633
-        },
-        {
-          "x": -195.769,
-          "z": -1208.646
-        },
-        {
-          "x": -195.594,
-          "z": -1260.988
-        },
-        {
-          "x": -195.64,
-          "z": -1266.354
-        },
-        {
-          "x": -195.52,
-          "z": -1283.119
-        },
-        {
-          "x": -195.566,
-          "z": -1296.255
-        },
-        {
-          "x": -195.557,
-          "z": -1300.952
-        },
-        {
-          "x": -195.52,
-          "z": -1341.896
-        },
-        {
-          "x": -195.649,
-          "z": -1357.97
         }
       ],
       "crossing": null,
       "end_node_id": "13094539288",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13284710#section/21",
+      "id": "way/13284710#section/21#tile/8",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -118,9 +46,175 @@
       "parent_id": "way/13284710",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 21,
+      "section_index": 28,
       "start_node_id": "6758746560",
       "surface": null,
+      "tile_index": 8,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -195.982,
+          "z": -1099.63
+        },
+        {
+          "x": -195.935,
+          "z": -1146.808
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13094539288",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13284710#section/21#tile/9",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Brynhurst Avenue",
+      "oneway": false,
+      "parent_id": "way/13284710",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 28,
+      "start_node_id": "6758746560",
+      "surface": null,
+      "tile_index": 9,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -195.935,
+          "z": -1146.808
+        },
+        {
+          "x": -195.816,
+          "z": -1195.51
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13094539288",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13284710#section/21#tile/10",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Brynhurst Avenue",
+      "oneway": false,
+      "parent_id": "way/13284710",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 28,
+      "start_node_id": "6758746560",
+      "surface": null,
+      "tile_index": 10,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -195.816,
+          "z": -1195.51
+        },
+        {
+          "x": -195.797,
+          "z": -1201.633
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13094539288",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13284710#section/21#tile/11",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Brynhurst Avenue",
+      "oneway": false,
+      "parent_id": "way/13284710",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 28,
+      "start_node_id": "6758746560",
+      "surface": null,
+      "tile_index": 11,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -195.797,
+          "z": -1201.633
+        },
+        {
+          "x": -195.769,
+          "z": -1208.646
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13094539288",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13284710#section/21#tile/12",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Brynhurst Avenue",
+      "oneway": false,
+      "parent_id": "way/13284710",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 28,
+      "start_node_id": "6758746560",
+      "surface": null,
+      "tile_index": 12,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -195.769,
+          "z": -1208.646
+        },
+        {
+          "x": -195.597,
+          "z": -1260.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "13094539288",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13284710#section/21#tile/13",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Brynhurst Avenue",
+      "oneway": false,
+      "parent_id": "way/13284710",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 28,
+      "start_node_id": "6758746560",
+      "surface": null,
+      "tile_index": 13,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

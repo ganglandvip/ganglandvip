@@ -1,0 +1,92 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -1080,
+    "max_z": -900,
+    "min_x": -1260,
+    "min_z": -1080
+  },
+  "buildings": [],
+  "coord_x": -7,
+  "coord_z": -6,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 2
+  },
+  "id": "-7_-6",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -1080.0,
+          "z": -900.5
+        },
+        {
+          "x": -1110.938,
+          "z": -900.534
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123208685",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/607179440#section/2#tile/5",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Fairview Boulevard",
+      "oneway": false,
+      "parent_id": "way/607179440",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 497,
+      "start_node_id": "123073886",
+      "surface": "asphalt",
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1110.938,
+          "z": -900.534
+        },
+        {
+          "x": -1113.655,
+          "z": -900.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123208685",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/607179440#section/2#tile/6",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Fairview Boulevard",
+      "oneway": false,
+      "parent_id": "way/607179440",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 497,
+      "start_node_id": "123073886",
+      "surface": "asphalt",
+      "tile_index": 6,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

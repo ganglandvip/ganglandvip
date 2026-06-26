@@ -1,0 +1,125 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -1440,
+    "max_z": -180,
+    "min_x": -1620,
+    "min_z": -360
+  },
+  "buildings": [],
+  "coord_x": -9,
+  "coord_z": -2,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 3
+  },
+  "id": "-9_-2",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -1440.0,
+          "z": -303.419
+        },
+        {
+          "x": -1620.0,
+          "z": -304.067
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122799705",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295756012#section/7#tile/8",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Place",
+      "oneway": false,
+      "parent_id": "way/295756012",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 287,
+      "start_node_id": "122865612",
+      "surface": "asphalt",
+      "tile_index": 8,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1440.0,
+          "z": -202.444
+        },
+        {
+          "x": -1458.136,
+          "z": -202.591
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123579884",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/20#tile/9",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 881,
+      "start_node_id": "123526139",
+      "surface": "asphalt",
+      "tile_index": 9,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1458.136,
+          "z": -202.591
+        },
+        {
+          "x": -1620.0,
+          "z": -203.839
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123579884",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/20#tile/10",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 881,
+      "start_node_id": "123526139",
+      "surface": "asphalt",
+      "tile_index": 10,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

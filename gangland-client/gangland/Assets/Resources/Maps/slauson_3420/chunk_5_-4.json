@@ -691,7 +691,7 @@
     "buildings": 8,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 3
   },
   "id": "5_-4",
   "junctions": [],
@@ -701,31 +701,19 @@
     {
       "centerline": [
         {
-          "x": 1147.821,
-          "z": -584.252
-        },
-        {
-          "x": 1112.35,
-          "z": -584.018
+          "x": 1080.0,
+          "z": -584.42
         },
         {
           "x": 1021.803,
           "z": -585.142
-        },
-        {
-          "x": 931.026,
-          "z": -585.777
-        },
-        {
-          "x": 840.821,
-          "z": -586.423
         }
       ],
       "crossing": null,
       "end_node_id": "122994046",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13351184#section/0",
+      "id": "way/13351184#section/0#tile/2",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -735,9 +723,76 @@
       "parent_id": "way/13351184",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 70,
       "start_node_id": "122994041",
       "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1021.803,
+          "z": -585.142
+        },
+        {
+          "x": 931.026,
+          "z": -585.777
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122994046",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13351184#section/0#tile/3",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 62nd Street",
+      "oneway": false,
+      "parent_id": "way/13351184",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 70,
+      "start_node_id": "122994041",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 931.026,
+          "z": -585.777
+        },
+        {
+          "x": 900.0,
+          "z": -585.999
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122994046",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13351184#section/0#tile/4",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 62nd Street",
+      "oneway": false,
+      "parent_id": "way/13351184",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 70,
+      "start_node_id": "122994041",
+      "surface": null,
+      "tile_index": 4,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

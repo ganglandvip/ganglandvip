@@ -3410,9 +3410,9 @@
   "counts": {
     "areas": 0,
     "buildings": 61,
-    "junctions": 6,
+    "junctions": 2,
     "pois": 0,
-    "streets": 6
+    "streets": 12
   },
   "id": "-1_2",
   "junctions": [
@@ -3430,7 +3430,7 @@
       "radius_m": 4.976
     },
     {
-      "connected_road_count": 3,
+      "connected_road_count": 4,
       "highways": [
         "residential",
         "tertiary"
@@ -3441,54 +3441,6 @@
         "z": 466.698
       },
       "radius_m": 4.976
-    },
-    {
-      "connected_road_count": 2,
-      "highways": [
-        "tertiary"
-      ],
-      "id": "4011282409",
-      "position": {
-        "x": -171.208,
-        "z": 464.761
-      },
-      "radius_m": 4.976
-    },
-    {
-      "connected_road_count": 2,
-      "highways": [
-        "tertiary"
-      ],
-      "id": "4011282410",
-      "position": {
-        "x": -128.685,
-        "z": 465.585
-      },
-      "radius_m": 4.976
-    },
-    {
-      "connected_road_count": 2,
-      "highways": [
-        "tertiary"
-      ],
-      "id": "4011282413",
-      "position": {
-        "x": -67.749,
-        "z": 466.464
-      },
-      "radius_m": 4.976
-    },
-    {
-      "connected_road_count": 2,
-      "highways": [
-        "tertiary"
-      ],
-      "id": "4011282414",
-      "position": {
-        "x": -25.743,
-        "z": 467.121
-      },
-      "radius_m": 4.976
     }
   ],
   "pois": [],
@@ -3497,19 +3449,85 @@
     {
       "centerline": [
         {
-          "x": -25.743,
-          "z": 467.121
+          "x": -150.09,
+          "z": 465.262
         },
         {
-          "x": 15.46,
-          "z": 467.666
+          "x": -150.099,
+          "z": 379.223
         }
       ],
       "crossing": null,
-      "end_node_id": "7153239405",
+      "end_node_id": "122572244",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13284694#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Brynhurst Avenue",
+      "oneway": false,
+      "parent_id": "way/13284694",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 0,
+      "start_node_id": "122601726",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 4.976,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -150.099,
+          "z": 379.223
+        },
+        {
+          "x": -150.316,
+          "z": 360.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572244",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13284694#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Brynhurst Avenue",
+      "oneway": false,
+      "parent_id": "way/13284694",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 0,
+      "start_node_id": "122601726",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 0.0,
+          "z": 467.462
+        },
+        {
+          "x": -25.743,
+          "z": 467.121
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122742781",
       "estimated_road_width_m": 6.8,
       "highway": "tertiary",
-      "id": "way/398364652#section/0",
+      "id": "way/398364652#section/0#graph/way/398364669#section/0#tile/1",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -3518,10 +3536,77 @@
       "oneway": false,
       "parent_id": "way/398364652",
       "render_kind": "road",
-      "road_width_m": 6.8,
-      "section_index": 0,
-      "start_node_id": "4011282414",
+      "road_width_m": 10.2,
+      "section_index": 310,
+      "start_node_id": "7153239405",
       "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -25.743,
+          "z": 467.121
+        },
+        {
+          "x": -47.35,
+          "z": 466.698
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122742781",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/398364652#section/0#graph/way/398364669#section/0#tile/2",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "35 mph",
+      "name": "West 54th Street",
+      "oneway": false,
+      "parent_id": "way/398364652",
+      "render_kind": "road",
+      "road_width_m": 10.2,
+      "section_index": 310,
+      "start_node_id": "7153239405",
+      "surface": "asphalt",
+      "tile_index": 2,
+      "trim_end_m": 4.976,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -180.0,
+          "z": 464.715
+        },
+        {
+          "x": -171.208,
+          "z": 464.761
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122601726",
+      "estimated_road_width_m": 10.2,
+      "highway": "tertiary",
+      "id": "way/398364655#section/0#graph/way/398364654#section/0#graph/way/398364661#section/0#tile/2",
+      "lane_count": 3,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "35 mph",
+      "name": "West 54th Street",
+      "oneway": false,
+      "parent_id": "way/398364655",
+      "render_kind": "road",
+      "road_width_m": 10.2,
+      "section_index": 312,
+      "start_node_id": "122742783",
+      "surface": "asphalt",
+      "tile_index": 2,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -3541,52 +3626,21 @@
       "end_node_id": "122601726",
       "estimated_road_width_m": 10.2,
       "highway": "tertiary",
-      "id": "way/398364661#section/0",
+      "id": "way/398364655#section/0#graph/way/398364654#section/0#graph/way/398364661#section/0#tile/3",
       "lane_count": 3,
       "lane_source": "osm",
       "lane_width_m": 3.4,
       "maxspeed": "35 mph",
       "name": "West 54th Street",
       "oneway": false,
-      "parent_id": "way/398364661",
+      "parent_id": "way/398364655",
       "render_kind": "road",
       "road_width_m": 10.2,
-      "section_index": 0,
-      "start_node_id": "4011282409",
+      "section_index": 312,
+      "start_node_id": "122742783",
       "surface": "asphalt",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
-      "turn_lanes": null
-    },
-    {
-      "centerline": [
-        {
-          "x": -128.685,
-          "z": 465.585
-        },
-        {
-          "x": -67.749,
-          "z": 466.464
-        }
-      ],
-      "crossing": null,
-      "end_node_id": "4011282413",
-      "estimated_road_width_m": 6.8,
-      "highway": "tertiary",
-      "id": "way/398364665#section/0",
-      "lane_count": 2,
-      "lane_source": "osm",
-      "lane_width_m": 3.4,
-      "maxspeed": "35 mph",
-      "name": "West 54th Street",
-      "oneway": false,
-      "parent_id": "way/398364665",
-      "render_kind": "road",
-      "road_width_m": 6.8,
-      "section_index": 0,
-      "start_node_id": "4011282410",
-      "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 3,
+      "trim_end_m": 4.976,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -3597,47 +3651,15 @@
           "z": 466.698
         },
         {
-          "x": -25.743,
-          "z": 467.121
-        }
-      ],
-      "crossing": null,
-      "end_node_id": "4011282414",
-      "estimated_road_width_m": 10.2,
-      "highway": "tertiary",
-      "id": "way/398364669#section/0",
-      "lane_count": 3,
-      "lane_source": "osm",
-      "lane_width_m": 3.4,
-      "maxspeed": "35 mph",
-      "name": "West 54th Street",
-      "oneway": false,
-      "parent_id": "way/398364669",
-      "render_kind": "road",
-      "road_width_m": 10.2,
-      "section_index": 0,
-      "start_node_id": "122742781",
-      "surface": "asphalt",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
-      "turn_lanes": null
-    },
-    {
-      "centerline": [
-        {
           "x": -67.749,
           "z": 466.464
-        },
-        {
-          "x": -47.35,
-          "z": 466.698
         }
       ],
       "crossing": null,
-      "end_node_id": "122742781",
+      "end_node_id": "122601726",
       "estimated_road_width_m": 10.2,
       "highway": "tertiary",
-      "id": "way/398364670#section/0",
+      "id": "way/398364670#section/0#graph/way/398364665#section/0#graph/way/398364680#section/0#tile/0",
       "lane_count": 3,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -3647,18 +3669,19 @@
       "parent_id": "way/398364670",
       "render_kind": "road",
       "road_width_m": 10.2,
-      "section_index": 0,
-      "start_node_id": "4011282413",
+      "section_index": 319,
+      "start_node_id": "122742781",
       "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 4.976,
       "turn_lanes": null
     },
     {
       "centerline": [
         {
-          "x": -150.09,
-          "z": 465.262
+          "x": -67.749,
+          "z": 466.464
         },
         {
           "x": -128.685,
@@ -3666,23 +3689,156 @@
         }
       ],
       "crossing": null,
-      "end_node_id": "4011282410",
+      "end_node_id": "122601726",
       "estimated_road_width_m": 10.2,
       "highway": "tertiary",
-      "id": "way/398364680#section/0",
+      "id": "way/398364670#section/0#graph/way/398364665#section/0#graph/way/398364680#section/0#tile/1",
       "lane_count": 3,
       "lane_source": "osm",
       "lane_width_m": 3.4,
       "maxspeed": "35 mph",
       "name": "West 54th Street",
       "oneway": false,
-      "parent_id": "way/398364680",
+      "parent_id": "way/398364670",
       "render_kind": "road",
       "road_width_m": 10.2,
-      "section_index": 0,
-      "start_node_id": "122601726",
+      "section_index": 319,
+      "start_node_id": "122742781",
       "surface": "asphalt",
+      "tile_index": 1,
       "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -128.685,
+          "z": 465.585
+        },
+        {
+          "x": -150.09,
+          "z": 465.262
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122601726",
+      "estimated_road_width_m": 10.2,
+      "highway": "tertiary",
+      "id": "way/398364670#section/0#graph/way/398364665#section/0#graph/way/398364680#section/0#tile/2",
+      "lane_count": 3,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "35 mph",
+      "name": "West 54th Street",
+      "oneway": false,
+      "parent_id": "way/398364670",
+      "render_kind": "road",
+      "road_width_m": 10.2,
+      "section_index": 319,
+      "start_node_id": "122742781",
+      "surface": "asphalt",
+      "tile_index": 2,
+      "trim_end_m": 4.976,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -47.125,
+          "z": 540.0
+        },
+        {
+          "x": -47.35,
+          "z": 466.698
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122742781",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/829119490#section/4#tile/4",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/829119490",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 684,
+      "start_node_id": "123633534",
+      "surface": "asphalt",
+      "tile_index": 4,
+      "trim_end_m": 4.976,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -47.35,
+          "z": 466.698
+        },
+        {
+          "x": -47.601,
+          "z": 360.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572240",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/829119490#section/5#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Victoria Avenue",
+      "oneway": false,
+      "parent_id": "way/829119490",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 685,
+      "start_node_id": "122742781",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 4.976,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -150.09,
+          "z": 540.0
+        },
+        {
+          "x": -150.09,
+          "z": 465.262
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122601726",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1347434462#section/2#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Brynhurst Avenue",
+      "oneway": false,
+      "parent_id": "way/1347434462",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 910,
+      "start_node_id": "122601723",
+      "surface": "paved",
+      "tile_index": 1,
+      "trim_end_m": 4.976,
       "trim_start_m": 0,
       "turn_lanes": null
     }

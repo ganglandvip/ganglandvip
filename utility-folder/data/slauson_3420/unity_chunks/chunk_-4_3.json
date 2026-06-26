@@ -4367,12 +4367,12 @@
     "buildings": 84,
     "junctions": 2,
     "pois": 0,
-    "streets": 3
+    "streets": 6
   },
   "id": "-4_3",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4384,7 +4384,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential"
       ],
@@ -4402,19 +4402,19 @@
     {
       "centerline": [
         {
-          "x": -659.755,
-          "z": 667.998
+          "x": -661.058,
+          "z": 720.0
         },
         {
-          "x": -660.613,
-          "z": 511.393
+          "x": -659.755,
+          "z": 667.998
         }
       ],
       "crossing": null,
-      "end_node_id": "2995090749",
+      "end_node_id": "123665087",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13448145#section/1",
+      "id": "way/13448145#section/0#tile/2",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4424,10 +4424,77 @@
       "parent_id": "way/13448145",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 172,
+      "start_node_id": "123112589",
+      "surface": "asphalt",
+      "tile_index": 2,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -659.755,
+          "z": 667.998
+        },
+        {
+          "x": -660.456,
+          "z": 540.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "2995090749",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13448145#section/1#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Mullen Avenue",
+      "oneway": false,
+      "parent_id": "way/13448145",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 173,
       "start_node_id": "123665087",
       "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -540.0,
+          "z": 668.621
+        },
+        {
+          "x": -565.054,
+          "z": 668.376
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123451117",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/509313137#section/6#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 52nd Street",
+      "oneway": false,
+      "parent_id": "way/509313137",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 472,
+      "start_node_id": "123633214",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -4446,7 +4513,7 @@
       "end_node_id": "123665087",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/509313137#section/7",
+      "id": "way/509313137#section/7#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -4456,10 +4523,44 @@
       "parent_id": "way/509313137",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 7,
+      "section_index": 473,
       "start_node_id": "123451117",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -565.394,
+          "z": 720.0
+        },
+        {
+          "x": -565.054,
+          "z": 668.376
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123451117",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1347434461#section/0#tile/5",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Deane Avenue",
+      "oneway": false,
+      "parent_id": "way/1347434461",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 905,
+      "start_node_id": "123112585",
+      "surface": "asphalt",
+      "tile_index": 5,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -4470,15 +4571,15 @@
           "z": 668.376
         },
         {
-          "x": -564.916,
-          "z": 512.005
+          "x": -564.941,
+          "z": 540.0
         }
       ],
       "crossing": null,
       "end_node_id": "2995090779",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1347434461#section/1",
+      "id": "way/1347434461#section/1#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4488,11 +4589,12 @@
       "parent_id": "way/1347434461",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 906,
       "start_node_id": "123451117",
       "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

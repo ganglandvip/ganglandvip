@@ -1,0 +1,59 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 1440,
+    "max_z": -180,
+    "min_x": 1260,
+    "min_z": -360
+  },
+  "buildings": [],
+  "coord_x": 7,
+  "coord_z": -2,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 1
+  },
+  "id": "7_-2",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 1293.462,
+          "z": -180.572
+        },
+        {
+          "x": 1260.0,
+          "z": -180.999
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273759",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 861,
+      "start_node_id": "122728899",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

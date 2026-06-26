@@ -131,13 +131,146 @@
     "buildings": 4,
     "junctions": 0,
     "pois": 0,
-    "streets": 0
+    "streets": 4
   },
   "id": "5_3",
   "junctions": [],
   "pois": [],
   "schema": "gangland.unity_city_chunk.v1",
-  "streets": [],
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 1080.0,
+          "z": 680.216
+        },
+        {
+          "x": 1045.294,
+          "z": 679.976
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273752",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/817114847#section/0#tile/14",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 52nd Street",
+      "oneway": false,
+      "parent_id": "way/817114847",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 673,
+      "start_node_id": "122736927",
+      "surface": "asphalt",
+      "tile_index": 14,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1045.294,
+          "z": 679.976
+        },
+        {
+          "x": 945.748,
+          "z": 680.377
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273752",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/817114847#section/0#tile/15",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 52nd Street",
+      "oneway": false,
+      "parent_id": "way/817114847",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 673,
+      "start_node_id": "122736927",
+      "surface": "asphalt",
+      "tile_index": 15,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 945.748,
+          "z": 680.377
+        },
+        {
+          "x": 937.847,
+          "z": 680.299
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273752",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/817114847#section/0#tile/16",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 52nd Street",
+      "oneway": false,
+      "parent_id": "way/817114847",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 673,
+      "start_node_id": "122736927",
+      "surface": "asphalt",
+      "tile_index": 16,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 937.847,
+          "z": 680.299
+        },
+        {
+          "x": 900.0,
+          "z": 680.071
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273752",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/817114847#section/0#tile/17",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 52nd Street",
+      "oneway": false,
+      "parent_id": "way/817114847",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 673,
+      "start_node_id": "122736927",
+      "surface": "asphalt",
+      "tile_index": 17,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
   "terrain": {
     "columns": 2,
     "origin_elevation_m": 58.0,

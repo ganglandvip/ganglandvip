@@ -380,13 +380,115 @@
     "buildings": 5,
     "junctions": 0,
     "pois": 0,
-    "streets": 0
+    "streets": 3
   },
   "id": "-6_-3",
   "junctions": [],
   "pois": [],
   "schema": "gangland.unity_city_chunk.v1",
-  "streets": [],
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -942.61,
+          "z": -389.754
+        },
+        {
+          "x": -900.0,
+          "z": -389.443
+        }
+      ],
+      "crossing": null,
+      "end_node_id": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/771789025#segment/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/771789025",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "section_index": 625,
+      "segment_index": 0,
+      "start_node_id": null,
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -922.47,
+          "z": -406.262
+        },
+        {
+          "x": -900.0,
+          "z": -406.161
+        }
+      ],
+      "crossing": null,
+      "end_node_id": null,
+      "estimated_road_width_m": 3.4,
+      "highway": "footway",
+      "id": "way/771821245#segment/0#tile/0",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/771821245",
+      "render_kind": "walkway",
+      "road_width_m": 3.4,
+      "section_index": 661,
+      "segment_index": 0,
+      "start_node_id": null,
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -900.0,
+          "z": -398.349
+        },
+        {
+          "x": -929.558,
+          "z": -398.581
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "208120588",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/1020769073#section/14#tile/2",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 60th Street",
+      "oneway": false,
+      "parent_id": "way/1020769073",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 803,
+      "start_node_id": "123275865",
+      "surface": "asphalt",
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
   "terrain": {
     "columns": 2,
     "origin_elevation_m": 58.0,

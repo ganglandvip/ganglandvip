@@ -4954,12 +4954,12 @@
     "buildings": 107,
     "junctions": 2,
     "pois": 0,
-    "streets": 4
+    "streets": 7
   },
   "id": "3_-4",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4971,7 +4971,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4989,8 +4989,8 @@
     {
       "centerline": [
         {
-          "x": 751.381,
-          "z": -587.046
+          "x": 720.0,
+          "z": -587.271
         },
         {
           "x": 661.453,
@@ -5001,7 +5001,7 @@
       "end_node_id": "122994050",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13351184#section/2",
+      "id": "way/13351184#section/2#tile/1",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -5011,10 +5011,11 @@
       "parent_id": "way/13351184",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 2,
+      "section_index": 72,
       "start_node_id": "122994048",
       "surface": null,
-      "trim_end_m": 0,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -5033,7 +5034,7 @@
       "end_node_id": "122994052",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13351184#section/3",
+      "id": "way/13351184#section/3#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -5043,10 +5044,77 @@
       "parent_id": "way/13351184",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 3,
+      "section_index": 73,
       "start_node_id": "122994050",
       "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 571.792,
+          "z": -588.404
+        },
+        {
+          "x": 540.0,
+          "z": -588.521
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122994056",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13351184#section/4#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 62nd Street",
+      "oneway": false,
+      "parent_id": "way/13351184",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 74,
+      "start_node_id": "122994052",
+      "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 571.927,
+          "z": -540.0
+        },
+        {
+          "x": 571.792,
+          "z": -588.404
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122994052",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13362383#section/2#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Madden Avenue",
+      "oneway": false,
+      "parent_id": "way/13362383",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 77,
+      "start_node_id": "123054214",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -5057,15 +5125,15 @@
           "z": -588.404
         },
         {
-          "x": 570.343,
-          "z": -791.129
+          "x": 570.851,
+          "z": -720.0
         }
       ],
       "crossing": null,
       "end_node_id": "123054216",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13362383#section/3",
+      "id": "way/13362383#section/3#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -5075,10 +5143,44 @@
       "parent_id": "way/13362383",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 3,
+      "section_index": 78,
       "start_node_id": "122994052",
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 661.726,
+          "z": -540.0
+        },
+        {
+          "x": 661.453,
+          "z": -587.692
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122994050",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13364995#section/2#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "7th Avenue",
+      "oneway": false,
+      "parent_id": "way/13364995",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 82,
+      "start_node_id": "123070072",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -5089,15 +5191,15 @@
           "z": -587.692
         },
         {
-          "x": 660.281,
-          "z": -790.35
+          "x": 660.688,
+          "z": -720.0
         }
       ],
       "crossing": null,
       "end_node_id": "123070074",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13364995#section/3",
+      "id": "way/13364995#section/3#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -5107,11 +5209,12 @@
       "parent_id": "way/13364995",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 3,
+      "section_index": 83,
       "start_node_id": "122994050",
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

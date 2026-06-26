@@ -4274,12 +4274,12 @@
     "buildings": 79,
     "junctions": 1,
     "pois": 0,
-    "streets": 2
+    "streets": 4
   },
   "id": "-3_3",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4297,8 +4297,8 @@
     {
       "centerline": [
         {
-          "x": -357.563,
-          "z": 670.024
+          "x": -460.138,
+          "z": 720.0
         },
         {
           "x": -460.09,
@@ -4309,20 +4309,21 @@
       "end_node_id": "123633214",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/509313137#section/5",
+      "id": "way/165665958#section/0#tile/7",
       "lane_count": 2,
-      "lane_source": "osm",
+      "lane_source": "inferred",
       "lane_width_m": 3.4,
       "maxspeed": null,
-      "name": "West 52nd Street",
+      "name": "Hillcrest Drive",
       "oneway": false,
-      "parent_id": "way/509313137",
+      "parent_id": "way/165665958",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 5,
-      "start_node_id": "123224177",
+      "section_index": 237,
+      "start_node_id": "1772062186",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 7,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -4333,15 +4334,48 @@
           "z": 669.401
         },
         {
-          "x": -565.054,
-          "z": 668.376
+          "x": -460.951,
+          "z": 540.0
         }
       ],
       "crossing": null,
-      "end_node_id": "123451117",
+      "end_node_id": "122742787",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/509313137#section/6",
+      "id": "way/165665958#section/1#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Hillcrest Drive",
+      "oneway": false,
+      "parent_id": "way/165665958",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 238,
+      "start_node_id": "123633214",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -360.0,
+          "z": 670.009
+        },
+        {
+          "x": -460.09,
+          "z": 669.401
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123633214",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/509313137#section/5#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -4351,11 +4385,45 @@
       "parent_id": "way/509313137",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 6,
+      "section_index": 471,
+      "start_node_id": "123224177",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -460.09,
+          "z": 669.401
+        },
+        {
+          "x": -540.0,
+          "z": 668.621
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123451117",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/509313137#section/6#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 52nd Street",
+      "oneway": false,
+      "parent_id": "way/509313137",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 472,
       "start_node_id": "123633214",
       "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

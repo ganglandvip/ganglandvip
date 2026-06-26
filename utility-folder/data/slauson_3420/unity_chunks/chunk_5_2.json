@@ -44,7 +44,7 @@
     "buildings": 1,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 2
   },
   "id": "5_2",
   "junctions": [],
@@ -54,31 +54,65 @@
     {
       "centerline": [
         {
-          "x": 943.505,
-          "z": 475.025
+          "x": 900.0,
+          "z": 474.715
         },
         {
-          "x": 891.826,
-          "z": 474.657
+          "x": 943.505,
+          "z": 475.025
         }
       ],
       "crossing": null,
-      "end_node_id": "4011777744",
+      "end_node_id": "122742764",
       "estimated_road_width_m": 10.2,
       "highway": "tertiary",
-      "id": "way/398417452#section/0",
+      "id": "way/398417446#section/0#graph/way/398417452#section/0#tile/2",
       "lane_count": 3,
       "lane_source": "osm",
       "lane_width_m": 3.4,
       "maxspeed": "30 mph",
       "name": "West 54th Street",
       "oneway": false,
-      "parent_id": "way/398417452",
+      "parent_id": "way/398417446",
       "render_kind": "road",
       "road_width_m": 10.2,
-      "section_index": 0,
-      "start_node_id": "122742764",
+      "section_index": 416,
+      "start_node_id": "122742766",
       "surface": "paved",
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 900.0,
+          "z": 431.799
+        },
+        {
+          "x": 943.505,
+          "z": 431.632
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7403768738",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/791961268#section/0#tile/2",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/791961268",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 671,
+      "start_node_id": "7403768736",
+      "surface": null,
+      "tile_index": 2,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

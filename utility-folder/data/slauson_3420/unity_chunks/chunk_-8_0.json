@@ -1,0 +1,92 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -1260,
+    "max_z": 180,
+    "min_x": -1440,
+    "min_z": 0
+  },
+  "buildings": [],
+  "coord_x": -8,
+  "coord_z": 0,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 2
+  },
+  "id": "-8_0",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -1296.494,
+          "z": 180.0
+        },
+        {
+          "x": -1332.773,
+          "z": 112.032
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572291",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1111523013#section/12#tile/11",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1111523013",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 835,
+      "start_node_id": "122572269",
+      "surface": "asphalt",
+      "tile_index": 11,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1332.773,
+          "z": 112.032
+        },
+        {
+          "x": -1339.797,
+          "z": 106.043
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572291",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1111523013#section/12#tile/12",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1111523013",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 835,
+      "start_node_id": "122572269",
+      "surface": "asphalt",
+      "tile_index": 12,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

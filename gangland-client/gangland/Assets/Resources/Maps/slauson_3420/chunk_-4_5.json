@@ -230,7 +230,7 @@
     "buildings": 3,
     "junctions": 1,
     "pois": 0,
-    "streets": 3
+    "streets": 9
   },
   "id": "-4_5",
   "junctions": [
@@ -259,17 +259,13 @@
         {
           "x": -677.098,
           "z": 918.835
-        },
-        {
-          "x": -664.647,
-          "z": 891.028
         }
       ],
       "crossing": null,
       "end_node_id": "122882114",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13448150#section/0",
+      "id": "way/13448150#section/0#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -279,9 +275,43 @@
       "parent_id": "way/13448150",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 179,
       "start_node_id": "122819789",
       "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -677.098,
+          "z": 918.835
+        },
+        {
+          "x": -668.664,
+          "z": 900.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122882114",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13448150#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Mullen Avenue",
+      "oneway": false,
+      "parent_id": "way/13448150",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 179,
+      "start_node_id": "122819789",
+      "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -295,17 +325,13 @@
         {
           "x": -687.002,
           "z": 917.422
-        },
-        {
-          "x": -700.376,
-          "z": 891.695
         }
       ],
       "crossing": null,
       "end_node_id": "122819791",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/165665922#section/0",
+      "id": "way/165665922#section/0#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -315,9 +341,43 @@
       "parent_id": "way/165665922",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 216,
       "start_node_id": "122819789",
       "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -687.002,
+          "z": 917.422
+        },
+        {
+          "x": -696.059,
+          "z": 900.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122819791",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665922#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Lorado Way",
+      "oneway": false,
+      "parent_id": "way/165665922",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 216,
+      "start_node_id": "122819789",
+      "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -325,39 +385,19 @@
     {
       "centerline": [
         {
-          "x": -525.227,
-          "z": 965.267
-        },
-        {
           "x": -540.641,
           "z": 954.458
         },
         {
           "x": -554.597,
           "z": 942.368
-        },
-        {
-          "x": -566.227,
-          "z": 929.266
-        },
-        {
-          "x": -573.878,
-          "z": 918.512
-        },
-        {
-          "x": -582.315,
-          "z": 902.605
-        },
-        {
-          "x": -589.957,
-          "z": 883.836
         }
       ],
       "crossing": null,
       "end_node_id": "123112585",
       "estimated_road_width_m": 13.6,
       "highway": "tertiary",
-      "id": "way/165665929#section/0",
+      "id": "way/165665929#section/0#tile/1",
       "lane_count": 4,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -367,9 +407,142 @@
       "parent_id": "way/165665929",
       "render_kind": "road",
       "road_width_m": 13.6,
-      "section_index": 0,
+      "section_index": 220,
       "start_node_id": "1772062186",
       "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -554.597,
+          "z": 942.368
+        },
+        {
+          "x": -566.227,
+          "z": 929.266
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123112585",
+      "estimated_road_width_m": 13.6,
+      "highway": "tertiary",
+      "id": "way/165665929#section/0#tile/2",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "35 mph",
+      "name": "Angeles Vista Boulevard",
+      "oneway": false,
+      "parent_id": "way/165665929",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 220,
+      "start_node_id": "1772062186",
+      "surface": "asphalt",
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -566.227,
+          "z": 929.266
+        },
+        {
+          "x": -573.878,
+          "z": 918.512
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123112585",
+      "estimated_road_width_m": 13.6,
+      "highway": "tertiary",
+      "id": "way/165665929#section/0#tile/3",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "35 mph",
+      "name": "Angeles Vista Boulevard",
+      "oneway": false,
+      "parent_id": "way/165665929",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 220,
+      "start_node_id": "1772062186",
+      "surface": "asphalt",
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -573.878,
+          "z": 918.512
+        },
+        {
+          "x": -582.315,
+          "z": 902.605
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123112585",
+      "estimated_road_width_m": 13.6,
+      "highway": "tertiary",
+      "id": "way/165665929#section/0#tile/4",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "35 mph",
+      "name": "Angeles Vista Boulevard",
+      "oneway": false,
+      "parent_id": "way/165665929",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 220,
+      "start_node_id": "1772062186",
+      "surface": "asphalt",
+      "tile_index": 4,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -582.315,
+          "z": 902.605
+        },
+        {
+          "x": -583.376,
+          "z": 900.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123112585",
+      "estimated_road_width_m": 13.6,
+      "highway": "tertiary",
+      "id": "way/165665929#section/0#tile/5",
+      "lane_count": 4,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "35 mph",
+      "name": "Angeles Vista Boulevard",
+      "oneway": false,
+      "parent_id": "way/165665929",
+      "render_kind": "road",
+      "road_width_m": 13.6,
+      "section_index": 220,
+      "start_node_id": "1772062186",
+      "surface": "asphalt",
+      "tile_index": 5,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

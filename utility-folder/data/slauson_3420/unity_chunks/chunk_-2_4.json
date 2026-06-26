@@ -3988,12 +3988,12 @@
     "buildings": 73,
     "junctions": 2,
     "pois": 0,
-    "streets": 4
+    "streets": 8
   },
   "id": "-2_4",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4005,7 +4005,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "residential",
         "tertiary"
@@ -4024,8 +4024,8 @@
     {
       "centerline": [
         {
-          "x": -149.13,
-          "z": 866.994
+          "x": -180.0,
+          "z": 867.001
         },
         {
           "x": -252.756,
@@ -4036,7 +4036,7 @@
       "end_node_id": "122900182",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13334079#section/1",
+      "id": "way/13334079#section/1#tile/1",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4046,10 +4046,11 @@
       "parent_id": "way/13334079",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 64,
       "start_node_id": "122601718",
       "surface": null,
-      "trim_end_m": 0,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -4059,6 +4060,35 @@
           "x": -252.756,
           "z": 867.016
         },
+        {
+          "x": -348.287,
+          "z": 866.782
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122900185",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13334079#section/2#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Floresta Avenue",
+      "oneway": false,
+      "parent_id": "way/13334079",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 65,
+      "start_node_id": "122900182",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": -348.287,
           "z": 866.782
@@ -4072,7 +4102,7 @@
       "end_node_id": "122900185",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13334079#section/2",
+      "id": "way/13334079#section/2#tile/1",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4082,10 +4112,44 @@
       "parent_id": "way/13334079",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 2,
+      "section_index": 65,
       "start_node_id": "122900182",
       "surface": null,
-      "trim_end_m": 0,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -253.279,
+          "z": 900.0
+        },
+        {
+          "x": -252.756,
+          "z": 867.016
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122900182",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/165665937#section/0#tile/9",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Chesley Avenue",
+      "oneway": false,
+      "parent_id": "way/165665937",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 226,
+      "start_node_id": "1772062338",
+      "surface": "asphalt",
+      "tile_index": 9,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -4096,15 +4160,15 @@
           "z": 867.016
         },
         {
-          "x": -253.78,
-          "z": 670.614
+          "x": -253.523,
+          "z": 720.0
         }
       ],
       "crossing": null,
       "end_node_id": "123487003",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/165665937#section/1",
+      "id": "way/165665937#section/1#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4114,10 +4178,44 @@
       "parent_id": "way/165665937",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 227,
       "start_node_id": "122900182",
       "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -359.529,
+          "z": 884.493
+        },
+        {
+          "x": -356.686,
+          "z": 866.76
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122900185",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/165665943#section/0#tile/8",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West Boulevard",
+      "oneway": false,
+      "parent_id": "way/165665943",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 232,
+      "start_node_id": "1772062290",
+      "surface": "asphalt",
+      "tile_index": 8,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -4128,15 +4226,15 @@
           "z": 866.76
         },
         {
-          "x": -357.563,
-          "z": 670.024
+          "x": -357.34,
+          "z": 720.0
         }
       ],
       "crossing": null,
       "end_node_id": "123224177",
       "estimated_road_width_m": 6.8,
       "highway": "tertiary",
-      "id": "way/165665943#section/1",
+      "id": "way/165665943#section/1#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -4146,9 +4244,43 @@
       "parent_id": "way/165665943",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 233,
       "start_node_id": "122900185",
       "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -180.0,
+          "z": 772.107
+        },
+        {
+          "x": -182.644,
+          "z": 772.138
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "8411402407",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/905761344#section/0#tile/1",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/905761344",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 749,
+      "start_node_id": "8411402406",
+      "surface": null,
+      "tile_index": 1,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

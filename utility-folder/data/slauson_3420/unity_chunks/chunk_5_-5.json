@@ -421,7 +421,7 @@
     "buildings": 6,
     "junctions": 0,
     "pois": 0,
-    "streets": 6
+    "streets": 14
   },
   "id": "5_-5",
   "junctions": [],
@@ -431,67 +431,19 @@
     {
       "centerline": [
         {
-          "x": 1291.164,
-          "z": -620.075
-        },
-        {
-          "x": 1286.134,
-          "z": -621.388
-        },
-        {
-          "x": 1283.817,
-          "z": -622.368
-        },
-        {
-          "x": 1247.45,
-          "z": -642.294
-        },
-        {
-          "x": 1199.482,
-          "z": -669.846
-        },
-        {
-          "x": 1109.415,
-          "z": -720.619
-        },
-        {
-          "x": 1094.915,
-          "z": -728.79
+          "x": 1080.0,
+          "z": -737.236
         },
         {
           "x": 1019.662,
           "z": -771.403
-        },
-        {
-          "x": 959.953,
-          "z": -805.178
-        },
-        {
-          "x": 956.713,
-          "z": -807.493
-        },
-        {
-          "x": 947.575,
-          "z": -812.681
-        },
-        {
-          "x": 928.709,
-          "z": -823.2
-        },
-        {
-          "x": 918.778,
-          "z": -828.733
-        },
-        {
-          "x": 838.753,
-          "z": -874.597
         }
       ],
       "crossing": null,
       "end_node_id": "122991563",
       "estimated_road_width_m": 6.8,
       "highway": "tertiary",
-      "id": "way/13350737#section/0",
+      "id": "way/13350737#section/0#tile/8",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -501,9 +453,241 @@
       "parent_id": "way/13350737",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 66,
       "start_node_id": "122728915",
       "surface": null,
+      "tile_index": 8,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1019.662,
+          "z": -771.403
+        },
+        {
+          "x": 959.953,
+          "z": -805.178
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/9",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 9,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 959.953,
+          "z": -805.178
+        },
+        {
+          "x": 956.713,
+          "z": -807.493
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/10",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 10,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 956.713,
+          "z": -807.493
+        },
+        {
+          "x": 947.575,
+          "z": -812.681
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/11",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 11,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 947.575,
+          "z": -812.681
+        },
+        {
+          "x": 928.709,
+          "z": -823.2
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/12",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 12,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 928.709,
+          "z": -823.2
+        },
+        {
+          "x": 918.778,
+          "z": -828.733
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/13",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 13,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 918.778,
+          "z": -828.733
+        },
+        {
+          "x": 900.0,
+          "z": -839.495
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/14",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 14,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 918.076,
+          "z": -755.084
+        },
+        {
+          "x": 900.0,
+          "z": -765.548
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123272433",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/173794415#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Hyde Park Boulevard",
+      "oneway": false,
+      "parent_id": "way/173794415",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 259,
+      "start_node_id": "1845491110",
+      "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -515,14 +699,15 @@
           "z": -771.581
         },
         {
-          "x": 894.872,
-          "z": -781.522
+          "x": 900.0,
+          "z": -779.037
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1387892874#segment/0",
+      "id": "way/1387892874#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -532,8 +717,11 @@
       "parent_id": "way/1387892874",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 932,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": "concrete",
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -550,9 +738,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 6.8,
       "highway": "cycleway",
-      "id": "way/1387892875#segment/0",
+      "id": "way/1387892875#segment/0#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -562,8 +751,45 @@
       "parent_id": "way/1387892875",
       "render_kind": "walkway",
       "road_width_m": 6.8,
+      "section_index": 936,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 915.187,
+          "z": -775.578
+        },
+        {
+          "x": 900.0,
+          "z": -784.182
+        }
+      ],
+      "crossing": null,
+      "end_node_id": null,
+      "estimated_road_width_m": 6.8,
+      "highway": "cycleway",
+      "id": "way/1387892875#segment/1#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Harbor Subdivision",
+      "oneway": false,
+      "parent_id": "way/1387892875",
+      "render_kind": "walkway",
+      "road_width_m": 6.8,
+      "section_index": 937,
+      "segment_index": 1,
+      "start_node_id": null,
+      "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -580,9 +806,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1444386649#segment/0",
+      "id": "way/1444386649#segment/0#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -592,8 +819,11 @@
       "parent_id": "way/1444386649",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1338,
       "segment_index": 0,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -610,9 +840,10 @@
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1444386649#segment/1",
+      "id": "way/1444386649#segment/1#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -622,8 +853,11 @@
       "parent_id": "way/1444386649",
       "render_kind": "walkway",
       "road_width_m": 3.4,
+      "section_index": 1339,
       "segment_index": 1,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null
@@ -631,18 +865,19 @@
     {
       "centerline": [
         {
-          "x": 916.304,
-          "z": -767.384
-        },
-        {
           "x": 914.061,
           "z": -766.572
+        },
+        {
+          "x": 900.0,
+          "z": -774.533
         }
       ],
       "crossing": null,
+      "end_node_id": null,
       "estimated_road_width_m": 3.4,
       "highway": "footway",
-      "id": "way/1444386649#segment/2",
+      "id": "way/1444386649#segment/3#tile/0",
       "lane_count": 1,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -652,8 +887,11 @@
       "parent_id": "way/1444386649",
       "render_kind": "walkway",
       "road_width_m": 3.4,
-      "segment_index": 2,
+      "section_index": 1341,
+      "segment_index": 3,
+      "start_node_id": null,
       "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

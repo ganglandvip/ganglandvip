@@ -160,12 +160,12 @@
     "buildings": 5,
     "junctions": 1,
     "pois": 0,
-    "streets": 1
+    "streets": 5
   },
   "id": "5_0",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 3,
       "highways": [
         "primary",
         "service"
@@ -190,6 +190,35 @@
         {
           "x": 933.158,
           "z": 18.568
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7456826670",
+      "estimated_road_width_m": 17.0,
+      "highway": "primary",
+      "id": "way/398417460#section/0#tile/0",
+      "lane_count": 5,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "35 mph",
+      "name": "West Slauson Avenue",
+      "oneway": false,
+      "parent_id": "way/398417460",
+      "render_kind": "road",
+      "road_width_m": 17.0,
+      "section_index": 417,
+      "start_node_id": "123144409",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 933.158,
+          "z": 18.568
         },
         {
           "x": 905.837,
@@ -200,7 +229,7 @@
       "end_node_id": "7456826670",
       "estimated_road_width_m": 17.0,
       "highway": "primary",
-      "id": "way/398417460#section/0",
+      "id": "way/398417460#section/0#tile/1",
       "lane_count": 5,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -210,10 +239,110 @@
       "parent_id": "way/398417460",
       "render_kind": "road",
       "road_width_m": 17.0,
-      "section_index": 0,
+      "section_index": 417,
       "start_node_id": "123144409",
       "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 7.56,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 905.837,
+          "z": 18.19
+        },
+        {
+          "x": 900.0,
+          "z": 18.107
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273755",
+      "estimated_road_width_m": 17.0,
+      "highway": "primary",
+      "id": "way/398417460#section/1#graph/way/398417472#section/0#graph/way/400003938#section/0#tile/0",
+      "lane_count": 5,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "35 mph",
+      "name": "West Slauson Avenue",
+      "oneway": false,
+      "parent_id": "way/398417460",
+      "render_kind": "road",
+      "road_width_m": 17.0,
+      "section_index": 418,
+      "start_node_id": "7456826670",
+      "surface": null,
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 7.56,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 906.501,
+          "z": 0.0
+        },
+        {
+          "x": 906.262,
+          "z": 6.134
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7456826670",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/797310647#section/0#tile/10",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/797310647",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 672,
+      "start_node_id": "7456826659",
+      "surface": null,
+      "tile_index": 10,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 906.262,
+          "z": 6.134
+        },
+        {
+          "x": 905.837,
+          "z": 18.19
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "7456826670",
+      "estimated_road_width_m": 3.4,
+      "highway": "service",
+      "id": "way/797310647#section/0#tile/11",
+      "lane_count": 1,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": null,
+      "oneway": false,
+      "parent_id": "way/797310647",
+      "render_kind": "road",
+      "road_width_m": 3.4,
+      "section_index": 672,
+      "start_node_id": "7456826659",
+      "surface": null,
+      "tile_index": 11,
+      "trim_end_m": 7.56,
       "trim_start_m": 0,
       "turn_lanes": null
     }

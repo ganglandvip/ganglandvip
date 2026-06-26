@@ -1,0 +1,191 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 1260,
+    "max_z": -540,
+    "min_x": 1080,
+    "min_z": -720
+  },
+  "buildings": [],
+  "coord_x": 6,
+  "coord_z": -4,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 5
+  },
+  "id": "6_-4",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 1260.0,
+          "z": -635.418
+        },
+        {
+          "x": 1247.45,
+          "z": -642.294
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/3",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1247.45,
+          "z": -642.294
+        },
+        {
+          "x": 1199.482,
+          "z": -669.846
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/4",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 4,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1199.482,
+          "z": -669.846
+        },
+        {
+          "x": 1110.513,
+          "z": -720.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122991563",
+      "estimated_road_width_m": 6.8,
+      "highway": "tertiary",
+      "id": "way/13350737#section/0#tile/5",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": "30 mph",
+      "name": "Southwest Drive",
+      "oneway": false,
+      "parent_id": "way/13350737",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 66,
+      "start_node_id": "122728915",
+      "surface": null,
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1147.821,
+          "z": -584.252
+        },
+        {
+          "x": 1112.35,
+          "z": -584.018
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122994046",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13351184#section/0#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 62nd Street",
+      "oneway": false,
+      "parent_id": "way/13351184",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 70,
+      "start_node_id": "122994041",
+      "surface": null,
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1112.35,
+          "z": -584.018
+        },
+        {
+          "x": 1080.0,
+          "z": -584.42
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122994046",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13351184#section/0#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 62nd Street",
+      "oneway": false,
+      "parent_id": "way/13351184",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 70,
+      "start_node_id": "122994041",
+      "surface": null,
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

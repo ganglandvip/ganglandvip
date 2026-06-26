@@ -4272,12 +4272,12 @@
     "buildings": 69,
     "junctions": 2,
     "pois": 0,
-    "streets": 3
+    "streets": 7
   },
   "id": "-5_1",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4289,7 +4289,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4307,8 +4307,8 @@
     {
       "centerline": [
         {
-          "x": -758.673,
-          "z": 409.034
+          "x": -758.531,
+          "z": 360.0
         },
         {
           "x": -758.092,
@@ -4319,7 +4319,7 @@
       "end_node_id": "122572267",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13427781#section/3",
+      "id": "way/13427781#section/3#tile/1",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4329,18 +4329,52 @@
       "parent_id": "way/13427781",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 3,
+      "section_index": 151,
       "start_node_id": "2995089667",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
     {
       "centerline": [
         {
-          "x": -856.161,
-          "z": 408.288
+          "x": -758.092,
+          "z": 208.992
+        },
+        {
+          "x": -758.011,
+          "z": 180.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "705825513",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13427781#section/4#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Rimpau Boulevard",
+      "oneway": false,
+      "parent_id": "way/13427781",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 152,
+      "start_node_id": "122572267",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -855.967,
+          "z": 360.0
         },
         {
           "x": -855.358,
@@ -4351,7 +4385,7 @@
       "end_node_id": "122572269",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13431469#section/3",
+      "id": "way/13431469#section/3#tile/1",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4361,10 +4395,77 @@
       "parent_id": "way/13431469",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 3,
+      "section_index": 163,
       "start_node_id": "2995090803",
       "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -855.358,
+          "z": 208.18
+        },
+        {
+          "x": -855.264,
+          "z": 180.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "705825512",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13431469#section/4#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "South Harcourt Avenue",
+      "oneway": false,
+      "parent_id": "way/13431469",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 164,
+      "start_node_id": "122572269",
+      "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -720.0,
+          "z": 209.566
+        },
+        {
+          "x": -758.092,
+          "z": 208.992
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572267",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1111523013#section/10#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1111523013",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 833,
+      "start_node_id": "122572264",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
@@ -4383,7 +4484,7 @@
       "end_node_id": "122572269",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1111523013#section/11",
+      "id": "way/1111523013#section/11#tile/0",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -4393,11 +4494,45 @@
       "parent_id": "way/1111523013",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 11,
+      "section_index": 834,
       "start_node_id": "122572267",
       "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -855.358,
+          "z": 208.18
+        },
+        {
+          "x": -900.0,
+          "z": 207.8
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122572291",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1111523013#section/12#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 57th Street",
+      "oneway": false,
+      "parent_id": "way/1111523013",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 835,
+      "start_node_id": "122572269",
+      "surface": "asphalt",
+      "tile_index": 0,
       "trim_end_m": 0,
-      "trim_start_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

@@ -1,0 +1,92 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 720,
+    "max_z": 1620,
+    "min_x": 540,
+    "min_z": 1440
+  },
+  "buildings": [],
+  "coord_x": 3,
+  "coord_z": 8,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 2
+  },
+  "id": "3_8",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 647.593,
+          "z": 1620.0
+        },
+        {
+          "x": 647.331,
+          "z": 1591.097
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123070191",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13365011#section/0#tile/2",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "7th Avenue",
+      "oneway": false,
+      "parent_id": "way/13365011",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 85,
+      "start_node_id": "123070183",
+      "surface": null,
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 647.331,
+          "z": 1591.097
+        },
+        {
+          "x": 646.19,
+          "z": 1440.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123070191",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13365011#section/0#tile/3",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "7th Avenue",
+      "oneway": false,
+      "parent_id": "way/13365011",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 85,
+      "start_node_id": "123070183",
+      "surface": null,
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

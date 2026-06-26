@@ -4191,12 +4191,12 @@
     "buildings": 84,
     "junctions": 2,
     "pois": 0,
-    "streets": 3
+    "streets": 8
   },
   "id": "-1_-2",
   "junctions": [
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4208,7 +4208,7 @@
       "radius_m": 3.684
     },
     {
-      "connected_road_count": 2,
+      "connected_road_count": 4,
       "highways": [
         "residential"
       ],
@@ -4226,6 +4226,39 @@
     {
       "centerline": [
         {
+          "x": -120.83,
+          "z": -180.0
+        },
+        {
+          "x": -120.868,
+          "z": -190.713
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122601750",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13284702#section/2#tile/1",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Brynhurst Avenue",
+      "oneway": false,
+      "parent_id": "way/13284702",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 4,
+      "start_node_id": "122601743",
+      "surface": "paved",
+      "tile_index": 1,
+      "trim_end_m": 3.684,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
           "x": -120.868,
           "z": -190.713
         },
@@ -4238,7 +4271,7 @@
       "end_node_id": "122601754",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13284702#section/3",
+      "id": "way/13284702#section/3#tile/0",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -4248,18 +4281,52 @@
       "parent_id": "way/13284702",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 3,
+      "section_index": 5,
       "start_node_id": "122601750",
       "surface": "paved",
-      "trim_end_m": 0,
-      "trim_start_m": 0,
+      "tile_index": 0,
+      "trim_end_m": 3.684,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     },
     {
       "centerline": [
         {
-          "x": 22.807,
-          "z": -290.634
+          "x": -121.458,
+          "z": -291.67
+        },
+        {
+          "x": -122.157,
+          "z": -360.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122601757",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13284702#section/4#tile/0",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Brynhurst Avenue",
+      "oneway": false,
+      "parent_id": "way/13284702",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 6,
+      "start_node_id": "122601754",
+      "surface": "paved",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -0.0,
+          "z": -290.798
         },
         {
           "x": -121.458,
@@ -4270,7 +4337,7 @@
       "end_node_id": "122601754",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/295756012#section/1",
+      "id": "way/295756012#section/1#tile/1",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -4280,19 +4347,82 @@
       "parent_id": "way/295756012",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 281,
       "start_node_id": "6768739135",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 1,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
       "turn_lanes": null
     },
     {
       "centerline": [
         {
-          "x": 29.545,
-          "z": -190.457
+          "x": -121.458,
+          "z": -291.67
         },
+        {
+          "x": -180.0,
+          "z": -292.484
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "705825489",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/295756012#section/2#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Place",
+      "oneway": false,
+      "parent_id": "way/295756012",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 282,
+      "start_node_id": "122601754",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 0.0,
+          "z": -190.774
+        },
+        {
+          "x": -43.252,
+          "z": -191.237
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122601750",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/13#tile/1",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 874,
+      "start_node_id": "6790048863",
+      "surface": "asphalt",
+      "tile_index": 1,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
         {
           "x": -43.252,
           "z": -191.237
@@ -4306,7 +4436,7 @@
       "end_node_id": "122601750",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/1265686427#section/13",
+      "id": "way/1265686427#section/13#tile/2",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -4316,11 +4446,45 @@
       "parent_id": "way/1265686427",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 13,
+      "section_index": 874,
       "start_node_id": "6790048863",
       "surface": "asphalt",
-      "trim_end_m": 0,
+      "tile_index": 2,
+      "trim_end_m": 3.684,
       "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -120.868,
+          "z": -190.713
+        },
+        {
+          "x": -180.0,
+          "z": -192.063
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "705825488",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/1265686427#section/14#tile/0",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 59th Street",
+      "oneway": false,
+      "parent_id": "way/1265686427",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 875,
+      "start_node_id": "122601750",
+      "surface": "asphalt",
+      "tile_index": 0,
+      "trim_end_m": 0,
+      "trim_start_m": 3.684,
       "turn_lanes": null
     }
   ],

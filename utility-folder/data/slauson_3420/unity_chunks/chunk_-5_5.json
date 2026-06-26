@@ -185,7 +185,7 @@
     "buildings": 2,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 2
   },
   "id": "-5_5",
   "junctions": [],
@@ -195,47 +195,19 @@
     {
       "centerline": [
         {
-          "x": -700.376,
-          "z": 891.695
-        },
-        {
-          "x": -790.665,
-          "z": 886.363
-        },
-        {
-          "x": -819.518,
-          "z": 890.304
-        },
-        {
           "x": -842.307,
           "z": 900.312
         },
         {
           "x": -864.126,
           "z": 920.561
-        },
-        {
-          "x": -900.991,
-          "z": 960.525
-        },
-        {
-          "x": -936.545,
-          "z": 993.564
-        },
-        {
-          "x": -959.03,
-          "z": 1013.045
-        },
-        {
-          "x": -1047.934,
-          "z": 1013.201
         }
       ],
       "crossing": null,
       "end_node_id": "122882118",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13330595#section/1",
+      "id": "way/13330595#section/1#tile/4",
       "lane_count": 2,
       "lane_source": "inferred",
       "lane_width_m": 3.4,
@@ -245,9 +217,43 @@
       "parent_id": "way/13330595",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 1,
+      "section_index": 62,
       "start_node_id": "122819791",
       "surface": null,
+      "tile_index": 4,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -864.126,
+          "z": 920.561
+        },
+        {
+          "x": -900.0,
+          "z": 959.451
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "122882118",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13330595#section/1#tile/5",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "Floresta Way",
+      "oneway": false,
+      "parent_id": "way/13330595",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 62,
+      "start_node_id": "122819791",
+      "surface": null,
+      "tile_index": 5,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

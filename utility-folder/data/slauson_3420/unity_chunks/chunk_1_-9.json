@@ -1,0 +1,125 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": 360,
+    "max_z": -1440,
+    "min_x": 180,
+    "min_z": -1620
+  },
+  "buildings": [],
+  "coord_x": 1,
+  "coord_z": -9,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 3
+  },
+  "id": "1_-9",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": 211.876,
+          "z": -1440.0
+        },
+        {
+          "x": 211.876,
+          "z": -1473.821
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123322468",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13401387#section/22#tile/18",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "11th Avenue",
+      "oneway": false,
+      "parent_id": "way/13401387",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 135,
+      "start_node_id": "8410375486",
+      "surface": null,
+      "tile_index": 18,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 211.876,
+          "z": -1473.821
+        },
+        {
+          "x": 211.128,
+          "z": -1536.951
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123322468",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13401387#section/22#tile/19",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "11th Avenue",
+      "oneway": false,
+      "parent_id": "way/13401387",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 135,
+      "start_node_id": "8410375486",
+      "surface": null,
+      "tile_index": 19,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 211.128,
+          "z": -1536.951
+        },
+        {
+          "x": 210.325,
+          "z": -1601.65
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123322468",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13401387#section/22#tile/20",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "11th Avenue",
+      "oneway": false,
+      "parent_id": "way/13401387",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 135,
+      "start_node_id": "8410375486",
+      "surface": null,
+      "tile_index": 20,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

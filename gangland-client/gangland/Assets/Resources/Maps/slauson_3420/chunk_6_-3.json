@@ -14,7 +14,7 @@
     "buildings": 0,
     "junctions": 0,
     "pois": 0,
-    "streets": 1
+    "streets": 3
   },
   "id": "6_-3",
   "junctions": [],
@@ -24,39 +24,19 @@
     {
       "centerline": [
         {
-          "x": 1292.087,
-          "z": -381.683
-        },
-        {
-          "x": 1283.881,
-          "z": -381.739
+          "x": 1260.0,
+          "z": -381.905
         },
         {
           "x": 1202.436,
           "z": -382.306
-        },
-        {
-          "x": 1112.526,
-          "z": -382.941
-        },
-        {
-          "x": 1023.049,
-          "z": -383.564
-        },
-        {
-          "x": 932.263,
-          "z": -384.199
-        },
-        {
-          "x": 841.587,
-          "z": -384.822
         }
       ],
       "crossing": null,
       "end_node_id": "123273762",
       "estimated_road_width_m": 6.8,
       "highway": "residential",
-      "id": "way/13392821#section/0",
+      "id": "way/13392821#section/0#tile/2",
       "lane_count": 2,
       "lane_source": "osm",
       "lane_width_m": 3.4,
@@ -66,9 +46,76 @@
       "parent_id": "way/13392821",
       "render_kind": "road",
       "road_width_m": 6.8,
-      "section_index": 0,
+      "section_index": 108,
       "start_node_id": "122728901",
       "surface": "asphalt",
+      "tile_index": 2,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1202.436,
+          "z": -382.306
+        },
+        {
+          "x": 1112.526,
+          "z": -382.941
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273762",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13392821#section/0#tile/3",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 60th Street",
+      "oneway": false,
+      "parent_id": "way/13392821",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 108,
+      "start_node_id": "122728901",
+      "surface": "asphalt",
+      "tile_index": 3,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": 1112.526,
+          "z": -382.941
+        },
+        {
+          "x": 1080.0,
+          "z": -383.167
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123273762",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13392821#section/0#tile/4",
+      "lane_count": 2,
+      "lane_source": "osm",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "West 60th Street",
+      "oneway": false,
+      "parent_id": "way/13392821",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 108,
+      "start_node_id": "122728901",
+      "surface": "asphalt",
+      "tile_index": 4,
       "trim_end_m": 0,
       "trim_start_m": 0,
       "turn_lanes": null

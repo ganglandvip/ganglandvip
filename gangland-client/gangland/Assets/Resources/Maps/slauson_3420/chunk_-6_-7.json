@@ -1,0 +1,92 @@
+{
+  "areas": [],
+  "bounds": {
+    "max_x": -900,
+    "max_z": -1080,
+    "min_x": -1080,
+    "min_z": -1260
+  },
+  "buildings": [],
+  "coord_x": -6,
+  "coord_z": -7,
+  "counts": {
+    "areas": 0,
+    "buildings": 0,
+    "junctions": 0,
+    "pois": 0,
+    "streets": 2
+  },
+  "id": "-6_-7",
+  "junctions": [],
+  "pois": [],
+  "schema": "gangland.unity_city_chunk.v1",
+  "streets": [
+    {
+      "centerline": [
+        {
+          "x": -1080.0,
+          "z": -1112.628
+        },
+        {
+          "x": -1026.335,
+          "z": -1085.236
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123073886",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13365731#section/0#tile/5",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Brett Street",
+      "oneway": false,
+      "parent_id": "way/13365731",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 89,
+      "start_node_id": "123073883",
+      "surface": null,
+      "tile_index": 5,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    },
+    {
+      "centerline": [
+        {
+          "x": -1026.335,
+          "z": -1085.236
+        },
+        {
+          "x": -1016.061,
+          "z": -1080.0
+        }
+      ],
+      "crossing": null,
+      "end_node_id": "123073886",
+      "estimated_road_width_m": 6.8,
+      "highway": "residential",
+      "id": "way/13365731#section/0#tile/6",
+      "lane_count": 2,
+      "lane_source": "inferred",
+      "lane_width_m": 3.4,
+      "maxspeed": null,
+      "name": "East Brett Street",
+      "oneway": false,
+      "parent_id": "way/13365731",
+      "render_kind": "road",
+      "road_width_m": 6.8,
+      "section_index": 89,
+      "start_node_id": "123073883",
+      "surface": null,
+      "tile_index": 6,
+      "trim_end_m": 0,
+      "trim_start_m": 0,
+      "turn_lanes": null
+    }
+  ],
+  "terrain": null
+}

@@ -1,5 +1,9 @@
 # Gangland
 
+<p align="center">
+  <img src="gangland.banner.png" alt="Gangland banner" width="100%">
+</p>
+
 Website: https://gangland.vip
 
 Gangland is a multiplayer VR crime simulator set inside a persistent living city.
