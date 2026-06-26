@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -20,6 +21,10 @@ namespace Gangland.CityStreaming
         const string IntersectionMaterialPath = "Assets/Night Modular City Pack/Materials/NC_Asphalt_Cross and Corner.mat";
         const string SidewalkMaterialPath = "Assets/Night Modular City Pack/Materials/NC_Footpath.mat";
         const string BuildingMaterialPath = "Assets/Night Modular City Pack/Materials/NC_Building_B_diffuse.mat";
+        const string RoadTexturePath = "Assets/Night Modular City Pack/Textures/NC_Asphalt_Road Texture_M_01.png";
+        const string IntersectionTexturePath = "Assets/Night Modular City Pack/Textures/NC_Asphalt_Cross and Corner.png";
+        const string SidewalkTexturePath = "Assets/Night Modular City Pack/Textures/NC_Footpath.png";
+        const string BuildingTexturePath = "Assets/Night Modular City Pack/Textures/NC_Buildings_n_Props_diffuse_N.png";
         static readonly string[] BuildingPaths =
         {
             "Assets/Night Modular City Pack/Prefabs/Buildings/SmallBuildings/NC_SmallBuilding_A.prefab",
@@ -87,7 +92,7 @@ namespace Gangland.CityStreaming
         [SerializeField] bool spawnPois = true;
         [SerializeField] bool configureEnvironment = true;
         [SerializeField] bool renderProceduralBuildings = false;
-        [SerializeField] bool useAssetPackMaterials = false;
+        [SerializeField] bool useAssetPackMaterials = true;
 
         [Header("Asset Pack Dressing")]
         [SerializeField] bool useAssetPackProps = true;
@@ -138,13 +143,13 @@ namespace Gangland.CityStreaming
             benchPrefab = LoadEditorPrefab(BenchPath, benchPrefab);
             hydrantPrefab = LoadEditorPrefab(HydrantPath, hydrantPrefab);
             characterPreviewPrefab = LoadEditorPrefab(CharacterPreviewPath, characterPreviewPrefab);
-            if (useAssetPackMaterials)
+            if (useAssetPackMaterials || roadMaterial == null || sidewalkMaterial == null || buildingMaterial == null)
             {
-                roadMaterial = LoadEditorMaterial(RoadMaterialPath, roadMaterial);
-                roadEdgeMarkingMaterial = LoadEditorMaterial(IntersectionMaterialPath, roadEdgeMarkingMaterial);
-                sidewalkMaterial = LoadEditorMaterial(SidewalkMaterialPath, sidewalkMaterial);
-                walkwayMaterial = LoadEditorMaterial(SidewalkMaterialPath, walkwayMaterial);
-                buildingMaterial = LoadEditorMaterial(BuildingMaterialPath, buildingMaterial);
+                roadMaterial = LoadEditorCompatibleMaterial(RoadMaterialPath, RoadTexturePath, "Gangland Asset Roads", new Color(0.22f, 0.22f, 0.21f), roadMaterial);
+                roadEdgeMarkingMaterial = LoadEditorCompatibleMaterial(IntersectionMaterialPath, IntersectionTexturePath, "Gangland Asset Intersections", new Color(0.72f, 0.70f, 0.64f), roadEdgeMarkingMaterial);
+                sidewalkMaterial = LoadEditorCompatibleMaterial(SidewalkMaterialPath, SidewalkTexturePath, "Gangland Asset Sidewalks", new Color(0.58f, 0.56f, 0.50f), sidewalkMaterial);
+                walkwayMaterial = LoadEditorCompatibleMaterial(SidewalkMaterialPath, SidewalkTexturePath, "Gangland Asset Walkways", new Color(0.50f, 0.49f, 0.44f), walkwayMaterial);
+                buildingMaterial = LoadEditorCompatibleMaterial(BuildingMaterialPath, BuildingTexturePath, "Gangland Asset Buildings", new Color(0.62f, 0.60f, 0.54f), buildingMaterial);
             }
 
             buildingPrefabs.Clear();
@@ -169,6 +174,25 @@ namespace Gangland.CityStreaming
         static Material LoadEditorMaterial(string path, Material currentValue)
         {
             Material material = AssetDatabase.LoadAssetAtPath<Material>(path);
+            return material != null ? material : currentValue;
+        }
+
+        static Material LoadEditorCompatibleMaterial(string materialPath, string texturePath, string name, Color fallbackColor, Material currentValue)
+        {
+            Material source = AssetDatabase.LoadAssetAtPath<Material>(materialPath);
+            if (source != null && IsCompatibleMaterial(source))
+            {
+                return source;
+            }
+
+            Material material = NewMaterial(name, fallbackColor, 0.42f, 0.02f);
+            Texture2D texture = AssetDatabase.LoadAssetAtPath<Texture2D>(texturePath);
+            if (texture != null)
+            {
+                SetMaterialTexture(material, texture);
+                material.color = Color.white;
+            }
+
             return material != null ? material : currentValue;
         }
 #endif
@@ -341,6 +365,7 @@ namespace Gangland.CityStreaming
                 }
 
                 FitToFootprint(instance, size);
+                ApplyAssetBuildingMaterial(instance);
                 placed++;
             }
         }
@@ -658,6 +683,7 @@ namespace Gangland.CityStreaming
                 if (building != null)
                 {
                     FitToFootprint(building, new Vector2(18f, 18f));
+                    ApplyAssetBuildingMaterial(building);
                     building.name = "Night City Building Preview";
                 }
             }
@@ -773,6 +799,47 @@ namespace Gangland.CityStreaming
             Vector3 delta = instance.transform.position - bounds.center;
             delta.y = -bounds.min.y;
             instance.transform.position += delta;
+        }
+
+        void ApplyAssetBuildingMaterial(GameObject instance)
+        {
+            if (buildingMaterial == null)
+            {
+                return;
+            }
+
+            Renderer[] renderers = instance.GetComponentsInChildren<Renderer>();
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                Renderer renderer = renderers[i];
+                Material[] materials = renderer.sharedMaterials;
+                if (materials == null || materials.Length == 0)
+                {
+                    renderer.sharedMaterial = buildingMaterial;
+                    continue;
+                }
+
+                for (int m = 0; m < materials.Length; m++)
+                {
+                    if (materials[m] == null || !IsCompatibleMaterial(materials[m]))
+                    {
+                        materials[m] = buildingMaterial;
+                    }
+                }
+
+                renderer.sharedMaterials = materials;
+            }
+        }
+
+        static bool IsCompatibleMaterial(Material material)
+        {
+            if (material == null || material.shader == null)
+            {
+                return false;
+            }
+
+            string shaderName = material.shader.name;
+            return shaderName.Contains("Universal Render Pipeline") || shaderName == "Standard" || shaderName == "Sprites/Default";
         }
 
         static bool IsPropStreet(CityStreet street)
@@ -933,9 +1000,19 @@ namespace Gangland.CityStreaming
             Camera mainCamera = Camera.main;
             if (mainCamera != null)
             {
-                mainCamera.clearFlags = CameraClearFlags.SolidColor;
+                mainCamera.clearFlags = CameraClearFlags.Skybox;
                 mainCamera.backgroundColor = new Color(0.43f, 0.52f, 0.60f);
+                mainCamera.allowHDR = false;
                 mainCamera.farClipPlane = Mathf.Max(mainCamera.farClipPlane, 1400f);
+
+                UniversalAdditionalCameraData cameraData = mainCamera.GetComponent<UniversalAdditionalCameraData>();
+                if (cameraData != null)
+                {
+                    cameraData.renderPostProcessing = false;
+                    cameraData.allowHDROutput = false;
+                    cameraData.requiresDepthTexture = false;
+                    cameraData.requiresColorTexture = false;
+                }
             }
 
             Light sun = Object.FindAnyObjectByType<Light>();
@@ -974,6 +1051,23 @@ namespace Gangland.CityStreaming
                 material.SetFloat("_Metallic", Mathf.Clamp01(metallic));
             }
             return material;
+        }
+
+        static void SetMaterialTexture(Material material, Texture texture)
+        {
+            if (material == null || texture == null)
+            {
+                return;
+            }
+
+            if (material.HasProperty("_BaseMap"))
+            {
+                material.SetTexture("_BaseMap", texture);
+            }
+            if (material.HasProperty("_MainTex"))
+            {
+                material.SetTexture("_MainTex", texture);
+            }
         }
     }
 }

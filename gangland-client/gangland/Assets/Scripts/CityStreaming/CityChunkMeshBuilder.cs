@@ -29,6 +29,8 @@ namespace Gangland.CityStreaming
         const float WalkwayWidth = 2.4f;
         const float CurbWidth = 0.28f;
         const float GroundY = -0.02f;
+        const float MinimumPolylinePointSpacing = 1.25f;
+        const float RoadSmoothingSegmentLength = 5.5f;
 
         public static Mesh BuildChunkGroundMesh(CityChunkBounds bounds)
         {
@@ -109,7 +111,7 @@ namespace Gangland.CityStreaming
                     continue;
                 }
 
-                AddPolylineRibbon(vertices, triangles, TrimmedPolyline(street, RoadY), RoadWidth(street) * 0.5f);
+                AddPolylineRibbon(vertices, triangles, SmoothedPolyline(TrimmedPolyline(street, RoadY)), RoadWidth(street) * 0.5f);
             }
 
             return CreateMesh("Roads", vertices, triangles);
@@ -155,7 +157,7 @@ namespace Gangland.CityStreaming
                     continue;
                 }
 
-                List<Vector3> points = TrimmedPolyline(street, SidewalkY);
+                List<Vector3> points = SmoothedPolyline(TrimmedPolyline(street, SidewalkY));
                 float sidewalkWidth = Mathf.Max(0.25f, SidewalkWidth - 0.25f);
                 float centerOffset = RoadWidth(street) * 0.5f + 0.25f + sidewalkWidth * 0.5f;
                 AddOffsetPolylineRibbon(vertices, triangles, points, centerOffset, sidewalkWidth * 0.5f);
@@ -182,7 +184,7 @@ namespace Gangland.CityStreaming
                     continue;
                 }
 
-                List<Vector3> points = TrimmedPolyline(street, CurbY);
+                List<Vector3> points = SmoothedPolyline(TrimmedPolyline(street, CurbY));
                 float curbCenterOffset = RoadWidth(street) * 0.5f;
                 AddOffsetPolylineRibbon(vertices, triangles, points, curbCenterOffset, CurbWidth);
                 AddOffsetPolylineRibbon(vertices, triangles, points, -curbCenterOffset, CurbWidth);
@@ -248,7 +250,7 @@ namespace Gangland.CityStreaming
                     continue;
                 }
 
-                List<Vector3> points = TrimmedPolyline(street, LaneMarkingY);
+                List<Vector3> points = SmoothedPolyline(TrimmedPolyline(street, LaneMarkingY));
                 for (int i = 0; i < points.Count - 1; i++)
                 {
                     AddDashedLine(vertices, triangles, points[i], points[i + 1]);
@@ -275,7 +277,7 @@ namespace Gangland.CityStreaming
                     continue;
                 }
 
-                List<Vector3> points = TrimmedPolyline(street, RoadEdgeMarkingY);
+                List<Vector3> points = SmoothedPolyline(TrimmedPolyline(street, RoadEdgeMarkingY));
                 float edgeCenterOffset = RoadWidth(street) * 0.5f - EdgeLineWidth * 0.5f;
                 AddOffsetPolylineRibbon(vertices, triangles, points, edgeCenterOffset, EdgeLineWidth * 0.5f);
                 AddOffsetPolylineRibbon(vertices, triangles, points, -edgeCenterOffset, EdgeLineWidth * 0.5f);
@@ -447,6 +449,101 @@ namespace Gangland.CityStreaming
             }
         }
 
+        static List<Vector3> SmoothedPolyline(List<Vector3> points)
+        {
+            points = CleanPolyline(points);
+            if (points.Count < 3)
+            {
+                return points;
+            }
+
+            var smoothed = new List<Vector3>();
+            smoothed.Add(points[0]);
+
+            for (int i = 0; i < points.Count - 1; i++)
+            {
+                Vector3 p0 = i > 0 ? points[i - 1] : points[i];
+                Vector3 p1 = points[i];
+                Vector3 p2 = points[i + 1];
+                Vector3 p3 = i + 2 < points.Count ? points[i + 2] : p2;
+                float segmentLength = Vector3.Distance(p1, p2);
+                int steps = Mathf.Clamp(Mathf.CeilToInt(segmentLength / RoadSmoothingSegmentLength), 1, 8);
+
+                for (int step = 1; step <= steps; step++)
+                {
+                    float t = step / (float)steps;
+                    Vector3 point = CatmullRom(p0, p1, p2, p3, t);
+                    point.y = p1.y;
+                    if ((point - smoothed[smoothed.Count - 1]).sqrMagnitude >= 0.16f || step == steps)
+                    {
+                        smoothed.Add(point);
+                    }
+                }
+            }
+
+            return CleanPolyline(smoothed);
+        }
+
+        static List<Vector3> CleanPolyline(List<Vector3> points)
+        {
+            var cleaned = new List<Vector3>();
+            if (points == null || points.Count == 0)
+            {
+                return cleaned;
+            }
+
+            cleaned.Add(points[0]);
+            for (int i = 1; i < points.Count; i++)
+            {
+                Vector3 previous = cleaned[cleaned.Count - 1];
+                Vector3 current = points[i];
+                if ((current - previous).sqrMagnitude >= MinimumPolylinePointSpacing * MinimumPolylinePointSpacing || i == points.Count - 1)
+                {
+                    cleaned.Add(current);
+                }
+            }
+
+            RemoveNearlyCollinearPoints(cleaned);
+            return cleaned;
+        }
+
+        static void RemoveNearlyCollinearPoints(List<Vector3> points)
+        {
+            if (points.Count < 3)
+            {
+                return;
+            }
+
+            for (int i = points.Count - 2; i > 0; i--)
+            {
+                Vector3 previousDirection = FlatDirection(points[i - 1], points[i]);
+                Vector3 nextDirection = FlatDirection(points[i], points[i + 1]);
+                if (previousDirection == Vector3.zero || nextDirection == Vector3.zero)
+                {
+                    points.RemoveAt(i);
+                    continue;
+                }
+
+                float angle = Vector3.Angle(previousDirection, nextDirection);
+                if (angle < 2.5f)
+                {
+                    points.RemoveAt(i);
+                }
+            }
+        }
+
+        static Vector3 CatmullRom(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)
+        {
+            float t2 = t * t;
+            float t3 = t2 * t;
+            return 0.5f * (
+                2f * p1 +
+                (-p0 + p2) * t +
+                (2f * p0 - 5f * p1 + 4f * p2 - p3) * t2 +
+                (-p0 + 3f * p1 - 3f * p2 + p3) * t3
+            );
+        }
+
         static void AddPolylineRibbon(List<Vector3> vertices, List<int> triangles, List<Vector3> points, float halfWidth)
         {
             if (points == null || points.Count < 2)
@@ -500,7 +597,7 @@ namespace Gangland.CityStreaming
                 }
 
                 float halfWidth = RoadWidth(street) * 0.5f;
-                List<Vector3> trimmedPoints = TrimmedPolyline(street, JunctionY);
+                List<Vector3> trimmedPoints = SmoothedPolyline(TrimmedPolyline(street, JunctionY));
                 if (trimmedPoints.Count < 2)
                 {
                     continue;
